@@ -117,6 +117,11 @@ define('PANEL_BEER_REAL_CIDER','Real cider');
 define('PANEL_BEER_REAL_ALE','Real ale');
 define('PANEL_BEER_BREWERY_PLACEHOLDER','ex. Heineken');
 
+define('PANEL_EMERGENCY', 'Emergency');
+define('PANEL_EMERGENCY_LIST', 'List');
+define('PANEL_EMERGENCY_LIST_HEADER', 'Include');
+define('PANEL_EMERGENCY_DEFIBRILLATOR', 'Defibrillator');
+
 define('PANEL_ACCESS','Access');
 define('PANEL_ACCESS_HEADER','No set/Yes/Only');
 define('PANEL_ACCESS_MALE','Male');

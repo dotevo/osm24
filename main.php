@@ -88,6 +88,7 @@ if(file_exists("lang/".$lang.".php"))
                 <li><a id="party"><?php echo PANEL_PARTY;?></a></li>
                 <li><a id="buy"><?php echo PANEL_BUY;?></a></li>
                 <li><a id="exercise"><?php echo PANEL_EXERCISE;?></a></li>
+                <li><a id="emergency"><?php echo PANEL_EMERGENCY;?></a></li>
               </ul>
             </li>
 
@@ -247,7 +248,16 @@ if(file_exists("lang/".$lang.".php"))
                   <input type="text" data-tag-key="brewery" data-tag-value='@' data-tag-char="~" class="form-control select-text" style="height:30px" placeholder="<?php echo PANEL_BEER_BREWERY_PLACEHOLDER;?>" id="brewery">
                 </li>
               </ul>
-            </li>   
+            </li>
+
+            <li style="display:none;" class="dropdown  btn-group btn-group-own  visible-emergency">
+              <a class="dropdown-toggle btn-select" id="emergency-list" data-toggle="dropdown" ><?php echo PANEL_EMERGENCY_LIST;?><span class="caret"></span></a>
+              <ul class="dropdown-menu dropdown-always-on  tag-parent">
+                <li class="dropdown-header"><?php echo PANEL_EMERGENCY_LIST_HEADER;?></li>
+                <li class="select-multi-state"><a id="defibrillator" data-tag-pair-s0="['emergency'='defibrillator']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_EMERGENCY_DEFIBRILLATOR;?></a></li>
+              </ul>
+            </li>
+
 
             <li class="dropdown  btn-group btn-group-own  visible-party" style="display:none">
               <a class="dropdown-toggle btn-select" id="access" data-toggle="dropdown" ><?php echo PANEL_ACCESS;?><span class="caret"></span></a>

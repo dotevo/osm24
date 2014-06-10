@@ -1,6 +1,6 @@
 var shop_icons=["alcohol","art","bakery","beauty","bicycle","books","butcher","car","chemist","clothes","computer","confectionery","convenience","doityourself","fabric","farm","florist","gift","greengrocer","hairdresser","hardware","kiosk","mall","mobile_phone","motorcycle","music","newsagent","optician","pet","second_hand","shoes","seafood","supermarket","toys","travel_agency","video"];
 var leisure_icons=['pitch','swimming_pool','stadium','track','sports_centre'];
-var amenity_icons=['bar','pub','restaurant','fast_food','cafe','nightclub','pharmacy','biergarten','stripclub'];
+var amenity_icons=['bar','pub','restaurant','fast_food','cafe','nightclub','pharmacy','biergarten','stripclub','ice_cream'];
 
 
 Date.prototype.addHours= function(h){

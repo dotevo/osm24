@@ -84,7 +84,7 @@ if(file_exists("lang/".$lang.".php"))
             <li class="dropdown  btn-group btn-group-own ">
               <a class="dropdown-toggle btn-select" id="type" data-toggle="dropdown"><?php echo PANEL_EAT;?><span class="caret"></span></a>
               <ul class="dropdown-menu select-one-change">
-                <li><a id="eat"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']" data-tag-type="main"><?php echo PANEL_EAT;?></a></li>
+                <li><a id="eat"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']" data-tag-type="main"><?php echo PANEL_EAT;?></a></li>
                 <li><a id="party"><?php echo PANEL_PARTY;?></a></li>
                 <li><a id="buy"><?php echo PANEL_BUY;?></a></li>
                 <li><a id="exercise"><?php echo PANEL_EXERCISE;?></a></li>
@@ -113,7 +113,7 @@ if(file_exists("lang/".$lang.".php"))
                 <li><a id="fish_and_chips"><?php echo PANEL_CUISINE_FISH_AND_CHIPS;?></a></li>	
                 <li><a id="fried_food"><?php echo PANEL_CUISINE_FRIED_FOOD;?></a></li>	
                 <li><a id="friture"><?php echo PANEL_CUISINE_FRITURE;?></a></li> 		
-                <li><a id="ice_cream"><?php echo PANEL_CUISINE_ICE_CREAM;?></a></li>	
+                <li><a id="ice_cream" data-tag-exclude="['amenity'='ice_cream']"><?php echo PANEL_CUISINE_ICE_CREAM;?></a></li>	
                 <li><a id="kebab"><?php echo PANEL_CUISINE_KEBAB;?></a></li>
                 <li><a id="mediterranean"><?php echo PANEL_CUISINE_MEDITERRANEAN;?></a></li>
                 <li><a id="noodle"><?php echo PANEL_CUISINE_NOODLE;?></a></li>		

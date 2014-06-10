@@ -59,16 +59,6 @@ if(file_exists("lang/".$lang.".php"))
     </script>
   </head>
   <body>
-  <div id="fb-root"></div>
-  <script>
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -428,15 +418,9 @@ if(file_exists("lang/".$lang.".php"))
               , lbl_amount: "BTC"
               });
           </script><div id='main-plus' size="small" data-href='http://gdzie.bl.ee'></div></h4>
-          
           <hr/>
-          
-          <div class="fb-like-box" data-href="http://www.facebook.com/gdzieblee" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="true"></div>
-
           <iframe scrolling="no" style="border: 0; width: 234px; height: 60px;" src="//coinurl.com/get.php?id=26774"></iframe>
-
         </div>
-
         <div class="modal-body">
           <img src="http://www.openstreetmap.org/assets/osm_logo-79d71f6a51b0e6a724a570834c07d828.png" alt="OpenStreetMap Logo"/><br/>
           <?php echo POPUP_ABOUT_BODY;?>

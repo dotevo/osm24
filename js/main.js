@@ -412,7 +412,10 @@ $(window).load(function() {
       //hours
       if(typeof opening != 'undefined' && e.tags.hasOwnProperty("opening_hours")){
         content+='<div class="tab-pane" id="hours">';
-        content+=drawTable(opening, new Date());
+        if(e.tags['opening_hours']=="24/7")
+            content+="24h<br/>";
+        else
+            content+=drawTable(opening, new Date());
         content+='<a href="https://github.com/AMDmi3/opening_hours.js/commits/master/demo.html">Author</a></div>';
       }
 

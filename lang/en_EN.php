@@ -1,9 +1,12 @@
 <?php
 //PANELS
-define('PANEL_EAT','Eat');
-define('PANEL_PARTY','Party');
-define('PANEL_BUY','Buy');
-define('PANEL_EXERCISE','Exercise');
+define('PANEL_EAT','Food');
+define('PANEL_PARTY','Fun');
+define('PANEL_BUY','Shop');
+define('PANEL_EXERCISE','Sport');
+define('PANEL_OFFICE','Office');
+define('PANEL_CRAFT','Craft');
+define('PANEL_EMERGENCY', 'Emergency');
 
 define('PANEL_CUISINE','Cuisine');
 define('PANEL_CUISINE_ALL','All');
@@ -117,7 +120,20 @@ define('PANEL_BEER_REAL_CIDER','Real cider');
 define('PANEL_BEER_REAL_ALE','Real ale');
 define('PANEL_BEER_BREWERY_PLACEHOLDER','ex. Heineken');
 
-define('PANEL_EMERGENCY', 'Emergency');
+define('PANEL_OFFICE_LIST','Type');
+define('PANEL_OFFICE_ALL','All');
+define('PANEL_OFFICE_ACCOUNTANT','Accountant');
+define('PANEL_OFFICE_ADMINISTRATIVE','Administrative');
+define('PANEL_OFFICE_ARCHITECT','Architect');
+define('PANEL_OFFICE_ASSOCIATION','Association');
+define('PANEL_OFFICE_LAWYER','Lawyer');
+define('PANEL_OFFICE_NOTARY','Notary');
+
+define('PANEL_CRAFT_LIST','Type');
+define('PANEL_CRAFT_ALL','All');
+define('PANEL_CRAFT_CARPENTER','Carpenter');
+define('PANEL_CRAFT_GLAZIERY','Glaziery');
+
 define('PANEL_EMERGENCY_LIST', 'List');
 define('PANEL_EMERGENCY_LIST_HEADER', 'Include');
 define('PANEL_EMERGENCY_DEFIBRILLATOR', 'Defibrillator');

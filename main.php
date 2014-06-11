@@ -88,6 +88,8 @@ if(file_exists("lang/".$lang.".php"))
                 <li><a id="party"><?php echo PANEL_PARTY;?></a></li>
                 <li><a id="buy"><?php echo PANEL_BUY;?></a></li>
                 <li><a id="exercise"><?php echo PANEL_EXERCISE;?></a></li>
+                <li><a id="office"><?php echo PANEL_OFFICE;?></a></li>
+                <li><a id="craft"><?php echo PANEL_CRAFT;?></a></li>
                 <li><a id="emergency"><?php echo PANEL_EMERGENCY;?></a></li>
               </ul>
             </li>
@@ -258,6 +260,29 @@ if(file_exists("lang/".$lang.".php"))
               </ul>
             </li>
 
+            <li style="display:none;" class="dropdown  btn-group btn-group-own  visible-office">
+              <a class="dropdown-toggle btn-select tag-default" id="office" data-toggle="dropdown" data-default-id="office_all" data-arrow><?php echo PANEL_OFFICE_LIST;?><span class="caret"></span></a>
+              <ul class="dropdown-menu select-one dropdown-menu-long tag-parent">
+                <li><a id="office_all" data-tag-pair="[office]" data-tag-type="main"><?php echo PANEL_OFFICE_ALL;?></a></li>
+                <li class="divider"></li>
+                <li><a id="office_accountant" data-tag-pair="[office=accountant]" data-tag-type="main"><?php echo PANEL_OFFICE_ACCOUNTANT;?></a></li>
+                <li><a id="office_administrative" data-tag-pair="[office=administrative]" data-tag-type="main"><?php echo PANEL_OFFICE_ADMINISTRATIVE;?></a></li>
+                <li><a id="office_architect" data-tag-pair="[office=architect]" data-tag-type="main"><?php echo PANEL_OFFICE_ARCHITECT;?></a></li>
+                <li><a id="office_association" data-tag-pair="[office=association]" data-tag-type="main"><?php echo PANEL_OFFICE_ASSOCIATION;?></a></li>
+                <li><a id="office_lawyer" data-tag-pair="[office=lawyer]" data-tag-type="main"><?php echo PANEL_OFFICE_LAWYER;?></a></li>
+                <li><a id="office_notary" data-tag-pair="[office=notary]" data-tag-type="main"><?php echo PANEL_OFFICE_NOTARY;?></a></li>
+              </ul>
+            </li>
+
+            <li style="display:none;" class="dropdown  btn-group btn-group-own  visible-craft">
+              <a class="dropdown-toggle btn-select tag-default" id="craft" data-toggle="dropdown" data-default-id="craft_all" data-arrow><?php echo PANEL_CRAFT_LIST;?><span class="caret"></span></a>
+              <ul class="dropdown-menu select-one dropdown-menu-long tag-parent">
+                <li><a id="craft_all" data-tag-pair="[craft]" data-tag-type="main"><?php echo PANEL_CRAFT_ALL;?></a></li>
+                <li class="divider"></li>
+                <li><a id="craft_carpenter" data-tag-pair="[craft=carpenter]" data-tag-type="main"><?php echo PANEL_CRAFT_CARPENTER;?></a></li>
+                <li><a id="craft_glaziery" data-tag-pair="[craft=glaziery]" data-tag-type="main"><?php echo PANEL_CRAFT_GLAZIERY;?></a></li>
+              </ul>
+            </li>
 
             <li class="dropdown  btn-group btn-group-own  visible-party" style="display:none">
               <a class="dropdown-toggle btn-select" id="access" data-toggle="dropdown" ><?php echo PANEL_ACCESS;?><span class="caret"></span></a>
@@ -272,7 +297,7 @@ if(file_exists("lang/".$lang.".php"))
             <li style="display:none;" class="dropdown  btn-group btn-group-own  visible-buy">
               <a class="dropdown-toggle btn-select tag-default" id="store" data-toggle="dropdown" data-default-id="store_all" data-arrow><?php echo PANEL_STORE;?><span class="caret"></span></a>
               <ul class="dropdown-menu select-one dropdown-menu-long tag-parent">
-                <li><a id="store_all" data-tag-pair="[shop]@[amenity='pharmacy']" data-tag-type="main"><?php echo PANEL_STORE_ALL;?></a></li>
+                <li><a id="store_all" data-tag-pair="[shop]@[amenity='pharmacy']@[office=travel_agency]" data-tag-type="main"><?php echo PANEL_STORE_ALL;?></a></li>
                 <li class="divider"></li>
                 <li><a id="store_alcohol" data-tag-pair="[shop=alcohol]@[shop]['alcohol'='yes']" data-tag-type="main"><?php echo PANEL_STORE_ALCOHOL;?></a></li>
                 <li><a id="store_art" data-tag-pair="[shop=art]@[shop=music]" data-tag-type="main"><?php echo PANEL_STORE_ART;?></a></li>
@@ -281,7 +306,7 @@ if(file_exists("lang/".$lang.".php"))
                 <li><a id="store_electronic" data-tag-pair="[shop='computer']@[shop=mobile_phone]@[shop=electronics]" data-tag-type="main"><?php echo PANEL_STORE_ELECTRONIC;?></a></li>
                 <li><a id="store_health" data-tag-pair="[amenity='pharmacy']@[shop=chemist]@[shop=hairdresser]@[shop=beauty]" data-tag-type="main"><?php echo PANEL_STORE_HEALTH_AND_BEAUTY;?></a></li>
                 <li><a id="store_transport" data-tag-pair="[shop=car]@[shop=bicycle]@[shop=motorcycle]" data-tag-type="main"><?php echo PANEL_STORE_TRANSPORT;?></a></li>
-                <li><a id="store_travel" data-tag-pair="[shop=travel_agency]" data-tag-type="main"><?php echo PANEL_STORE_TRAVEL;?></a></li>
+                <li><a id="store_travel" data-tag-pair="[shop=travel_agency]@[office=travel_agency]" data-tag-type="main"><?php echo PANEL_STORE_TRAVEL;?></a></li>
               </ul>
             </li>
 

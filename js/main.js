@@ -401,14 +401,21 @@ $(window).load(function() {
       content+='<small>'+((e.tags.hasOwnProperty("addr:city")) ?  e.tags["addr:city"]+', ' : "")+((e.tags.hasOwnProperty("addr:street")) ?  e.tags["addr:street"]+', ' : "")+((e.tags.hasOwnProperty("addr:housenumber")) ?  e.tags["addr:housenumber"]+', ' : "")+'</small>';
       //net
       content+='<p>'+((e.tags.hasOwnProperty("contact:email"))?'<i class="glyphicon glyphicon-envelope"></i>'+e.tags["contact:email"]+'<br />':"")+((e.tags.hasOwnProperty("contact:phone"))?'<i class="glyphicon glyphicon-phone-alt"></i>'+e.tags["contact:phone"]+'<br />':"")+
-((e.tags.hasOwnProperty("contact:website"))?'<i class="glyphicon glyphicon-globe"></i><a href="'+e.tags["contact:website"]+'">'+e.tags["contact:website"]+'</a><br />':"")+((e.tags.hasOwnProperty("cuisine"))?'<i class="glyphicon glyphicon-cutlery"></i>'+e.tags["cuisine"]+'<br />':"")+'</p>';
+((e.tags.hasOwnProperty("contact:website"))?'<i class="glyphicon glyphicon-globe"></i><a href="'+e.tags["contact:website"]+'">'+e.tags["contact:website"]+'</a><br />':"");
+      //Alternative contact
+      content+=((e.tags.hasOwnProperty("email"))?'<i class="glyphicon glyphicon-envelope"></i>'+e.tags["email"]+'<br />':"")+    ((e.tags.hasOwnProperty("phone"))?'<i class="glyphicon glyphicon-phone-alt"></i>'+e.tags["phone"]+'<br />':"")+((e.tags.hasOwnProperty("website"))?'<i class="glyphicon glyphicon-globe"></i><a href="'+e.tags["website"]+'">'+e.tags["website"]+'</a><br />':"");
+
+      content+=((e.tags.hasOwnProperty("cuisine"))?'<i class="glyphicon glyphicon-cutlery"></i>'+e.tags["cuisine"]+'<br />':"")+'</p>';
       //sports
       content+=((e.tags.hasOwnProperty("sport"))?'Sports: </i>'+e.tags["sport"]+'<br />':"");
       content+='<br/><br/><a onclick="showNoteMessage(\''+lang_report+'\',note_body,function n(){add('+e.lon+','+e.lat+",'"+name+"'"+');},'+e.lon+','+e.lat+')">'+lang_add_missing_data+'</a></div>'      
       //hours
       if(typeof opening != 'undefined' && e.tags.hasOwnProperty("opening_hours")){
         content+='<div class="tab-pane" id="hours">';
-        content+=drawTable(opening, new Date());
+        if(e.tags['opening_hours']=="24/7")
+            content+="24h<br/>";
+        else
+            content+=drawTable(opening, new Date());
         content+='<a href="https://github.com/AMDmi3/opening_hours.js/commits/master/demo.html">Author</a></div>';
       }
 

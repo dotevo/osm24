@@ -6,6 +6,7 @@ define('PANEL_BUY','Shop');
 define('PANEL_EXERCISE','Sport');
 define('PANEL_OFFICE','Office');
 define('PANEL_CRAFT','Craft');
+define('PANEL_NEED','Needs');
 define('PANEL_EMERGENCY', 'Emergency');
 
 define('PANEL_CUISINE','Cuisine');
@@ -135,6 +136,12 @@ define('PANEL_CRAFT_CARPENTER','Carpenter');
 define('PANEL_CRAFT_CLOCKMAKER','Clockmaker');
 define('PANEL_CRAFT_GLAZIERY','Glaziery');
 define('PANEL_CRAFT_PHOTOGRAPHER','Photographer');
+
+define('PANEL_NEED_LIST','Type');
+define('PANEL_NEED_HEADER','Include');
+define('PANEL_NEED_TOILETS','Toilets');
+define('PANEL_NEED_DRINKING_WATER','Drinking water');
+define('PANEL_NEED_SHELTER','Shelter');
 
 define('PANEL_EMERGENCY_LIST', 'List');
 define('PANEL_EMERGENCY_LIST_HEADER', 'Include');

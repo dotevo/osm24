@@ -80,6 +80,7 @@ if(file_exists("lang/".$lang.".php"))
                 <li><a id="exercise"><?php echo PANEL_EXERCISE;?></a></li>
                 <li><a id="office"><?php echo PANEL_OFFICE;?></a></li>
                 <li><a id="craft"><?php echo PANEL_CRAFT;?></a></li>
+                <li><a id="need"><?php echo PANEL_NEED;?></a></li>
                 <li><a id="emergency"><?php echo PANEL_EMERGENCY;?></a></li>
               </ul>
             </li>
@@ -274,6 +275,16 @@ if(file_exists("lang/".$lang.".php"))
                 <li><a id="craft_glaziery" data-tag-pair="[craft=glaziery]" data-tag-type="main"><?php echo PANEL_CRAFT_GLAZIERY;?></a></li>
                 <li><a id="craft_photographer" data-tag-pair="[craft=photographer]" data-tag-type="main"><?php echo PANEL_CRAFT_PHOTOGRAPHER;?></a></li>
 
+              </ul>
+            </li>
+
+            <li style="display:none;" class="dropdown  btn-group btn-group-own  visible-need">
+              <a class="dropdown-toggle btn-select" id="need" data-toggle="dropdown" ><?php echo PANEL_NEED_LIST;?><span class="caret"></span></a>
+              <ul class="dropdown-menu dropdown-always-on  tag-parent">
+                <li class="dropdown-header"><?php echo PANEL_NEED_HEADER;?></li>
+                <li class="select-multi-state"><a id="toilets" data-tag-pair-s0="['amenity'='toilets']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_NEED_TOILETS;?></a></li>
+                <li class="select-multi-state"><a id="drinking_water" data-tag-pair-s0="['amenity'='drinking_water']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_NEED_DRINKING_WATER;?></a></li>
+                <li class="select-multi-state"><a id="shelter" data-tag-pair-s0="['amenity'='shelter']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_NEED_SHELTER;?></a></li>
               </ul>
             </li>
 

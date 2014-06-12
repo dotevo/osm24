@@ -270,7 +270,10 @@ if(file_exists("lang/".$lang.".php"))
                 <li><a id="craft_all" data-tag-pair="[craft]" data-tag-type="main"><?php echo PANEL_CRAFT_ALL;?></a></li>
                 <li class="divider"></li>
                 <li><a id="craft_carpenter" data-tag-pair="[craft=carpenter]" data-tag-type="main"><?php echo PANEL_CRAFT_CARPENTER;?></a></li>
+                <li><a id="craft_clockmaker" data-tag-pair="[craft=clockmaker]" data-tag-type="main"><?php echo PANEL_CRAFT_CLOCKMAKER;?></a></li>
                 <li><a id="craft_glaziery" data-tag-pair="[craft=glaziery]" data-tag-type="main"><?php echo PANEL_CRAFT_GLAZIERY;?></a></li>
+                <li><a id="craft_photographer" data-tag-pair="[craft=photographer]" data-tag-type="main"><?php echo PANEL_CRAFT_PHOTOGRAPHER;?></a></li>
+
               </ul>
             </li>
 

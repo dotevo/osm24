@@ -1,6 +1,8 @@
 var shop_icons=["alcohol","art","bakery","beauty","bicycle","books","butcher","car","chemist","clothes","computer","confectionery","convenience","doityourself","fabric","farm","florist","gift","greengrocer","hairdresser","hardware","kiosk","mall","mobile_phone","motorcycle","music","newsagent","optician","pet","second_hand","shoes","seafood","supermarket","toys","travel_agency","video"];
 var leisure_icons=['pitch','swimming_pool','stadium','track','sports_centre'];
 var amenity_icons=['bar','pub','restaurant','fast_food','cafe','nightclub','pharmacy','biergarten','stripclub','ice_cream'];
+var office_icons=[];
+var craft_icons=['clockmaker','glaziery','photographer'];
 var emergency_icons=['defibrillator'];
 
 Date.prototype.addHours= function(h){
@@ -68,6 +70,10 @@ EasyOverpass.prototype.addElement = function(e){
       icon_name="leisure_"+e.tags["leisure"];
   }else if(e.tags.hasOwnProperty("emergency")&&emergency_icons.indexOf(e.tags["emergency"]) != -1){
       icon_name="emergency_"+e.tags["emergency"];
+  }else if(e.tags.hasOwnProperty("office")&&office_icons.indexOf(e.tags["office"]) != -1){
+      icon_name="office_"+e.tags["office"];
+  }else if(e.tags.hasOwnProperty("craft")&&craft_icons.indexOf(e.tags["craft"]) != -1){
+      icon_name="craft_"+e.tags["craft"];
   }
   
   if(icon_name==="null")

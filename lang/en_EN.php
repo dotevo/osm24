@@ -132,7 +132,9 @@ define('PANEL_OFFICE_NOTARY','Notary');
 define('PANEL_CRAFT_LIST','Type');
 define('PANEL_CRAFT_ALL','All');
 define('PANEL_CRAFT_CARPENTER','Carpenter');
+define('PANEL_CRAFT_CLOCKMAKER','Clockmaker');
 define('PANEL_CRAFT_GLAZIERY','Glaziery');
+define('PANEL_CRAFT_PHOTOGRAPHER','Photographer');
 
 define('PANEL_EMERGENCY_LIST', 'List');
 define('PANEL_EMERGENCY_LIST_HEADER', 'Include');

@@ -236,13 +236,15 @@ define('PANEL_SPORT_WATER_SKI','Water ski');
 define('PANEL_SPORT_WEIGHTLIFTING','Weightlifting');
 define('PANEL_SPORT_WRESTLING','Wrestling');
 
-
 define('PANEL_OTHER','Other');
 define('PANEL_OTHER_HEADER','No set/Yes');
 define('PANEL_OTHER_TAKE_AWAY','Take away');
 define('PANEL_OTHER_DELIVERY','Delivery');
 define('PANEL_OTHER_WHEELCHAIR','Wheelchair');
 define('PANEL_OTHER_SMOKING','Smoking');
+define('PANEL_OTHER_INTERNET','Internet access');
+define('PANEL_FREE','Free');
+define('PANEL_WLAN','Wlan');
 
 define('PANEL_EMPTY','Empty');
 define('PANEL_NO','No');

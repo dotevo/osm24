@@ -411,13 +411,26 @@ if(file_exists("lang/".$lang.".php"))
                 <li class="visible-eat select-multi-state"><a id="takeaway" data-tag-pair-s1="['takeaway'='yes']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span><?php echo PANEL_OTHER_TAKE_AWAY;?></a></li>
                 <li class="visible-eat select-multi-state"><a id="delivery" data-tag-pair-s1="['delivery'='yes']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span><?php echo PANEL_OTHER_DELIVERY;?></a></li>
                 <li class="select-multi-state"><a id="wheelchair" data-tag-pair-s1="['wheelchair'='yes']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span><?php echo PANEL_OTHER_WHEELCHAIR;?></a></li>
+
+                <li class="dropdown-header visible-eat visible-party"><?php echo PANEL_OTHER_INTERNET;?></li>
+                <li class="dropdown-submenu btn-group-own visible-eat visible-party">
+                  <a tabindex="-1" id="internet" class="dropdown-toggle"><?php echo PANEL_EMPTY;?></a>
+                  <ul class="dropdown-menu select-one tag-parent" data-tag-key="internet_access">
+                  <li><a id="int_empty" data-tag-pair="$$"><?php echo PANEL_EMPTY;?></a></li>
+                  <li><a id="int_no" data-tag-value="no"><?php echo PANEL_NO;?></a></li>
+                  <li><a id="int_yes" data-tag-pair='["internet_access"~"wlan|yes|wired|public|terminal"]'><?php echo PANEL_YES;?></a></li>
+                  <li><a id="int_free" data-tag-pair="['internet_access:fee'='no']"><?php echo PANEL_FREE;?></a></li>
+                  <li><a id="int_wlan" data-tag-value="wlan"><?php echo PANEL_WLAN;?></a></li>
+                  </ul>
+                </li>
+
                 <li class="dropdown-header visible-eat visible-party"><?php echo PANEL_OTHER_SMOKING;?></li>
                 <li class="dropdown-submenu btn-group-own visible-eat visible-party">
                   <a tabindex="-1" id="smoking" class="dropdown-toggle"><?php echo PANEL_EMPTY;?></a>
                   <ul class="dropdown-menu select-one tag-parent" data-tag-key="smoking">
                   <li><a id="empty" data-tag-pair="$$"><?php echo PANEL_EMPTY;?></a></li>
                   <li><a id="no" data-tag-value="no"><?php echo PANEL_NO;?></a></li>
-                  <li><a id="yes" data-tag-pair="['smoking'='yes|dedicated|isolated|separated']"><?php echo PANEL_YES;?></a></li>
+                  <li><a id="yes" data-tag-pair="['smoking'~'yes|dedicated|isolated|separated']"><?php echo PANEL_YES;?></a></li>
                   <li><a id="dedicated" data-tag-value="dedicated"><?php echo PANEL_DEDICATED;?></a></li>
                   <li><a id="isolated" data-tag-value="isolated"><?php echo PANEL_ISOLATED;?></a></li>
                   <li><a id="separated" data-tag-value="separated"><?php echo PANEL_SEPARATED;?></a></li>

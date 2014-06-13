@@ -85,6 +85,10 @@ EasyOverpass.prototype.addElement = function(e){
 
   var VAL = this.options.poiInfo(e,oh);
   var popup = VAL[0];
+  ga('send', 'pageview', {
+             'page': VAL[1],
+             'title': 'Popup'
+              });
   var marker=new L.marker(pos, {
     icon: m_icon,riseOnHover: true
   }).bindLabel(name)

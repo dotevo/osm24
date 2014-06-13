@@ -25,8 +25,11 @@ function getTagFromElement(el,state){
   var excludetag=el.data("tag-exclude");
   if(fulltag=="$$") return "";
   //Visible=false - hidden (null)
+
   if(el.closest(".dropdown").css('display')=="none") {return "";}
   if(el.parent().css('display')=="none") return "";
+  if(el.closest(".main").css('display')=="none") return "";
+
   //Tag-pair=* return tag
   if(typeof fulltag!='undefined') return getTagArray(fulltag,typetag,excludetag);
   //If multistate get tag-pair-state value 
@@ -176,7 +179,7 @@ function showNoteMessage(header,body,callback,lon,lat){
 
 function add(lonv,latv,name){
   $.ajax({
-    url: "http://gdzie.bl.ee/add_note.php",
+    url: "http://osm24.eu/add_note.php",
     data: {lon:lonv,lat:latv,text:"("+name+") "+$( "#text1").val()},
     success: function(data){$msg2Modal.modal('hide')},
   });
@@ -396,7 +399,7 @@ $(window).load(function() {
       content+='<div class="tab-pane active container" id="basic" style="margin:0px;width:400px">';
       
       //name
-      content+='<h4><a href=\'http://gdzie.bl.ee/index.php?id='+e.id+'#!18/'+e.lat+'/'+e.lon+'/type='+global_menu_data["type"]+'/\'>' +((e.tags.hasOwnProperty("name")) ?  e.tags["name"]:"----")+'</a><div id="plusone-div" data-size="small" data-href=\'http://gdzie.bl.ee/index.php?id='+e.id+'#!18/'+e.lat+'/'+e.lon+'/type='+global_menu_data["type"]+'/\'></div></h4>';
+      content+='<h4><a href=\'http://osm24.eu/index.php?id='+e.id+'#!18/'+e.lat+'/'+e.lon+'/type='+global_menu_data["type"]+'/\'>' +((e.tags.hasOwnProperty("name")) ?  e.tags["name"]:"----")+'</a><div id="plusone-div" data-size="small" data-href=\'http://osm24.eu/index.php?id='+e.id+'#!18/'+e.lat+'/'+e.lon+'/type='+global_menu_data["type"]+'/\'></div></h4>';
       //addr
       content+='<small>'+((e.tags.hasOwnProperty("addr:city")) ?  e.tags["addr:city"]+', ' : "")+((e.tags.hasOwnProperty("addr:street")) ?  e.tags["addr:street"]+', ' : "")+((e.tags.hasOwnProperty("addr:housenumber")) ?  e.tags["addr:housenumber"]+', ' : "")+'</small>';
       //net
@@ -435,7 +438,7 @@ $(window).load(function() {
       var link = '<iframe scrolling="no" style="border: 0; width: 234px; height: 60px;" src="//coinurl.com/get.php?id=26775"></iframe>';
       var container = $('<div />');
       container.html('<div class="tabbable tabs-below">'+content+tabs+'</div>'+link);
-      return [container[0], 'http://gdzie.bl.ee/index.php?id='+e.id+'#!18/'+e.lat+'/'+e.lon+'/type='+global_menu_data["type"]+'/' ];
+      return [container[0], 'http://osm24.eu/index.php?id='+e.id+'#!18/'+e.lat+'/'+e.lon+'/type='+global_menu_data["type"]+'/' ];
     },
   });
 

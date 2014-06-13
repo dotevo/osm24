@@ -8,9 +8,10 @@ function print_poi($tags,$lat,$lon,$id,$type){
     $ret.="<br/><h1>".$tags['name']."</h1><br/>";
   }else
     $ret.="<br/><h4><a href='?id=".$id."#!18/".$lat."/".$lon."/".$type."'>".$tags['name']."</a></h4><br/>";
-  foreach ($tags as $key => $value) {
-    $ret.=$key."  =  ".$value."<br/>";
-  }
+  if(isset($_GET['id'])
+    foreach ($tags as $key => $value) {
+      $ret.=$key."  =  ".$value."<br/>";
+    }
   $ret.="Id: ".$id."<br/>";
   return $ret;
 }
@@ -29,15 +30,18 @@ if(isset($_GET['id'])){
   $lat=round($a[1],2);
   $lon=round($a[2],2);
   $delta=0.005;
-  $title=" list - ".$lat." ".$lon;
+  //$title=" list - ".$lat." ".$lon;
   $content.="<a href='index.php#!16/".($lat+($delta*2))."/".($lon)."/'>Move up</a><br/>";
   $content.="<a href='index.php#!16/".($lat-($delta*2))."/".($lon)."/'>Move down</a><br/>";
   $content.="<a href='index.php#!16/".($lat)."/".($lon-($delta*2))."/'>Move left</a><br/>";
   $content.="<a href='index.php#!16/".($lat)."/".($lon+($delta*2))."/'>Move right</a><br/>";
 
+  $content.="<a href='index.php'>osm24</a><br/>";
   $content.="<a href='index.php#!16/".($lat)."/".$lon."/type=eat/'>Eat</a><br/>";
   $content.="<a href='index.php#!16/".($lat)."/".$lon."/type=party/'>Party</a><br/>";
   $content.="<a href='index.php#!16/".($lat)."/".$lon."/type=buy/'>Buy</a><br/>";
+  $content.="<a href='index.php#!16/".($lat)."/".$lon."/type=office/'>Office</a><br/>";
+  $content.="<a href='index.php#!16/".($lat)."/".$lon."/type=craft/'>Craft</a><br/>";
   //Options
   $options=array();
   for($i=0;$i<count($a);$i++){
@@ -54,6 +58,10 @@ if(isset($_GET['id'])){
     $query="[out:json];(node".$bbox."[sport]);out;";//TODO
   }else if($options['type']=='buy'){
     $query="[out:json];(node".$bbox."[shop];node".$bbox."[amenity='pharmacy'];);out;";
+  }else if($options['type']=='craft'){
+    $query="[out:json];(node".$bbox."[craft]);out;";
+  }else if($options['type']=='office'){
+    $query="[out:json];(node".$bbox."[office]);out;";
   }else{
     $query="[out:json];(node".$bbox."[amenity='restaurant'];node".$bbox."[amenity='fast_food'];node".$bbox."[amenity='cafe'];);out;";
   }

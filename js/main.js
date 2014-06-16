@@ -333,7 +333,7 @@ $(window).load(function() {
   if(global_menu_data['type']==="undefined")
      global_menu_data['type']='all';
   var modal = $('#myModal')
-  modal.modal('show'); 
+  //modal.modal('show'); 
   $('#mapper').removeAttr("checked");
 
   var attrib = 'ODbL OpenStreetMap, Data: <a href="http://www.overpass-api.de/">OverpassAPI</a>"';

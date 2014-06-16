@@ -1,4 +1,4 @@
-var shop_icons=["alcohol","art","baby_goods","bakery","beauty","bicycle","books","butcher","car","car_repair","chemist","clothes","computer","confectionery","convenience","doityourself","fabric","farm","florist","gift","greengrocer","hairdresser","hardware","kiosk","mall","mobile_phone","motorcycle","music","newsagent","optician","pet","second_hand","shoes","seafood","supermarket","toys","travel_agency","tyres","video"];
+var shop_icons=["alcohol","art","baby_goods","bakery","beauty","bicycle","books","butcher","car","car_repair","chemist","clothes","computer","confectionery","convenience","dog_hairdresser","doityourself","fabric","farm","florist","gift","greengrocer","hairdresser","hardware","kiosk","mall","mobile_phone","motorcycle","music","newsagent","optician","pet","second_hand","shoes","seafood","supermarket","toys","travel_agency","tyres","video"];
 var leisure_icons=['pitch','swimming_pool','stadium','track','sports_centre'];
 var amenity_icons=['toilets','drinking_water','shelter','bar','pub','restaurant','fast_food','cafe','nightclub','pharmacy','biergarten','stripclub','ice_cream'];
 var office_icons=[];

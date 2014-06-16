@@ -41,7 +41,10 @@ if(file_exists("lang/".$lang.".php"))
         $id=intval($_GET['id']);
         if($_GET['id'][0]=='w')
           $id='w'+intval($_GET['id']);
-        echo "<script type=\"text/javascript\">var permalink_object_id=".$id.";</script>";
+        echo "<script type=\"text/javascript\">var permalink_object_id='".$id."';</script>";
+      }
+      if(isset($_GET['locate'])){
+        echo "<script type=\"text/javascript\">var get_locate=1;</script>";
       }
     ?>
     <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

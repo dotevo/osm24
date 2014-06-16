@@ -2,7 +2,7 @@ var shop_icons=["alcohol","art","bakery","beauty","bicycle","books","butcher","c
 var leisure_icons=['pitch','swimming_pool','stadium','track','sports_centre'];
 var amenity_icons=['toilets','drinking_water','shelter','bar','pub','restaurant','fast_food','cafe','nightclub','pharmacy','biergarten','stripclub','ice_cream'];
 var office_icons=[];
-var craft_icons=['clockmaker','glaziery','photographer'];
+var craft_icons=['key_cutter','clockmaker','glaziery','photographer'];
 var emergency_icons=['defibrillator'];
 
 Date.prototype.addHours= function(h){
@@ -105,8 +105,10 @@ DISQUS.reset({
 });
   },marker);
   this.options.layer.addLayer(marker);
-  if(typeof permalink_object_id != 'undefined' && e.id === permalink_object_id)
+  if(typeof permalink_object_id != 'undefined' && e.id == permalink_object_id){
     marker.fire('click');
+    //console.log("FIRE");delete permalink_object_id;
+  }
 }
 
 EasyOverpass.prototype.dataDownloadWays = function(data){
@@ -142,15 +144,21 @@ EasyOverpass.prototype.dataDownloadWays = function(data){
 }
 
 EasyOverpass.prototype.dataDownloadNodes = function(data){
+console.log(this.query);
   if (typeof this.instance.options.layer === 'undefined') {
     console.error("_map == null");return;
   }
-  if(this.query!=this.instance.options.query){
+  if(this.query!=this.instance.options.query && this.query!="perm"){
     console.log("Different");return;
   }
 
   for(i=0;i<data.elements.length;i++) {
      this.instance.addElement(data.elements[i]);
+  }
+
+  if(this.query=="perm"){
+    console.log("a");
+    //map.panTo(new L.LatLng(40.737, -73.923));
   }
 }
 
@@ -187,6 +195,38 @@ EasyOverpass.prototype.onMoveEnd = function(){
       data: {},
       success: this.dataDownloadWays
     });
+  }
+}
+
+EasyOverpass.prototype.downloadID = function(){
+   console.log("ID");
+   if(typeof permalink_object_id != 'undefined'){
+    var out=url+"data=[out:json];";
+    if(permalink_object_id[0] != 'w'){
+      out+="node("+permalink_object_id+");out;";
+      console.log(out);
+      $.ajax({
+      url: out,
+      context: { instance: this, query: "perm" },
+      crossDomain: true,
+      dataType: "json",
+      data: {},
+      success: this.dataDownloadNodes
+      });
+    }
+    else{
+       console.log(out);
+       var a=permalink_object_id.substring(1);
+       out+="way("+a+");out;(._;>;);out;";
+             $.ajax({
+      url: out,
+      context: { instance: this, query: "perm" },
+      crossDomain: true,
+      dataType: "json",
+      data: {},
+      success: this.dataDownloadWays
+      });
+    }    
   }
 }
 

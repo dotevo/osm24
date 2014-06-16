@@ -26,6 +26,9 @@ function getTagFromElement(el,state){
   if(fulltag=="$$") return "";
   //Visible=false - hidden (null)
 
+  if(el.attr('id')=="int_yes"){
+    console.log(el.closest(".main"));
+  }
   if(el.closest(".dropdown").css('display')=="none") {return "";}
   if(el.parent().css('display')=="none") return "";
   if(el.closest(".main").css('display')=="none") return "";
@@ -186,13 +189,16 @@ function add(lonv,latv,name){
 }
 
 var easyOverpass;
-
+var nn=0;
 function ustaw(){
   if(!n)return;
   var a=getQuery();
   easyOverpass.options.query=a.replace(/(DATATYPE)/g, 'node');
   easyOverpass.options.queryWays=a.replace(/(DATATYPE)/g, 'way');
   easyOverpass.clear();
+  if(typeof permalink_object_id != 'undefined' && nn==0){
+    easyOverpass.downloadID();nn=1;
+  }
   easyOverpass.onMoveEnd();
 }
 
@@ -479,3 +485,6 @@ function locate_toggle(){
     
   }
 }
+
+if(typeof get_locate != 'undefined')
+  locate_toggle();

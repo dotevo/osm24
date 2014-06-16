@@ -331,7 +331,7 @@ $(window).load(function() {
     }]
   }).setView([51.505, 21], 7);
   if(global_menu_data['type']==="undefined")
-     global_menu_data['type']='eat';
+     global_menu_data['type']='all';
   var modal = $('#myModal')
   modal.modal('show'); 
   $('#mapper').removeAttr("checked");
@@ -357,7 +357,7 @@ $(window).load(function() {
       }
     }
     if(typeof global_menu_data["type"]==='undefined'){
-      global_menu_data["type"]="eat";
+      global_menu_data["type"]="all";
     }
  
     setAll();
@@ -390,7 +390,7 @@ $(window).load(function() {
       }
     }
     if(typeof global_menu_data["type"]==='undefined'){
-      global_menu_data["type"]="eat";
+      global_menu_data["type"]="all";
     }
     ustaw();
     hash.onMapMove();
@@ -475,6 +475,9 @@ $(window).load(function() {
   var href=$("#main-plus").data("href");
   var size=$("#main-plus").data("size");
   gapi.plusone.render("main-plus",{'size':size,'href':href});
+
+  if(typeof get_locate != 'undefined')
+    map.locate({setView:true,maxZoom: 16, enableHighAccuracy: true, maximumAge: 30000, timeout: 3000000,});
 });
 
 
@@ -499,5 +502,4 @@ function locate_toggle(){
   }
 }
 
-if(typeof get_locate != 'undefined')
-  locate_toggle();
+

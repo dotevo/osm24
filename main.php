@@ -81,6 +81,8 @@ if(file_exists("lang/".$lang.".php"))
             <li class="dropdown  btn-group btn-group-own ">
               <a class="dropdown-toggle btn-select" id="type" data-toggle="dropdown"><?php echo PANEL_EAT;?><span class="caret"></span></a>
               <ul class="dropdown-menu select-one-change">
+                <li><a id="all"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']@[shop]@[office]@[craft]@[sport]@[amenity=toilets]@[amenity=drinking_water]@['amenity'='pub']@['amenity'='bar']@['amenity'='nightclub']@['amenity'='biergarten']@['amenity'='stripclub']" data-tag-type="main"><?php echo PANEL_ALL;?></a></li>
+                <li class="divider"></li>
                 <li><a id="eat"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']" data-tag-type="main"><?php echo PANEL_EAT;?></a></li>
                 <li><a id="party"><?php echo PANEL_PARTY;?></a></li>
                 <li><a id="buy"><?php echo PANEL_BUY;?></a></li>
@@ -89,8 +91,7 @@ if(file_exists("lang/".$lang.".php"))
                 <li><a id="craft"><?php echo PANEL_CRAFT;?></a></li>
                 <li><a id="need"><?php echo PANEL_NEED;?></a></li>
                 <li><a id="emergency"><?php echo PANEL_EMERGENCY;?></a></li>
-                <li class="divider"></li>
-                <li><a id="all"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']@[shop]@[office]@[craft]@[sport]@[amenity=toilets]@[amenity=drinking_water]@['amenity'='pub']@['amenity'='bar']@['amenity'='nightclub']@['amenity'='biergarten']@['amenity'='stripclub']" data-tag-type="main"><?php echo PANEL_ALL;?></a></li>
+                
               </ul>
             </li>
 
@@ -318,7 +319,7 @@ if(file_exists("lang/".$lang.".php"))
                 <li><a id="store_food" data-tag-pair="[shop=supermarket]@[shop=bakery]@[shop=butcher]@[shop=convenience]@[shop=farm]@[shop=greengrocer]@[shop=seafood]@[shop=confectionery]" data-tag-type="main"><?php echo PANEL_STORE_FOOD;?></a></li>
                 <li><a id="store_electronic" data-tag-pair="[shop='computer']@[shop=mobile_phone]@[shop=electronics]" data-tag-type="main"><?php echo PANEL_STORE_ELECTRONIC;?></a></li>
                 <li><a id="store_health" data-tag-pair="[amenity='pharmacy']@[shop=chemist]@[shop=hairdresser]@[shop=beauty]" data-tag-type="main"><?php echo PANEL_STORE_HEALTH_AND_BEAUTY;?></a></li>
-                <li><a id="store_transport" data-tag-pair="[shop=car]@[shop=bicycle]@[shop=motorcycle]" data-tag-type="main"><?php echo PANEL_STORE_TRANSPORT;?></a></li>
+                <li><a id="store_transport" data-tag-pair="[shop=car]@[shop=bicycle]@[shop=motorcycle]@[shop=tyres]" data-tag-type="main"><?php echo PANEL_STORE_TRANSPORT;?></a></li>
                 <li><a id="store_travel" data-tag-pair="[shop=travel_agency]@[office=travel_agency]" data-tag-type="main"><?php echo PANEL_STORE_TRAVEL;?></a></li>
               </ul>
             </li>

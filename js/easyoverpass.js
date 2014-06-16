@@ -2,7 +2,7 @@ var shop_icons=["alcohol","art","bakery","beauty","bicycle","books","butcher","c
 var leisure_icons=['pitch','swimming_pool','stadium','track','sports_centre'];
 var amenity_icons=['toilets','drinking_water','shelter','bar','pub','restaurant','fast_food','cafe','nightclub','pharmacy','biergarten','stripclub','ice_cream'];
 var office_icons=[];
-var craft_icons=['key_cutter','clockmaker','glaziery','photographer'];
+var craft_icons=['key_cutter','clockmaker','glaziery','photographer','tailor'];
 var emergency_icons=['defibrillator'];
 
 Date.prototype.addHours= function(h){

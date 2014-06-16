@@ -8,6 +8,7 @@ define('PANEL_OFFICE','Office');
 define('PANEL_CRAFT','Craft');
 define('PANEL_NEED','Needs');
 define('PANEL_EMERGENCY', 'Emergency');
+define('PANEL_ALL', 'All');
 
 define('PANEL_CUISINE','Cuisine');
 define('PANEL_CUISINE_ALL','All');
@@ -257,7 +258,7 @@ define('BUTTON_SET','Set');
 define('BUTTON_LOCATE','Locate');
 define('BUTTON_STOP_LOCATE','Stop locate');
 define('BUTTON_ABOUT','About');
-define('POPUP_ABOUT_BODY','Data from <a href="http://osm.org">OpenStreetMap</a> ODbL. <a href="http://en.wikipedia.org/wiki/OpenStreetMap">About</a><br/>Between 10-15 zoom is downloaded only 40POI. Fulldata minzoom=15.<br/>Key:<br/><span  class="glyphicon glyphicon-ok">yes</span><br/><span  class="glyphicon glyphicon-ok-sign">only</span><br/><br/>Used libs and tools:<br/><a href="http://leafletjs.com">Leaflet</a>, <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://jquery.com/">jQuery</a>, <a href="https://github.com/AMDmi3/opening_hours.js">Opening_hours</a>, <a href="https://github.com/mlevans/leaflet-hash">Leaflet-hash</a>, <a href="https://github.com/kartenkarsten/leaflet-layer-overpass/">LeafLet-layer-overpass</a>, Overpass API, VIM :-)<br/>Icons: Maps Icons Collection <a href="http://mapicons.nicolasmollet.com">http://mapicons.nicolasmollet.com</a><br/>Author: Adam Jordanek (dotevo)');
+define('POPUP_ABOUT_BODY','Data from <a href="http://osm.org">OpenStreetMap</a> ODbL. <a href="http://en.wikipedia.org/wiki/OpenStreetMap">About</a><br/>Between 10-15 zoom is downloaded only 40POI. Fulldata minzoom=15.<br/>Key:<br/><span  class="glyphicon glyphicon-ok">yes</span><br/><span  class="glyphicon glyphicon-ok-sign">only</span><br/><br/>Used libs and tools:<br/><a href="http://leafletjs.com">Leaflet</a>, <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://jquery.com/">jQuery</a>, <a href="https://github.com/AMDmi3/opening_hours.js">Opening_hours</a>, <a href="https://github.com/mlevans/leaflet-hash">Leaflet-hash</a>, <a href="https://github.com/kartenkarsten/leaflet-layer-overpass/">LeafLet-layer-overpass</a>, Overpass API, VIM :-)<br/>Icons: Maps Icons Collection <a href="http://mapicons.nicolasmollet.com">http://mapicons.nicolasmollet.com</a> and Tuuli<br/>Author: Adam Jordanek (dotevo)');
 define('BUTTON_CLOSE','Close');
 define('BUTTON_ADD','Add');
 

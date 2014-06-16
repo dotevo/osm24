@@ -24,6 +24,7 @@ if(file_exists("lang/".$lang.".php"))
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
     <link rel="stylesheet" href="css/MarkerCluster.css"/>
     <link rel="stylesheet" href="css/MarkerCluster.Default.css"/>
+    <link rel="stylesheet" href="css/leaflet.contextmenu.css"/>
     <!--[if lte IE 8]>
       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
     <![endif]-->
@@ -36,6 +37,7 @@ if(file_exists("lang/".$lang.".php"))
     <script src="http://coinwidget.com/widget/coin.js"></script>
     <script src="js/leaflet-hash.js"></script>
     <script src="js/leaflet.label.min.js"></script>
+    <script src="js/leaflet.contextmenu.js"></script>
     <?php
       if(isset($_GET['id'])){
         $id=intval($_GET['id']);
@@ -87,6 +89,8 @@ if(file_exists("lang/".$lang.".php"))
                 <li><a id="craft"><?php echo PANEL_CRAFT;?></a></li>
                 <li><a id="need"><?php echo PANEL_NEED;?></a></li>
                 <li><a id="emergency"><?php echo PANEL_EMERGENCY;?></a></li>
+                <li class="divider"></li>
+                <li><a id="all"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']@[shop]@[office]@[craft]@[sport]@[amenity=toilets]@[amenity=drinking_water]@['amenity'='pub']@['amenity'='bar']@['amenity'='nightclub']@['amenity'='biergarten']@['amenity'='stripclub']" data-tag-type="main"><?php echo PANEL_ALL;?></a></li>
               </ul>
             </li>
 

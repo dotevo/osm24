@@ -146,7 +146,7 @@ function showMessage(header, body, callback) {
 }
 
 function showNoteMessage(header,body,callback,lon,lat){
-  var delta=0.00000001;
+  var delta=0.001;
   console.log(lon+" :" +lat);
   $.ajax({
     url: "http://api.openstreetmap.org/api/0.6/notes.json",
@@ -313,10 +313,23 @@ function onLocationError(e) {
   alert(e.message);
 }
 
+function report_poi (e) {
+  showNoteMessage(lang_report,note_body,function n(){
+         add(e.latlng.lng, e.latlng.lat,'Main report');
+    },e.latlng.lng,e.latlng.lat);
+}
+
 var locate=0;
 
 $(window).load(function() {
-  map = new L.Map('map').setView([51.505, 21], 7);
+  map = new L.Map('map',{
+    contextmenu: true,
+    contextmenuWidth: 140,
+    contextmenuItems: [{
+      text: 'Report data',
+      callback: report_poi
+    }]
+  }).setView([51.505, 21], 7);
   if(global_menu_data['type']==="undefined")
      global_menu_data['type']='eat';
   var modal = $('#myModal')

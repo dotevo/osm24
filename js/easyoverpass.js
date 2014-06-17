@@ -1,8 +1,8 @@
-var shop_icons=["alcohol","art","baby_goods","bakery","beauty","bicycle","books","butcher","car","car_repair","chemist","clothes","computer","confectionery","convenience","dog_hairdresser","doityourself","fabric","farm","florist","gift","greengrocer","hairdresser","hardware","kiosk","mall","mobile_phone","motorcycle","music","newsagent","optician","pet","second_hand","shoes","seafood","supermarket","toys","travel_agency","tyres","video"];
+var shop_icons=["alcohol",'antiques',"art","baby_goods","bakery","beauty","bicycle","books","butcher","car","car_repair","chemist","clothes","computer","confectionery","convenience","dog_hairdresser","doityourself","fabric","farm","florist","gift","greengrocer","haberdashery","hairdresser","hardware","hearing_aids","kiosk","mall","mobile_phone","motorcycle","music","newsagent","optician","pet","second_hand","shoes","seafood","supermarket","toys","travel_agency","tyres","video"];
 var leisure_icons=['pitch','swimming_pool','stadium','track','sports_centre'];
 var amenity_icons=['toilets','drinking_water','shelter','bar','pub','restaurant','fast_food','cafe','nightclub','pharmacy','biergarten','stripclub','ice_cream'];
 var office_icons=[];
-var craft_icons=['key_cutter','clockmaker','glaziery','photographer','tailor'];
+var craft_icons=['key_cutter','clockmaker','glaziery','photographer','shoemaker','tailor'];
 var emergency_icons=['defibrillator'];
 
 Date.prototype.addHours= function(h){
@@ -105,9 +105,11 @@ DISQUS.reset({
 });
   },marker);
   this.options.layer.addLayer(marker);
+  //console.log(permalink_object_id + " "+e.id);
   if(typeof permalink_object_id != 'undefined' && e.id == permalink_object_id){
+    map.panTo(marker.getLatLng());
     marker.fire('click');
-    //console.log("FIRE");delete permalink_object_id;
+    console.log("FIRE");//delete permalink_object_id;
   }
 }
 

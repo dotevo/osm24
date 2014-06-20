@@ -98,7 +98,7 @@ if(file_exists("lang/".$lang.".php"))
             <li class="dropdown  btn-group btn-group-own  visible-eat">
               <a class="dropdown-toggle btn-select" id="cuisine" data-toggle="dropdown" data-arrow><?php echo PANEL_CUISINE;?><span class="caret"></span></a>
               <ul class="dropdown-menu select-one dropdown-menu-long tag-parent" data-tag-key="cuisine" data-tag-char="~">
-                <li><a id="all" data-tag-pair="$$"><?php echo PANEL_CUISINE_ALL;?></a></li>
+                <li><a id="c-all" data-tag-pair="$$"><?php echo PANEL_CUISINE_ALL;?></a></li>
                 <li class="divider"></li>
                 <li><a id="bagel"><?php echo PANEL_CUISINE_BAGEL;?></a></li>	
                 <li><a id="barbecue"><?php echo PANEL_CUISINE_BARBECUE;?></a></li> 		
@@ -340,7 +340,7 @@ if(file_exists("lang/".$lang.".php"))
             <li style="display:none;" class="dropdown  btn-group btn-group-own  visible-exercise">
               <a class="dropdown-toggle btn-select" id="sport" data-toggle="dropdown" data-arrow><?php echo PANEL_SPORT;?><span class="caret"></span></a>
               <ul class="dropdown-menu select-one dropdown-menu-long tag-parent" data-tag-key="sport" data-tag-char="~">
-                <li><a id="all" data-tag-pair="$$"><?php echo PANEL_SPORT_ALL;?></a></li>
+                <li><a id="sport-all" data-tag-pair="$$"><?php echo PANEL_SPORT_ALL;?></a></li>
                 <li class="divider"></li>	
                 <li><a id="9pin"><?php echo PANEL_SPORT_9PIN;?></a></li>
                 <li><a id="10pin"><?php echo PANEL_SPORT_10PIN;?></a></li>
@@ -481,7 +481,6 @@ if(file_exists("lang/".$lang.".php"))
               });
           </script><div id='main-plus' size="small" data-href='http://osm24.eu'></div></h4>
           <hr/>
-          <iframe scrolling="no" style="border: 0; width: 234px; height: 60px;" src="//coinurl.com/get.php?id=26774"></iframe>
         </div>
         <div class="modal-body">
           <img src="http://www.openstreetmap.org/assets/osm_logo-79d71f6a51b0e6a724a570834c07d828.png" alt="OpenStreetMap Logo"/><br/>

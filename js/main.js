@@ -445,12 +445,18 @@ $(window).load(function() {
       content+='<div class="tab-pane" id="comments"><div id="disqus_thread"></div></div>';
 
       //tags
-      content+='<div class="tab-pane" id="tags"><table>';
+      content+='<div class="tab-pane" id="tags"><table border=1>';
       content+="<tr><th><b>"+lang_key+"</b></th><th><b>"+lang_value+"</b></th></tr>";
       for (key in e.tags)
         content+='<tr><td>'+key+'</td><td> <i>'+e.tags[key]+'</i></td></tr>';
+      
+      content+='</table>';
+      if(e.id[0]!='w')
+        content+="<a href='http://www.openstreetmap.org/node/"+e.id+"' target='_blank'>Open in OSM</a>";
+      else
+        content+="<a href='http://www.openstreetmap.org/way/"+e.id.substr(1)+"' target='_blank'>Open in OSM</a>";
 
-      content+='</table></div>';
+      content+='</div>';
 
 
       content+='</div>';

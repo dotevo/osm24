@@ -411,7 +411,7 @@ $(window).load(function() {
       if(typeof opening != 'undefined' && e.tags.hasOwnProperty("opening_hours"))
         tabs+='<li><a href="#hours" data-toggle="tab">'+lang_opening_hours+'</a></li>';
       tabs+='<li><a href="#comments" data-toggle="tab">Comments</a></li>';
-      tabs+='<li><a href="#tags" data-toggle="tab">Tags</a></li></ul>';
+      tabs+='<li><a href="#tags" data-toggle="tab">Advanced</a></li></ul>';
 
       var content = '<div class="tab-content">';
       //------basic
@@ -448,7 +448,8 @@ $(window).load(function() {
       content+='<div class="tab-pane" id="tags"><table>';
       content+="<tr><th><b>"+lang_key+"</b></th><th><b>"+lang_value+"</b></th></tr>";
       for (key in e.tags)
-        content+='<tr><td>'+key+'</td><td><i>'+e.tags[key]+'</i></td></tr>';
+        content+='<tr><td>'+key+'</td><td> <i>'+e.tags[key]+'</i></td></tr>';
+
       content+='</table></div>';
 
 

@@ -19,7 +19,7 @@ if(file_exists("lang/".$lang.".php"))
 
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
-    <title>Gdzie</title>
+    <title>osm24.eu</title>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
     <link rel="stylesheet" href="css/MarkerCluster.css"/>
@@ -68,20 +68,20 @@ if(file_exists("lang/".$lang.".php"))
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header" style="width: 250px">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="">Gdzie</a>
+          <a class="navbar-brand" href="">osm24.eu - <b><i id="info"></i></b></a> 
         </div>
         <div class="collapse navbar-collapse global-menu-data">
           <ul class="nav navbar-nav">
             <li class="dropdown  btn-group btn-group-own ">
               <a class="dropdown-toggle btn-select" id="type" data-toggle="dropdown"><?php echo PANEL_EAT;?><span class="caret"></span></a>
               <ul class="dropdown-menu select-one-change">
-                <li><a id="all"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']@[shop]@[office]@[craft]@[sport]@[amenity=toilets]@[amenity=drinking_water]@['amenity'='pub']@['amenity'='bar']@['amenity'='nightclub']@['amenity'='biergarten']@['amenity'='stripclub']" data-tag-type="main"><?php echo PANEL_ALL;?></a></li>
+                <li><a id="all"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']@[shop]@[office]@[craft]@[sport]@[amenity=toilets]@[amenity=drinking_water]@['amenity'='pub']@['amenity'='bar']@['amenity'='nightclub']@['amenity'='biergarten']@['amenity'='stripclub']@[amenity='pharmacy']@[amenity='fuel']" data-tag-type="main"><?php echo PANEL_ALL;?></a></li>
                 <li class="divider"></li>
                 <li><a id="eat"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']" data-tag-type="main"><?php echo PANEL_EAT;?></a></li>
                 <li><a id="party"><?php echo PANEL_PARTY;?></a></li>
@@ -98,7 +98,7 @@ if(file_exists("lang/".$lang.".php"))
             <li class="dropdown  btn-group btn-group-own  visible-eat">
               <a class="dropdown-toggle btn-select" id="cuisine" data-toggle="dropdown" data-arrow><?php echo PANEL_CUISINE;?><span class="caret"></span></a>
               <ul class="dropdown-menu select-one dropdown-menu-long tag-parent" data-tag-key="cuisine" data-tag-char="~">
-                <li><a id="all" data-tag-pair="$$"><?php echo PANEL_CUISINE_ALL;?></a></li>
+                <li><a id="c-all" data-tag-pair="$$"><?php echo PANEL_CUISINE_ALL;?></a></li>
                 <li class="divider"></li>
                 <li><a id="bagel"><?php echo PANEL_CUISINE_BAGEL;?></a></li>	
                 <li><a id="barbecue"><?php echo PANEL_CUISINE_BARBECUE;?></a></li> 		
@@ -311,7 +311,7 @@ if(file_exists("lang/".$lang.".php"))
             <li style="display:none;" class="dropdown  btn-group btn-group-own  visible-buy">
               <a class="dropdown-toggle btn-select tag-default" id="store" data-toggle="dropdown" data-default-id="store_all" data-arrow><?php echo PANEL_STORE;?><span class="caret"></span></a>
               <ul class="dropdown-menu select-one dropdown-menu-long tag-parent">
-                <li><a id="store_all" data-tag-pair="[shop]@[amenity='pharmacy']@[office=travel_agency]" data-tag-type="main"><?php echo PANEL_STORE_ALL;?></a></li>
+                <li><a id="store_all" data-tag-pair="[shop]@[amenity='pharmacy']@[office=travel_agency]@[amenity='fuel']" data-tag-type="main"><?php echo PANEL_STORE_ALL;?></a></li>
                 <li class="divider"></li>
                 <li><a id="store_alcohol" data-tag-pair="[shop=alcohol]@[shop]['alcohol'='yes']" data-tag-type="main"><?php echo PANEL_STORE_ALCOHOL;?></a></li>
                 <li><a id="store_art" data-tag-pair="[shop=art]@[shop=music]" data-tag-type="main"><?php echo PANEL_STORE_ART;?></a></li>
@@ -319,7 +319,7 @@ if(file_exists("lang/".$lang.".php"))
                 <li><a id="store_food" data-tag-pair="[shop=supermarket]@[shop=bakery]@[shop=butcher]@[shop=convenience]@[shop=farm]@[shop=greengrocer]@[shop=seafood]@[shop=confectionery]" data-tag-type="main"><?php echo PANEL_STORE_FOOD;?></a></li>
                 <li><a id="store_electronic" data-tag-pair="[shop='computer']@[shop=mobile_phone]@[shop=electronics]" data-tag-type="main"><?php echo PANEL_STORE_ELECTRONIC;?></a></li>
                 <li><a id="store_health" data-tag-pair="[amenity='pharmacy']@[shop=chemist]@[shop=hairdresser]@[shop=beauty]" data-tag-type="main"><?php echo PANEL_STORE_HEALTH_AND_BEAUTY;?></a></li>
-                <li><a id="store_transport" data-tag-pair="[shop=car]@[shop=bicycle]@[shop=motorcycle]@[shop=tyres]" data-tag-type="main"><?php echo PANEL_STORE_TRANSPORT;?></a></li>
+                <li><a id="store_transport" data-tag-pair="[shop=car]@[shop=bicycle]@[shop=motorcycle]@[shop=tyres]@[amenity='fuel']" data-tag-type="main"><?php echo PANEL_STORE_TRANSPORT;?></a></li>
                 <li><a id="store_travel" data-tag-pair="[shop=travel_agency]@[office=travel_agency]" data-tag-type="main"><?php echo PANEL_STORE_TRAVEL;?></a></li>
               </ul>
             </li>
@@ -340,7 +340,7 @@ if(file_exists("lang/".$lang.".php"))
             <li style="display:none;" class="dropdown  btn-group btn-group-own  visible-exercise">
               <a class="dropdown-toggle btn-select" id="sport" data-toggle="dropdown" data-arrow><?php echo PANEL_SPORT;?><span class="caret"></span></a>
               <ul class="dropdown-menu select-one dropdown-menu-long tag-parent" data-tag-key="sport" data-tag-char="~">
-                <li><a id="all" data-tag-pair="$$"><?php echo PANEL_SPORT_ALL;?></a></li>
+                <li><a id="sport-all" data-tag-pair="$$"><?php echo PANEL_SPORT_ALL;?></a></li>
                 <li class="divider"></li>	
                 <li><a id="9pin"><?php echo PANEL_SPORT_9PIN;?></a></li>
                 <li><a id="10pin"><?php echo PANEL_SPORT_10PIN;?></a></li>
@@ -481,7 +481,6 @@ if(file_exists("lang/".$lang.".php"))
               });
           </script><div id='main-plus' size="small" data-href='http://osm24.eu'></div></h4>
           <hr/>
-          <iframe scrolling="no" style="border: 0; width: 234px; height: 60px;" src="//coinurl.com/get.php?id=26774"></iframe>
         </div>
         <div class="modal-body">
           <img src="http://www.openstreetmap.org/assets/osm_logo-79d71f6a51b0e6a724a570834c07d828.png" alt="OpenStreetMap Logo"/><br/>

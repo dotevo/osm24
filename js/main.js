@@ -1,5 +1,5 @@
-//var url="http://overpass-api.de/api/interpreter?";
-var url="http://overpass.osm.rambler.ru/cgi/interpreter?";
+var url="http://overpass-api.de/api/interpreter?";
+//var url="http://overpass.osm.rambler.ru/cgi/interpreter?";
 var n=false;
 function getTagArray(tag,typetag,excludetag){
   //To do few combinations
@@ -454,7 +454,7 @@ $(window).load(function() {
 
       content+='</div>';
       //link
-      var link = '<iframe scrolling="no" style="border: 0; width: 234px; height: 60px;" src="//coinurl.com/get.php?id=26775"></iframe>';
+      var link = '<iframe scrolling="no" style="border: 0; width: 234px; height: 60px;" src="//coinurl.com/get.php?id=27504&SSL=1"></iframe>';
       var container = $('<div />');
       container.html('<div class="tabbable tabs-below">'+content+tabs+'</div>'+link);
       return [container[0], 'http://osm24.eu/index.php?id='+e.id+'#!18/'+e.lat+'/'+e.lon+'/type='+global_menu_data["type"]+'/' ];
@@ -501,5 +501,3 @@ function locate_toggle(){
     
   }
 }
-
-

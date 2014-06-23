@@ -1,20 +1,36 @@
 <?php
-
 function print_poi($tags,$lat,$lon,$id,$type){
-  $ret="";
+  $ret="<div itemscope itemtype=\"http://data-vocabulary.org/Organization\">";
   if($type!="")
     $type="type=".$type."/";
   if(isset($_GET['id'])){
-    $ret.="<br/><h1>".$tags['name']."</h1><br/>";
-  }else
-    $ret.="<br/><h4><a href='?id=".$id."#!18/".$lat."/".$lon."/".$type."'>".$tags['name']."</a></h4><br/>";
-  if(isset($_GET['id'])
+    $ret.="<br/><span itemprop=\"name\">".$tags['name']."</span><br/>";
+
+    //ADDR
+    $ret.="<span itemprop=\"address\" itemscope itemtype=\"http://data-vocabulary.org/Address\">";
+    if(isset($tags['addr:street']))
+      $ret.= "<span itemprop=\"street-address\">".$tags['addr:street']." ".$tags['addr:housenumber']."</span>";
+    if(isset($tags['addr:city']))
+      $ret.= "<span itemprop=\"locality\">".$tags['city']."</span>";
+    $ret .= "</span>";
+
+    if(isset($tags['contact:phone']))
+      $ret .="<span itemprop=\"tel\">".$tags['contact:phone']."</span>";
+
+    if(isset($tags['contact:website']))
+      $ret .="<span itemprop=\"url\">".$tags['contact:website']."</span>";
+
+    $ret .= "<br/><br/>";
     foreach ($tags as $key => $value) {
       $ret.=$key."  =  ".$value."<br/>";
     }
+  }else
+    $ret.="<br/><h4><a href='?id=".$id."#!18/".$lat."/".$lon."/".$type."'>".$tags['name']."</a></h4><br/>";
+    
   $ret.="Id: ".$id."<br/>";
   return $ret;
 }
+
 
 $title="";
 $content="";
@@ -37,11 +53,6 @@ if(isset($_GET['id'])){
   $content.="<a href='index.php#!16/".($lat)."/".($lon+($delta*2))."/'>Move right</a><br/>";
 
   $content.="<a href='index.php'>osm24</a><br/>";
-  $content.="<a href='index.php#!16/".($lat)."/".$lon."/type=eat/'>Eat</a><br/>";
-  $content.="<a href='index.php#!16/".($lat)."/".$lon."/type=party/'>Party</a><br/>";
-  $content.="<a href='index.php#!16/".($lat)."/".$lon."/type=buy/'>Buy</a><br/>";
-  $content.="<a href='index.php#!16/".($lat)."/".$lon."/type=office/'>Office</a><br/>";
-  $content.="<a href='index.php#!16/".($lat)."/".$lon."/type=craft/'>Craft</a><br/>";
   //Options
   $options=array();
   for($i=0;$i<count($a);$i++){
@@ -63,7 +74,7 @@ if(isset($_GET['id'])){
   }else if($options['type']=='office'){
     $query="[out:json];(node".$bbox."[office]);out;";
   }else{
-    $query="[out:json];(node".$bbox."[amenity='restaurant'];node".$bbox."[amenity='fast_food'];node".$bbox."[amenity='cafe'];);out;";
+    $query="[out:json];(node".$bbox."[amenity='restaurant'];node".$bbox."[amenity='fast_food'];node".$bbox."[amenity='cafe'];node".$bbox."[amenity='pub'];node".$bbox."[amenity='bar'];node".$bbox."[amenity='nightclub'];node".$bbox."[amenity='stripclub'];node".$bbox."[amenity='biergarden'];node".$bbox."[amenity='sport'];node".$bbox."[amenity='office'];node".$bbox."[amenity='craft'];node".$bbox."[amenity='shop'];);out;";
   }
 
   $url="http://overpass.osm.rambler.ru/cgi/interpreter?data=".$query;
@@ -79,10 +90,10 @@ if(isset($_GET['id'])){
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Opening hours">
-    <meta name="author" content="">
+    <meta name="description" content="POI map with opening hours for <?php echo $title; ?>">
+    <meta name="author" content="dotevo">
     <meta name="fragment" content="!">
-    <title>Gdzie <?php echo $title; ?> </title>
+    <title>Find <?php echo $title; ?> </title>
   </head>
 <body>
 <h1>Your favorite places on the map. Opening hours.</h1><br/>

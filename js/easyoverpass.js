@@ -1,9 +1,10 @@
-var shop_icons=["alcohol",'antiques',"art","baby_goods","bakery","beauty","bicycle","books","butcher","car","car_repair","chemist","clothes","computer","confectionery","convenience","dog_hairdresser","doityourself","fabric","farm","florist","gift","greengrocer","haberdashery","hairdresser","hardware","hearing_aids","kiosk","mall","mobile_phone","motorcycle","music","newsagent","optician","pet","second_hand","shoes","seafood","supermarket","toys","travel_agency","tyres","video"];
+var shop_icons=["alcohol",'antiques',"art","baby_goods","bag","bakery","beauty","bicycle","books","boutique","butcher","car","car_parts","car_repair","chemist","clothes","computer","confectionery","convenience","copyshop","dog_hairdresser","doityourself","fabric","farm","fishing","florist","funeral_directors","furniture","garden_centre","gift","greengrocer","haberdashery","hairdresser","hardware","hearing_aids","interior_decoration","jewelry","kiosk","mall","mobile_phone","motorcycle","music","musical_instruments","newsagent","optician","pet","second_hand","shoes","seafood","supermarket","tobacco","toys","travel_agency","tyres","video"];
 var leisure_icons=['pitch','swimming_pool','stadium','track','sports_centre'];
-var amenity_icons=['toilets','drinking_water','shelter','bar','pub','restaurant','fast_food','cafe','nightclub','pharmacy','biergarten','stripclub','ice_cream'];
+var amenity_icons=['toilets','drinking_water','shelter','bar','pub','restaurant','fast_food','fuel','cafe','nightclub','pharmacy','biergarten','stripclub','ice_cream'];
 var office_icons=[];
 var craft_icons=['key_cutter','clockmaker','glaziery','photographer','shoemaker','tailor'];
 var emergency_icons=['defibrillator'];
+
 
 Date.prototype.addHours= function(h){
     this.setHours(this.getHours()+h);
@@ -111,6 +112,9 @@ DISQUS.reset({
     marker.fire('click');
     console.log("FIRE");//delete permalink_object_id;
   }
+  if(this.options.minfullzoom<=this.options.map.getZoom()){
+    $("#info").html("");
+  }
 }
 
 EasyOverpass.prototype.dataDownloadWays = function(data){
@@ -157,19 +161,19 @@ console.log(this.query);
   for(i=0;i<data.elements.length;i++) {
      this.instance.addElement(data.elements[i]);
   }
-
-  if(this.query=="perm"){
-    console.log("a");
-    //map.panTo(new L.LatLng(40.737, -73.923));
-  }
 }
 
 EasyOverpass.prototype.onMoveEnd = function(){
   var out="out 40;";
   if(this.options.minfullzoom<=this.options.map.getZoom()){
      out="out;"
+     $("#info").html("Loading...");
+  }else{
+    $("#info").html("Please, zoom in.");
   }
-  if(this.options.minzoom>this.options.map.getZoom()) return;
+  if(this.options.minzoom>this.options.map.getZoom()){ 
+  return;
+  }
 
   if(this.options.query!=""){
     var query_a=this.options.query+out;
@@ -184,7 +188,7 @@ EasyOverpass.prototype.onMoveEnd = function(){
       success: this.dataDownloadNodes
     });
   }
-
+if(this.options.minfullzoom<=this.options.map.getZoom()){
   if(this.options.queryWays!=""){
     var query_a=this.options.queryWays+out+'(._;>;);out;';
     console.log("Query: "+query_a);
@@ -197,7 +201,7 @@ EasyOverpass.prototype.onMoveEnd = function(){
       data: {},
       success: this.dataDownloadWays
     });
-  }
+  }}
 }
 
 EasyOverpass.prototype.downloadID = function(){

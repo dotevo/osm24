@@ -180,7 +180,7 @@ if(file_exists("lang/".$lang.".php"))
 
 
             <li class="dropdown  btn-group btn-group-own  visible-money">
-              <a class="dropdown-toggle btn-select" id="mon" data-toggle="dropdown" data-default-id="place__all" data-arrow><?php echo PANEL_PLACE_ALL;?><span class="caret"></span></a>
+              <a class="dropdown-toggle btn-select tag-default" id="mon" data-toggle="dropdown" data-default-id="place_all" data-arrow><?php echo PANEL_PLACE_ALL;?><span class="caret"></span></a>
               <ul class="dropdown-menu select-one dropdown-menu-long tag-parent">
                 <li><a id="place_all" data-tag-pair="['amenity'='bank']@['amenity'='atm']" data-tag-type="main"><?php echo PANEL_PLACE_ALL;?></a></li>
                 <li class="divider"></li>

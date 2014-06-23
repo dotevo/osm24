@@ -8,6 +8,7 @@ define('PANEL_OFFICE','Office');
 define('PANEL_CRAFT','Craft');
 define('PANEL_NEED','Needs');
 define('PANEL_EMERGENCY', 'Emergency');
+define('PANEL_MONEY','Money');
 define('PANEL_ALL', 'All');
 
 define('PANEL_CUISINE','Cuisine');
@@ -100,6 +101,10 @@ define('PANEL_DIET_GLUTEN_FREE','Gluten free');
 define('PANEL_DIET_DAIRY_FREE','Dairy free');
 define('PANEL_DIET_LACTOSE_FREE','Lactose free');
 define('PANEL_DIET_HALAL','Halal');
+
+define('PANEL_PLACE_ALL','All');
+define('PANEL_PLACE_ATM','ATM');
+define('PANEL_PLACE_BANK','Bank');
 
 define('PANEL_WHERE','Where');
 define('PANEL_WHERE_HEADER','Exclude');

@@ -51,7 +51,7 @@ if(file_exists("lang/".$lang.".php"))
     ?>
     <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
     <script src="js/easyoverpass.js"></script>
-    <script src="js/opening_hours.js"></script>    
+    <script src="js/opening_hours.js"></script>  
     <link href="css/style.css" rel="stylesheet">
     <link href="css/leaflet.label.css" rel="stylesheet">
 <script>
@@ -80,18 +80,18 @@ if(file_exists("lang/".$lang.".php"))
           <ul class="nav navbar-nav">
             <li class="dropdown  btn-group btn-group-own ">
               <a class="dropdown-toggle btn-select" id="type" data-toggle="dropdown"><?php echo PANEL_EAT;?><span class="caret"></span></a>
-              <ul class="dropdown-menu select-one-change">
-                <li><a id="all"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']@[shop]@[office]@[craft]@[sport]@[amenity=toilets]@[amenity=drinking_water]@['amenity'='pub']@['amenity'='bar']@['amenity'='nightclub']@['amenity'='biergarten']@['amenity'='stripclub']@[amenity='pharmacy']@[amenity='fuel']" data-tag-type="main"><?php echo PANEL_ALL;?></a></li>
-                <li class="divider"></li>
-                <li><a id="eat"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']" data-tag-type="main"><?php echo PANEL_EAT;?></a></li>
-                <li><a id="party"><?php echo PANEL_PARTY;?></a></li>
-                <li><a id="buy"><?php echo PANEL_BUY;?></a></li>
-                <li><a id="exercise"><?php echo PANEL_EXERCISE;?></a></li>
-                <li><a id="office"><?php echo PANEL_OFFICE;?></a></li>
+              <ul class="dropdown-menu select-one-change sort">
+                <li><a id="all"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']@[shop]@[office]@[craft]@[sport]@[amenity=toilets]@[amenity=drinking_water]@['amenity'='pub']@['amenity'='bar']@['amenity'='nightclub']@['amenity'='biergarten']@['amenity'='stripclub']@[amenity='pharmacy']@[amenity='fuel']@['amenity'='bank']@['amenity'='atm']" data-tag-type="main"><?php echo PANEL_ALL;?></a></li>
+                <li class="divider"></li>                
                 <li><a id="craft"><?php echo PANEL_CRAFT;?></a></li>
-                <li><a id="need"><?php echo PANEL_NEED;?></a></li>
                 <li><a id="emergency"><?php echo PANEL_EMERGENCY;?></a></li>
-                
+                <li><a id="eat"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']" data-tag-type="main"><?php echo PANEL_EAT;?></a></li>
+                <li><a id="money"><?php echo PANEL_MONEY;?></a></li>
+                <li><a id="need"><?php echo PANEL_NEED;?></a></li>
+                <li><a id="office"><?php echo PANEL_OFFICE;?></a></li>
+                <li><a id="party"><?php echo PANEL_PARTY;?></a></li>
+                <li><a id="exercise"><?php echo PANEL_EXERCISE;?></a></li>
+                <li><a id="buy"><?php echo PANEL_BUY;?></a></li>
               </ul>
             </li>
 
@@ -177,6 +177,18 @@ if(file_exists("lang/".$lang.".php"))
                 <li><a id="turkish"><?php echo PANEL_CUISINE_TURKISH;?></a></li>
               </ul>
             </li>
+
+
+            <li class="dropdown  btn-group btn-group-own  visible-money">
+              <a class="dropdown-toggle btn-select" id="mon" data-toggle="dropdown" data-default-id="place__all" data-arrow><?php echo PANEL_PLACE_ALL;?><span class="caret"></span></a>
+              <ul class="dropdown-menu select-one dropdown-menu-long tag-parent">
+                <li><a id="place_all" data-tag-pair="['amenity'='bank']@['amenity'='atm']" data-tag-type="main"><?php echo PANEL_PLACE_ALL;?></a></li>
+                <li class="divider"></li>
+                <li><a id="bank" data-tag-pair="['amenity'='bank']" data-tag-type="main"><?php echo PANEL_PLACE_BANK;?></a></li>
+                <li><a id="atm" data-tag-pair="['amenity'='atm']@[atm=yes]" data-tag-type="main"><?php echo PANEL_PLACE_ATM;?></a></li>
+              </ul>
+            </li>
+
 <!--
             <li class="dropdown  btn-group btn-group-own ">
               <a class="dropdown-toggle btn-select" id="payment" data-toggle="dropdown" >Payment <span class="caret"></span></a>

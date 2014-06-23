@@ -452,9 +452,9 @@ $(window).load(function() {
       
       content+='</table>';
       if(e.id[0]!='w')
-        content+="<a href='http://www.openstreetmap.org/node/"+e.id+"' target='_blank'>Open in OSM</a>";
+        content+="<a href='http://www.openstreetmap.org/node/"+e.id+"' target='_blank'>Open OSM</a>";
       else
-        content+="<a href='http://www.openstreetmap.org/way/"+e.id.substr(1)+"' target='_blank'>Open in OSM</a>";
+        content+="<a href='http://www.openstreetmap.org/way/"+e.id.substr(1)+"' target='_blank'>Open OSM</a>";
 
       content+='</div>';
 

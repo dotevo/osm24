@@ -61,6 +61,8 @@ EasyOverpass.prototype.addElement = function(e){
     name=e.tags["name"];
   else if(e.tags.hasOwnProperty("ref"))
     name=e.tags["ref"];
+  else if(e.tags.hasOwnProperty("operator"))
+    name=e.tags["operator"];
 
   var icon_name="null";
   if(e.tags.hasOwnProperty("amenity")&&amenity_icons.indexOf(e.tags["amenity"]) != -1){
@@ -86,25 +88,51 @@ EasyOverpass.prototype.addElement = function(e){
 
   var VAL = this.options.poiInfo(e,oh);
   var popup = VAL[0];
-  ga('send', 'pageview', {
-             'page': VAL[1],
-             'title': 'Popup'
-              });
-  var marker=new L.marker(pos, {
-    icon: m_icon,riseOnHover: true
-  }).bindLabel(name)
-    .bindPopup(popup, {minWidth: 300});
-  marker.on("click",function(){
-     this.label.close();
+  
+  var marker;
+  if(isMobile.any){
+    marker=new L.marker(pos, {icon: m_icon,riseOnHover: true}).
+                        bindLabel(name);
+    marker.on("click",function(){
+              this.label.close();
+              ga('send', 'pageview', {
+                 'page': VAL[1],
+                 'title': 'PopupMob'
+                 });
 
-DISQUS.reset({
-  reload: true,
-  config: function () {  
-    this.page.identifier = e.id+"";  
-    this.page.url = VAL[1];
+              showMessage(name,popup.outerHTML,0);
+              DISQUS.reset({
+                 reload: true,
+                 config: function () {  
+                    this.page.identifier = e.id+"";  
+                    this.page.url = VAL[1];
+                 }
+              });
+    },marker);
+
+
+  }else{
+    marker=new L.marker(pos, {icon: m_icon,riseOnHover: true}).
+                        bindLabel(name).bindPopup(popup, {minWidth: 300});
+    marker.on("click",function(){
+              this.label.close();
+              ga('send', 'pageview', {
+                 'page': VAL[1],
+                 'title': 'Popup'
+                 });
+              DISQUS.reset({
+                 reload: true,
+                 config: function () {  
+                    this.page.identifier = e.id+"";  
+                    this.page.url = VAL[1];
+                 }
+              });
+           },marker);
   }
-});
-  },marker);
+
+  
+
+
   this.options.layer.addLayer(marker);
   //console.log(permalink_object_id + " "+e.id);
   if(typeof permalink_object_id != 'undefined' && e.id == permalink_object_id){

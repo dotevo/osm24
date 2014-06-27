@@ -84,6 +84,7 @@ EasyOverpass.prototype.addElement = function(e){
   m_icon = L.divIcon({
     className: "map-icon map-icon-"+shadow,html:"<div class='map-icon' style='background-image: url(img/icons/"+icon_name+".png);'></div>",
     iconSize: [32, 37],
+	iconAnchor: [16, 37],
   });
 
   var VAL = this.options.poiInfo(e,oh);

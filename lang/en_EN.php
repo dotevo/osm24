@@ -156,7 +156,7 @@ define('PANEL_EMERGENCY_DEFIBRILLATOR', 'Defibrillator');
 define('PANEL_ACCESS','Access');
 define('PANEL_ACCESS_HEADER','No set/Yes/Only');
 define('PANEL_ACCESS_MALE','Male');
-define('PANEL_ACCESS_FAMALE','Famale');
+define('PANEL_ACCESS_FEMALE','Female');
 define('PANEL_ACCESS_GAY','Gay');
 
 define('PANEL_STORE','Store');

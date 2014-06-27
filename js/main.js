@@ -39,7 +39,7 @@ function getTagFromElement(el,state){
 
   //Tag-pair=* return tag
   if(typeof fulltag!='undefined') return getTagArray(fulltag,typetag,excludetag);
-  //If multistate get tag-pair-state value 
+  //If multistate get tag-pair-state value
   if(state!=-1){
     fulltag=el.data("tag-pair-s"+state);
     if(typeof fulltag!='undefined') return getTagArray(fulltag,typetag,excludetag);
@@ -50,8 +50,8 @@ function getTagFromElement(el,state){
   if(typeof keytag==='undefined'&&el.closest(".tag-parent").length>0)
     keytag=el.closest(".tag-parent").data("tag-key");
   var chartag=el.data("tag-char");
-  if(typeof chartag==='undefined') 
-    el.closest(".tag-parent").data("tag-char");
+  if(typeof chartag==='undefined')
+    chartag=el.closest(".tag-parent").data("tag-char");
   if(typeof chartag==='undefined') chartag="=";
 
   //if tag-key does not exists

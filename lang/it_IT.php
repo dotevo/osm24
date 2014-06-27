@@ -1,5 +1,4 @@
 <?php
-//PANELS
 define('PANEL_EAT','Cibo');
 define('PANEL_PARTY','Divertimento');
 define('PANEL_BUY','Spesa');
@@ -62,7 +61,7 @@ define('PANEL_CUISINE_CROATIAN','Croato');
 define('PANEL_CUISINE_CZECH','Ceco');
 define('PANEL_CUISINE_FRENCH','Francese');
 define('PANEL_CUISINE_GERMAN','Tedesco');
-define('PANEL_CUISINE_GREEK','Greco;
+define('PANEL_CUISINE_GREEK','Greco');
 define('PANEL_CUISINE_GAUCHO','Gaucho');
 define('PANEL_CUISINE_HUNAN','Hunan');
 define('PANEL_CUISINE_HUNGARIAN','Ungherese');
@@ -127,23 +126,21 @@ define('PANEL_BEER_REAL_CIDER','Sidro vero');
 define('PANEL_BEER_REAL_ALE','Vera ale');
 define('PANEL_BEER_BREWERY_PLACEHOLDER','es. Heineken');
 
-// FIXME
 define('PANEL_OFFICE_LIST','Tipo');
 define('PANEL_OFFICE_ALL','Tutto');
-define('PANEL_OFFICE_ACCOUNTANT','Accountant');
-define('PANEL_OFFICE_ADMINISTRATIVE','Administrative');
-define('PANEL_OFFICE_ARCHITECT','Architect');
-define('PANEL_OFFICE_ASSOCIATION','Association');
-define('PANEL_OFFICE_LAWYER','Lawyer');
-define('PANEL_OFFICE_NOTARY','Notary');
+define('PANEL_OFFICE_ACCOUNTANT','Contabile');
+define('PANEL_OFFICE_ADMINISTRATIVE','Amministrazione');
+define('PANEL_OFFICE_ARCHITECT','Architetto');
+define('PANEL_OFFICE_ASSOCIATION','Associazioni');
+define('PANEL_OFFICE_LAWYER','Avvocato');
+define('PANEL_OFFICE_NOTARY','Notarile');
 
-// FIXME
 define('PANEL_CRAFT_LIST','Tipo');
 define('PANEL_CRAFT_ALL','Tutto');
-define('PANEL_CRAFT_CARPENTER','Carpenter');
-define('PANEL_CRAFT_CLOCKMAKER','Clockmaker');
-define('PANEL_CRAFT_GLAZIERY','Glaziery');
-define('PANEL_CRAFT_PHOTOGRAPHER','Photographer');
+define('PANEL_CRAFT_CARPENTER','Carpenteria');
+define('PANEL_CRAFT_CLOCKMAKER','Orologeria');
+define('PANEL_CRAFT_GLAZIERY','Vetreria');
+define('PANEL_CRAFT_PHOTOGRAPHER','Fotografia');
 
 define('PANEL_NEED_LIST','Tipo');
 define('PANEL_NEED_HEADER','Includi');
@@ -161,135 +158,126 @@ define('PANEL_ACCESS_MALE','Uomo');
 define('PANEL_ACCESS_FEMALE','Donna');
 define('PANEL_ACCESS_GAY','Gay');
 
-// FIXME
 define('PANEL_STORE','Store');
 define('PANEL_STORE_ALL','Tutto');
-define('PANEL_STORE_ALCOHOL','Alcohol');
-define('PANEL_STORE_ART','Art');
-define('PANEL_STORE_CLOTHES','Clothes');
-define('PANEL_STORE_FOOD','Food');
-define('PANEL_STORE_ELECTRONIC','Electronic');
-define('PANEL_STORE_HEALTH_AND_BEAUTY','Health and beauty');
-define('PANEL_STORE_TRANSPORT','Transport');
-define('PANEL_STORE_TRAVEL','Travel');
+define('PANEL_STORE_ALCOHOL','Alcool');
+define('PANEL_STORE_ART','Arte');
+define('PANEL_STORE_CLOTHES','Vestiti');
+define('PANEL_STORE_FOOD','Cibo');
+define('PANEL_STORE_ELECTRONIC','Elettronica');
+define('PANEL_STORE_HEALTH_AND_BEAUTY','Salute e bellezza');
+define('PANEL_STORE_TRANSPORT','Trasporto');
+define('PANEL_STORE_TRAVEL','Viaggio');
 
-// FIXME
 define('PANEL_SPORT','Sport');
-define('PANEL_SPORT_ALL','All');
+define('PANEL_SPORT_ALL','Tutto');
 define('PANEL_SPORT_9PIN','9Pin');
 define('PANEL_SPORT_10PIN','10Pin');
-define('PANEL_SPORT_AMERICAN_FOOTBALL','American football');
+define('PANEL_SPORT_AMERICAN_FOOTBALL','Football americano');
 define('PANEL_SPORT_AIKIDO','Aikido');
-define('PANEL_SPORT_ARCHERY','Archery');
-define('PANEL_SPORT_ATHLETICS','Athletics');
-define('PANEL_SPORT_AUSTRALIAN_FOOTBALL','Australian football');
+define('PANEL_SPORT_ARCHERY','Tiro con l\'arco');
+define('PANEL_SPORT_ATHLETICS','Atletica');
+define('PANEL_SPORT_AUSTRALIAN_FOOTBALL','Football australiano');
 define('PANEL_SPORT_BASE','Base');
 define('PANEL_SPORT_BADMINTON','Badminton');
 define('PANEL_SPORT_BASEBALL','Baseball');
-define('PANEL_SPORT_BASKETBALL','Basketball');
-define('PANEL_SPORT_BEACHVOLLEYBALL','Beachvolleyball');
+define('PANEL_SPORT_BASKETBALL','Basket');
+define('PANEL_SPORT_BEACHVOLLEYBALL','Beach volley');
 define('PANEL_SPORT_BMX','BMX');
 define('PANEL_SPORT_BOULES','Boules');
-define('PANEL_SPORT_BOWLS','Bowls');
-define('PANEL_SPORT_BOXING','Boxing');
-define('PANEL_SPORT_CANADIAN_FOOTBALL','Canadian football');
-define('PANEL_SPORT_CANOE','Canoe');
-define('PANEL_SPORT_CHESS','Chess');
-define('PANEL_SPORT_CLIMBING','Climbing');
+define('PANEL_SPORT_BOWLS','Bowling');
+define('PANEL_SPORT_BOXING','Boxe');
+define('PANEL_SPORT_CANADIAN_FOOTBALL','Football canadese');
+define('PANEL_SPORT_CANOE','Canoa');
+define('PANEL_SPORT_CHESS','Scacchi');
+define('PANEL_SPORT_CLIMBING','Arrampicata');
 define('PANEL_SPORT_CRICKET','Cricket');
-define('PANEL_SPORT_CRICKET_NETS','Cricket nets');
+define('PANEL_SPORT_CRICKET_NETS','Rete di cricket');
 define('PANEL_SPORT_CROQUET','Croquet');
-define('PANEL_SPORT_CYCLING','Cycling');
-define('PANEL_SPORT_DIVING','Diving');
-define('PANEL_SPORT_DOG_RACING','Dog racing');
-define('PANEL_SPORT_FENCING','Fencing');
-define('PANEL_SPORT_EQUESTRIAN','Equestrian');
-define('PANEL_SPORT_FREE_FLYING','Free flying');
-define('PANEL_SPORT_GAELIC_GAMES','Gaelic games');
+define('PANEL_SPORT_CYCLING','Ciclismo');
+define('PANEL_SPORT_DIVING','Tuffi/Apnea'); // Quale dei due è "Diving"?
+define('PANEL_SPORT_DOG_RACING','Corsa dei cani');
+define('PANEL_SPORT_FENCING','Scherma');
+define('PANEL_SPORT_EQUESTRIAN','Cavalli');
+define('PANEL_SPORT_FREE_FLYING','Volo libero');
+define('PANEL_SPORT_GAELIC_GAMES','Giochi gaelici');
 define('PANEL_SPORT_GOLF','Golf');
-define('PANEL_SPORT_GYMNASTICS','Gymnastics');
+define('PANEL_SPORT_GYMNASTICS','Ginnastica');
 define('PANEL_SPORT_HOCKEY','Hockey');
-define('PANEL_SPORT_HORSESHOES','Horseshoes');
-define('PANEL_SPORT_HORSE_RACING','Horse racing');
-define('PANEL_SPORT_ICE_STOCK','Ice stock');
+define('PANEL_SPORT_HORSESHOES','Ferri di cavallo');
+define('PANEL_SPORT_HORSE_RACING','Corsa dei cavalli');
+define('PANEL_SPORT_ICE_STOCK','Stock sport');
 define('PANEL_SPORT_JUDO','Judo');
 define('PANEL_SPORT_KARTING','Karting');
 define('PANEL_SPORT_KITESURFING','Kitesurfing');
 define('PANEL_SPORT_KORFBALL','Korfball');
-define('PANEL_SPORT_MOTOR','Motor');
-define('PANEL_SPORT_OBSTACLE_COURSE','Obstacle course');
-define('PANEL_SPORT_ORIENTEERING','Orienting');
+define('PANEL_SPORT_MOTOR','Motori');
+define('PANEL_SPORT_OBSTACLE_COURSE','Corsa ad ostacoli');
+define('PANEL_SPORT_ORIENTEERING','Orienting'); // Nulla su Wikipedia
 define('PANEL_SPORT_PADDLE_TENNIS','Paddle tennis');
-define('PANEL_SPORT_PARAGLIDING','Paragliding');
-define('PANEL_SPORT_PALOTA','Palota');
-define('PANEL_SPORT_RACQUET','Racquet');
-define('PANEL_SPORT_ROWING','Rowing');
+define('PANEL_SPORT_PARAGLIDING','Parapendio');
+define('PANEL_SPORT_PALOTA','Palota'); // Nulla su Wikipedia
+define('PANEL_SPORT_RACQUET','Racchetta');
+define('PANEL_SPORT_ROWING','Canottaggio');
 define('PANEL_SPORT_RUGBY_LEAGUE','Rugby league');
 define('PANEL_SPORT_RUGBY_UNION','Rugby union');
-define('PANEL_SPORT_RUNNING','Running');
+define('PANEL_SPORT_RUNNING','Corsa');
 define('PANEL_SPORT_SCUBA_DIVING','Scuba diving');
-define('PANEL_SPORT_SHOOTING','Shooting');
-define('PANEL_SPORT_SKATING','Skating');
+define('PANEL_SPORT_SHOOTING','Spari'); // Non mi viene il nome
+define('PANEL_SPORT_SKATING','Skate');
 define('PANEL_SPORT_SKATEBOARD','Skateboard');
-define('PANEL_SPORT_SKIING','Skiing');
-define('PANEL_SPORT_SOCCER','Soccer');
-define('PANEL_SPORT_SURFING','Surfing');
-define('PANEL_SPORT_SWIMMING','Swimming');
-define('PANEL_SPORT_TABLE_TENNIS','Table tennis');
+define('PANEL_SPORT_SKIING','Sci');
+define('PANEL_SPORT_SOCCER','Calcio');
+define('PANEL_SPORT_SURFING','Surf');
+define('PANEL_SPORT_SWIMMING','Nuoto');
+define('PANEL_SPORT_TABLE_TENNIS','Ping pong');
 define('PANEL_SPORT_TEAKWONDO','Teakwondo');
-define('PANEL_SPORT_TEAM_HANDBALL','Team handball');
+define('PANEL_SPORT_TEAM_HANDBALL','Pallamano');
 define('PANEL_SPORT_TENNIS','Tennis');
-define('PANEL_SPORT_TOBOGGAN','Toboggan');
-define('PANEL_SPORT_VALLEYBALL','Valleyball');
-define('PANEL_SPORT_WATER_SKI','Water ski');
-define('PANEL_SPORT_WEIGHTLIFTING','Weightlifting');
+define('PANEL_SPORT_TOBOGGAN','Toboga');
+define('PANEL_SPORT_VOLLEYBALL','Pallavolo');
+define('PANEL_SPORT_WATER_SKI','Sci d\'acqua');
+define('PANEL_SPORT_WEIGHTLIFTING','Sollevamento pesi');
 define('PANEL_SPORT_WRESTLING','Wrestling');
 
-// FIXME
-define('PANEL_OTHER','Other');
-define('PANEL_OTHER_HEADER','No set/Yes');
-define('PANEL_OTHER_TAKE_AWAY','Take away');
-define('PANEL_OTHER_DELIVERY','Delivery');
-define('PANEL_OTHER_WHEELCHAIR','Wheelchair');
-define('PANEL_OTHER_SMOKING','Smoking');
-define('PANEL_OTHER_INTERNET','Internet access');
-define('PANEL_FREE','Free');
+define('PANEL_OTHER','Altro');
+define('PANEL_OTHER_HEADER','Non selezionato/Sì');
+define('PANEL_OTHER_TAKE_AWAY','Asporto');
+define('PANEL_OTHER_DELIVERY','Domicilio');
+define('PANEL_OTHER_WHEELCHAIR','Sedie a rotelle');
+define('PANEL_OTHER_SMOKING','Fumatori');
+define('PANEL_OTHER_INTERNET','Accesso ad Internet');
+define('PANEL_FREE','Libera');
 define('PANEL_WLAN','Wlan');
 
-// FIXME
-define('PANEL_EMPTY','Empty');
+define('PANEL_EMPTY','Vuoto');
 define('PANEL_NO','No');
-define('PANEL_YES','Yes');
-define('PANEL_DEDICATED','Dedicated');
-define('PANEL_ISOLATED','Isolated');
-define('PANEL_SEPARATED','Separated');
+define('PANEL_YES','Sì');
+define('PANEL_DEDICATED','Dedicato');
+define('PANEL_ISOLATED','Isolato');
+define('PANEL_SEPARATED','Separato');
 
-// FIXME
-define('BUTTON_SET','Set');
-define('BUTTON_LOCATE','Locate');
-define('BUTTON_STOP_LOCATE','Stop locate');
-define('BUTTON_ABOUT','About');
-define('POPUP_ABOUT_BODY','Data from <a href="http://osm.org">OpenStreetMap</a> ODbL. <a href="http://en.wikipedia.org/wiki/OpenStreetMap">About</a><br/>Between 10-15 zoom is downloaded only 40POI. Fulldata minzoom=15.<br/>Key:<br/><span  class="glyphicon glyphicon-ok">yes</span><br/><span  class="glyphicon glyphicon-ok-sign">only</span><br/><br/>Used libs and tools:<br/><a href="http://leafletjs.com">Leaflet</a>, <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://jquery.com/">jQuery</a>, <a href="https://github.com/AMDmi3/opening_hours.js">Opening_hours</a>, <a href="https://github.com/mlevans/leaflet-hash">Leaflet-hash</a>, <a href="https://github.com/kartenkarsten/leaflet-layer-overpass/">LeafLet-layer-overpass</a>, Overpass API, VIM :-)<br/>Icons: Maps Icons Collection <a href="http://mapicons.nicolasmollet.com">http://mapicons.nicolasmollet.com</a><br/>Author: Adam Jordanek (dotevo)');
-define('BUTTON_CLOSE','Close');
-define('BUTTON_ADD','Add');
+define('BUTTON_SET','imposta');
+define('BUTTON_LOCATE','Localizza');
+define('BUTTON_STOP_LOCATE','Stop');
+define('BUTTON_ABOUT','Informazioni');
+define('POPUP_ABOUT_BODY','Dati dal database di <a href="http://osm.org">OpenStreetMap</a> sotto licenza ODbL. <a href="http://it.wikipedia.org/wiki/OpenStreetMap">Maggiori informazioni</a><br/>Vengono scaricati circa 40 POI a 10-15 di zoom. Tutti i dati a minzoom=15.<br/>Chiave:<br/><span  class="glyphicon glyphicon-ok">sì</span><br/><span  class="glyphicon glyphicon-ok-sign">solo</span><br/><br/>Librerie e strumenti usati:<br/><a href="http://leafletjs.com">Leaflet</a>, <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://jquery.com/">jQuery</a>, <a href="https://github.com/AMDmi3/opening_hours.js">Opening_hours</a>, <a href="https://github.com/mlevans/leaflet-hash">Leaflet-hash</a>, <a href="https://github.com/kartenkarsten/leaflet-layer-overpass/">LeafLet-layer-overpass</a>, API di Overpass, VIM :-)<br/>Icone: Maps Icons Collection <a href="http://mapicons.nicolasmollet.com">mapicons.nicolasmollet.com</a><br/>Autore: Adam Jordanek (dotevo)');
+define('BUTTON_CLOSE','Chiudi');
+define('BUTTON_ADD','Aggiungi');
 
-// FIXME
-define('JS_ADD_NOTE_BODY','You can add a note for mappers. Reported data will be added in a few weeks. You can do it yourself! Go to the <a href="http://openstreetmap.org">OpenStreetMap</a> page and edit. Use of English or the national language. Note should be understandable for mappers.');
-define('JS_ADD_NOTE_LIST','Added notes:');
-define('PLEASE_WAIT','Please wait...');
-define('JS_ADD_NOTE_LABEL','Note');
-define('JS_ADD_NOTE_PLACEHOLDER','Some important information');
+define('JS_ADD_NOTE_BODY','Puoi aggiungere una nota per i mappatori. I dati segnalati verranno aggiunti il più presto possibile. Puoi farlo da solo! Vai su <a href="http://openstreetmap.org">OpenStreetMap</a> e modifica la mappa. Usa l\'inglese o la lingua nazionale. La nota deve essere comprensibile per i mappatori.');
+define('JS_ADD_NOTE_LIST','Note aggiunte:');
+define('PLEASE_WAIT','Attendere prego...');
+define('JS_ADD_NOTE_LABEL','Nota');
+define('JS_ADD_NOTE_PLACEHOLDER','Alcune informazioni importanti');
 
-// FIXME
-define('JS_NOT_FOUND','Not Found');
-define('JS_ADD_MISSING_DATA','Add missing data!');
-define('JS_REPORT','Report');
-define('JS_KEY','Key');
-define('JS_VALUE','Value');
-define('JS_OPENING_HOURS','Opening hours');
-define('JS_BASIC','Basic');
-define('JS_NOTE','Note');
-define('JS_STATUS','Status');
+define('JS_NOT_FOUND','Non trovato!');
+define('JS_ADD_MISSING_DATA','Aggiungi dati mancanti!');
+define('JS_REPORT','Segnala');
+define('JS_KEY','Chiave');
+define('JS_VALUE','Valore');
+define('JS_OPENING_HOURS','Orario');
+define('JS_BASIC','Base');
+define('JS_NOTE','Nota');
+define('JS_STATUS','Stato');
 ?>        
-          
-          

@@ -315,7 +315,7 @@ if(file_exists("lang/".$lang.".php"))
               <ul class="dropdown-menu dropdown-always-on  tag-parent">
                 <li class="dropdown-header"><?php echo PANEL_ACCESS_HEADER;?></li>
                 <li class="select-multi-state"><a id="male" data-tag-pair-s1="['male'~'yes|only']" data-tag-pair-s2="['male'='only']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span><span style="display:none;" class="glyphicon glyphicon-ok-sign state2"></span><?php echo PANEL_ACCESS_MALE;?></a></li>
-                <li class="select-multi-state"><a id="famale" data-tag-pair-s1="['famale'~'yes|only']" data-tag-pair-s2="['famale'='only']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span><span style="display:none;" class="glyphicon glyphicon-ok-sign state2"></span><?php echo PANEL_ACCESS_FAMALE;?></a></li>
+                <li class="select-multi-state"><a id="female" data-tag-pair-s1="['female'~'yes|only']" data-tag-pair-s2="['female'='only']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span><span style="display:none;" class="glyphicon glyphicon-ok-sign state2"></span><?php echo PANEL_ACCESS_FEMALE;?></a></li>
                 <li class="select-multi-state"><a id="gay"  data-tag-pair-s1="['gay'~'yes|only|welcome']" data-tag-pair-s2="['gay'='only']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span><span style="display:none;" class="glyphicon glyphicon-ok-sign state2"></span><?php echo PANEL_ACCESS_GAY;?></a></li>                
               </ul>
             </li>        
@@ -418,7 +418,7 @@ if(file_exists("lang/".$lang.".php"))
                 <li><a id="team_handball"><?php echo PANEL_SPORT_TEAM_HANDBALL;?></a></li>
                 <li><a id="tennis"><?php echo PANEL_SPORT_TENNIS;?></a></li>
                 <li><a id="toboggan"><?php echo PANEL_SPORT_TOBOGGAN;?></a></li>
-                <li><a id="volleyball"><?php echo PANEL_SPORT_VALLEYBALL;?></a></li>
+                <li><a id="volleyball"><?php echo PANEL_SPORT_VOLLEYBALL;?></a></li>
                 <li><a id="water_ski"><?php echo PANEL_SPORT_WATER_SKI;?></a></li>
                 <li><a id="weightlifting"><?php echo PANEL_SPORT_WEIGHTLIFTING;?></a></li>
                 <li><a id="wrestling"><?php echo PANEL_SPORT_WRESTLING;?></a></li>

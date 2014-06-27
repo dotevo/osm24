@@ -64,6 +64,12 @@ color: #999;
   display: block;
 }
 
+.tab-content > #basic > div > ul {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 12px;
+}
+
 .tabs-below > .nav-tabs {
   border-top: 1px solid #ddd;
 }

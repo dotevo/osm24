@@ -158,7 +158,7 @@ define('PANEL_ACCESS_MALE','Uomo');
 define('PANEL_ACCESS_FEMALE','Donna');
 define('PANEL_ACCESS_GAY','Gay');
 
-define('PANEL_STORE','Store');
+define('PANEL_STORE','Store'); // FIXME
 define('PANEL_STORE_ALL','Tutto');
 define('PANEL_STORE_ALCOHOL','Alcool');
 define('PANEL_STORE_ART','Arte');
@@ -257,7 +257,7 @@ define('PANEL_DEDICATED','Dedicato');
 define('PANEL_ISOLATED','Isolato');
 define('PANEL_SEPARATED','Separato');
 
-define('BUTTON_SET','imposta');
+define('BUTTON_SET','Imposta');
 define('BUTTON_LOCATE','Localizza');
 define('BUTTON_STOP_LOCATE','Stop');
 define('BUTTON_ABOUT','Informazioni');

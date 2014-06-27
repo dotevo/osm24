@@ -434,13 +434,53 @@ $(window).load(function() {
       content+='<h4><a href=\'http://osm24.eu/index.php?id='+e.id+'#!18/'+e.lat+'/'+e.lon+'/type='+global_menu_data["type"]+'/\'>' +((e.tags.hasOwnProperty("name")) ?  e.tags["name"]:"----")+'</a><div id="plusone-div" data-size="small" data-href=\'http://osm24.eu/index.php?id='+e.id+'#!18/'+e.lat+'/'+e.lon+'/type='+global_menu_data["type"]+'/\'></div></h4>';
       //addr
       content+='<small>'+((e.tags.hasOwnProperty("addr:city")) ?  e.tags["addr:city"]+', ' : "")+((e.tags.hasOwnProperty("addr:street")) ?  e.tags["addr:street"]+', ' : "")+((e.tags.hasOwnProperty("addr:housenumber")) ?  e.tags["addr:housenumber"]+', ' : "")+'</small>';
-      //net
-      content+='<p>'+((e.tags.hasOwnProperty("contact:email"))?'<i class="glyphicon glyphicon-envelope"></i>'+e.tags["contact:email"]+'<br />':"")+((e.tags.hasOwnProperty("contact:phone"))?'<i class="glyphicon glyphicon-phone-alt"></i>'+e.tags["contact:phone"]+'<br />':"")+
-((e.tags.hasOwnProperty("contact:website"))?'<i class="glyphicon glyphicon-globe"></i><a href="'+e.tags["contact:website"]+'">'+e.tags["contact:website"]+'</a><br />':"");
+      
+	  //net
+      content+='<div>';
+      content+=((e.tags.hasOwnProperty("contact:email"))?'<i class="glyphicon glyphicon-envelope"></i>'+e.tags["contact:email"]+'<br />':"");
+      //content+=((e.tags.hasOwnProperty("contact:phone"))?'<i class="glyphicon glyphicon-phone-alt"></i>'+e.tags["contact:phone"]+'<br />':"");
+      if (e.tags.hasOwnProperty("contact:phone") || e.tags.hasOwnProperty("phone"))
+      {
+        var phoneItems = [];
+        if (e.tags.hasOwnProperty("contact:phone"))
+        {
+          phoneItems = phoneItems.concat(e.tags["contact:phone"].split(";"));
+        }
+        if (e.tags.hasOwnProperty("phone"))
+        {
+          phoneItems = phoneItems.concat(e.tags["phone"].split(";"));
+        }
+        var phoneContent = '<i class="glyphicon glyphicon-phone-alt"></i>';
+        phoneContent += '<ul>';
+        for (var i = 0; i < phoneItems.length; ++i)
+        {
+          phoneContent += '<li>' + phoneItems[i] + '</li>';
+        }
+        phoneContent += '</ul>';
+        phoneContent += '<br />';
+        content += phoneContent;
+      }
+      content+=((e.tags.hasOwnProperty("contact:website"))?'<i class="glyphicon glyphicon-globe"></i><a href="'+e.tags["contact:website"]+'">'+e.tags["contact:website"]+'</a><br />':"");
       //Alternative contact
-      content+=((e.tags.hasOwnProperty("email"))?'<i class="glyphicon glyphicon-envelope"></i>'+e.tags["email"]+'<br />':"")+    ((e.tags.hasOwnProperty("phone"))?'<i class="glyphicon glyphicon-phone-alt"></i>'+e.tags["phone"]+'<br />':"")+((e.tags.hasOwnProperty("website"))?'<i class="glyphicon glyphicon-globe"></i><a href="'+e.tags["website"]+'">'+e.tags["website"]+'</a><br />':"");
+      content+=((e.tags.hasOwnProperty("email"))?'<i class="glyphicon glyphicon-envelope"></i>'+e.tags["email"]+'<br />':"");
+      //content+=((e.tags.hasOwnProperty("phone"))?'<i class="glyphicon glyphicon-phone-alt"></i>'+e.tags["phone"]+'<br />':"");
+      content+=((e.tags.hasOwnProperty("website"))?'<i class="glyphicon glyphicon-globe"></i><a href="'+e.tags["website"]+'">'+e.tags["website"]+'</a><br />':"");
 
-      content+=((e.tags.hasOwnProperty("cuisine"))?'<i class="glyphicon glyphicon-cutlery"></i>'+e.tags["cuisine"]+'<br />':"")+'</p>';
+	  if (e.tags.hasOwnProperty("cuisine"))
+	  {
+        var cuisineItems = e.tags["cuisine"].split(";");
+        var cuisineContent = '<i class="glyphicon glyphicon-cutlery"></i>';
+        cuisineContent += '<ul>';
+        for (var i = 0; i < cuisineItems.length; ++i)
+        {
+          cuisineContent += '<li>' + cuisineItems[i] + '</li>';
+        }
+        cuisineContent += '</ul>';
+        cuisineContent += '<br />';
+        content += cuisineContent;
+      }
+      content+='</div>';
+	  
       //sports
       content+=((e.tags.hasOwnProperty("sport"))?'Sports: </i>'+e.tags["sport"]+'<br />':"");
       content+='<br/><br/><a onclick="showNoteMessage(\''+lang_report+'\',note_body,function n(){add('+e.lon+','+e.lat+",'"+name+"'"+');},'+e.lon+','+e.lat+')">'+lang_add_missing_data+'</a></div>'      

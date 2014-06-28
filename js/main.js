@@ -207,6 +207,7 @@ var locate=0;
 
 $(window).load(function() {
   map = new L.Map('map',{
+    zoomControl: false,
     contextmenu: true,
     contextmenuWidth: 140,
     contextmenuItems: [{
@@ -214,6 +215,21 @@ $(window).load(function() {
       callback: report_poi
     }]
   }).setView([51.505, 21], 7);
+
+  map.on("zoomend", function (e) {
+   if(10>map.getZoom()){
+     $("#info").html("Please, zoom in.");
+  }else{
+    if($("#info").html()=="Please, zoom in.")
+      $("#info").html("");
+  }
+  });
+var zoomControl = L.control.zoom({
+                    position: 'bottomleft'
+                });
+                map.addControl(zoomControl);
+
+
   if(global_menu_data['type']==="undefined")
      global_menu_data['type']='all';
   var modal = $('#myModal')

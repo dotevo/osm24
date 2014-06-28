@@ -278,7 +278,7 @@ define('JS_ADD_MISSING_DATA','Add missing data!');
 define('JS_REPORT','Report');
 define('JS_KEY','Key');
 define('JS_VALUE','Value');
-define('JS_OPENING_HOURS','Opening hours');
+define('JS_OPENING_HOURS','Hours');
 define('JS_BASIC','Basic');
 define('JS_NOTE','Note');
 define('JS_STATUS','Status');

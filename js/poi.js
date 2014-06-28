@@ -7,6 +7,31 @@ var emergency_icons=['defibrillator'];
 
 function POI(element){
   this.element = element;
+  //Opening h
+  var now = new Date();
+  var next_hour = (new Date().addHours(1));
+  this.oh;
+  this.shadow="nd";
+  if(this.element.tags.hasOwnProperty("opening_hours")){
+    try{
+      this.oh = new opening_hours(this.element.tags['opening_hours']);}
+    catch(err){
+      console.log("Unsupported:" + this.element.tags['opening_hours']);
+      this.oh=undefined;
+    }
+    //Status
+    if(typeof this.oh != 'undefined'){
+      var is_open = this.oh.getState(now);
+      this.shadow="closed";
+      if(is_open==true){
+        is_open = this.oh.getState(next_hour);
+        this.shadow="last";
+        if(is_open==true){
+          this.shadow="open";
+        }
+      }
+    }
+  }
 }
 
 POI.prototype.__genItems = function(opt){
@@ -55,12 +80,74 @@ POI.prototype.__genItems = function(opt){
   return ret;
 }
 
+var months = ['Jan', 'Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+var weekdays = ['Mo','Tu','We','Th','Fr','Sa','Su'];
+function pad(n) { return n < 10 ? '0'+n : n; };
+
+POI.prototype.drawTable = function(oh, date_today) {
+  var date_today = new Date(date_today);
+  date_today.setHours(0, 0, 0, 0);
+
+  var date = new Date(date_today);
+  date.setDate(date.getDate()-1);
+  var table = [];
+  for (var row = 0; row < 7; row++) {
+    date.setDate(date.getDate()+1);
+    
+    var state = oh.getState(date);
+    var prevdate = date;
+    var curdate = date;
+    table[row] = {
+      date: new Date(date),
+      times: '',
+      text: []
+    };
+    while (curdate.getTime() - date.getTime() < 24*60*60*1000) {
+      curdate = oh.getNextChange(curdate);
+      if(typeof curdate === 'undefined')return "";//Fixme: workaround
+      var fr = prevdate.getTime() - date.getTime();
+      var to = curdate.getTime() - date.getTime();
+      if (to > 24*60*60*1000)
+        to = 24*60*60*1000;
+      fr *= 100/1000/60/60/24;
+      to *= 100/1000/60/60/24;
+      table[row].times += '<div class="timebar ' + (state?'open':'closed') + '" style="width:' + (to-fr) + '%"></div>';
+      if (state) {
+        var text = prevdate.getHours() + ':' + pad(prevdate.getMinutes()) + ' - ';
+        if (prevdate.getDay() != curdate.getDay())
+          text += '24:00';
+        else
+          text += curdate.getHours() + ':' + pad(curdate.getMinutes());
+        table[row].text.push(text);
+      }
+      prevdate = curdate;
+      state = !state;
+    }
+  }
+  ret='<table>';
+  for (var row in table) {
+    var today = table[row].date.getDay() == date_today.getDay();
+    var endweek = ((table[row].date.getDay() + 1) % 7) == date_today.getDay();
+    var cl = today ? ' class="today"' : endweek ? ' class="endweek"' : '';
+
+    ret+='<tr' + cl + '><td class="day ' + (table[row].date.getDay() % 6 == 0 ? 'weekend' : 'workday') + '" width="100px">';
+    ret+=months[table[row].date.getMonth()] +' '+table[row].date.getDate();
+    ret+='</td><td class="times">';
+    ret+=table[row].times;
+    ret+='</td><td width="150px">';
+    ret+=table[row].text.join(', ') || '&nbsp;';
+    ret+='</td></tr>';
+  }
+  ret+='</table>';
+  return ret;
+}
+
 POI.prototype.getInfoBox = function(){
   var name=this.getName();
 
   var tabs='<ul class="nav nav-tabs" id="poiTab"><li class="active"><a href="#basic" data-toggle="tab">'+lang_basic+'</a></li>';
   //If opening hours exist
-  if(typeof opening != 'undefined' && this.element.tags.hasOwnProperty("opening_hours"))
+  if(typeof this.oh != 'undefined' && this.element.tags.hasOwnProperty("opening_hours"))
     tabs+='<li><a href="#hours" data-toggle="tab">'+lang_opening_hours+'</a></li>';
 
   tabs+='<li><a href="#comments" data-toggle="tab">Comments</a></li>';
@@ -91,12 +178,12 @@ POI.prototype.getInfoBox = function(){
 
       content+='<br/><br/><a onclick="showNoteMessage(\''+lang_report+'\',note_body,function n(){add('+this.element.lon+','+this.element.lat+",'"+name+"'"+');},'+this.element.lon+','+this.element.lat+')">'+lang_add_missing_data+'</a></div>'      
       //hours
-      if(typeof opening != 'undefined' && e.tags.hasOwnProperty("opening_hours")){
+      if(typeof this.oh != 'undefined' && this.element.tags.hasOwnProperty("opening_hours")){
         content+='<div class="tab-pane" id="hours">';
-        if(e.tags['opening_hours']=="24/7")
+        if(this.element.tags['opening_hours']=="24/7")
             content+="24h<br/>";
-        //else
-          //  content+=drawTable(opening, new Date());
+        else
+            content+=this.drawTable(this.oh, new Date());
         content+='<a href="https://github.com/AMDmi3/opening_hours.js/commits/master/demo.html">Author</a></div>';
       }
 
@@ -127,35 +214,6 @@ POI.prototype.getInfoBox = function(){
 }
 
 POI.prototype.getIcon = function(){
-  var now = new Date();
-  var next_hour = (new Date().addHours(1));
-  var oh;
-  var shadow="nd";
-
-  if(typeof this.element.tags === 'undefined'){console.log(e); return;}
-
-  if(this.element.tags.hasOwnProperty("opening_hours")){
-    try{
-      oh = new opening_hours(this.element.tags['opening_hours']);}
-    catch(err){
-      console.log("Unsupported:" + this.element.tags['opening_hours']);
-      oh=undefined;
-    }
-  }
-
-  //Opening hours
-  if(this.element.tags.hasOwnProperty("opening_hours")&&typeof oh != 'undefined'){
-    var is_open = oh.getState(now);
-    shadow="closed";
-    if(is_open==true){
-      is_open = oh.getState(next_hour);
-      shadow="last";
-      if(is_open==true){            
-        shadow="open";
-      }
-    }
-  }
-
   var icon_name="null";
   if(this.element.tags.hasOwnProperty("amenity")&&amenity_icons.indexOf(this.element.tags["amenity"]) != -1){
     icon_name="amenity_"+this.element.tags["amenity"];
@@ -175,7 +233,7 @@ POI.prototype.getIcon = function(){
     icon_name="other";
 
   return L.divIcon({
-    className: "map-icon map-icon-"+shadow,html:"<div class='map-icon' style='background-image: url(img/icons/"+icon_name+".png);'></div>",
+    className: "map-icon map-icon-"+this.shadow,html:"<div class='map-icon' style='background-image: url(img/icons/"+icon_name+".png);'></div>",
     iconSize: [32, 37],
     iconAnchor: [16, 37],
   });

@@ -154,66 +154,6 @@ Object.size = function(obj) {
     return size;
 };
 
-var months = ['Jan', 'Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-var weekdays = ['Mo','Tu','We','Th','Fr','Sa','Su'];
-function pad(n) { return n < 10 ? '0'+n : n; };
-function drawTable(oh, date_today) {
-  var date_today = new Date(date_today);
-  date_today.setHours(0, 0, 0, 0);
-
-  var date = new Date(date_today);
-  date.setDate(date.getDate()-1);
-  var table = [];
-  for (var row = 0; row < 7; row++) {
-    date.setDate(date.getDate()+1);
-    
-    var state = oh.getState(date);
-    var prevdate = date;
-    var curdate = date;
-    table[row] = {
-      date: new Date(date),
-      times: '',
-      text: []
-    };
-    while (curdate.getTime() - date.getTime() < 24*60*60*1000) {
-      curdate = oh.getNextChange(curdate);
-      if(typeof curdate === 'undefined')return "";//Fixme: workaround
-      var fr = prevdate.getTime() - date.getTime();
-      var to = curdate.getTime() - date.getTime();
-      if (to > 24*60*60*1000)
-        to = 24*60*60*1000;
-      fr *= 100/1000/60/60/24;
-      to *= 100/1000/60/60/24;
-      table[row].times += '<div class="timebar ' + (state?'open':'closed') + '" style="width:' + (to-fr) + '%"></div>';
-      if (state) {
-        var text = prevdate.getHours() + ':' + pad(prevdate.getMinutes()) + ' - ';
-        if (prevdate.getDay() != curdate.getDay())
-          text += '24:00';
-        else
-          text += curdate.getHours() + ':' + pad(curdate.getMinutes());
-        table[row].text.push(text);
-      }
-      prevdate = curdate;
-      state = !state;
-    }
-  }
-  ret='<table>';
-  for (var row in table) {
-    var today = table[row].date.getDay() == date_today.getDay();
-    var endweek = ((table[row].date.getDay() + 1) % 7) == date_today.getDay();
-    var cl = today ? ' class="today"' : endweek ? ' class="endweek"' : '';
-
-    ret+='<tr' + cl + '><td class="day ' + (table[row].date.getDay() % 6 == 0 ? 'weekend' : 'workday') + '" width="100px">';
-    ret+=months[table[row].date.getMonth()] +' '+table[row].date.getDate();
-    ret+='</td><td class="times">';
-    ret+=table[row].times;
-    ret+='</td><td width="150px">';
-    ret+=table[row].text.join(', ') || '&nbsp;';
-    ret+='</td></tr>';
-  }
-  ret+='</table>';
-  return ret;
-}
 
 
 //------------------------------  READY  ----------------------------------------------

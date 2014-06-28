@@ -22,18 +22,30 @@ POI.prototype.__genItems = function(opt){
       //First item
       if(added==0){
         ret+=((typeof opt.icon != 'undefined') ? '<i class="'+opt.icon+'"></i>' : "");
+        ret+=((typeof opt.desc != 'undefined') ? '<i>'+opt.desc+'</i>' : "");
         ret+="<ul>"
       }
       added++;
       for (var j = 0; j < items.length; ++j){
         ret += "<li>";
+
         if(typeof opt.href != 'undefined'){
-          ret += '<a href="'+opt.href+items[j]+'">';
-          ret += items[j];
-          ret += "</a>";
-        }else{
-          ret += items[j];
+          if(typeof opt.hrefFunc != 'undefined'){
+            ret += '<a href="'+opt.hrefFunc(items[j])+'">';
+          }else{
+            ret += '<a href="'+opt.href+items[j]+'">';
+          }
         }
+
+        if(typeof opt.name != 'undefined')
+          ret += opt.name;
+        else
+          ret += items[j];
+
+        if(typeof opt.href != 'undefined'){
+          ret += "</a>";
+        }
+
         ret += "</li>"
       }
     }
@@ -68,6 +80,9 @@ POI.prototype.getInfoBox = function(){
   content += this.__genItems({tag:['contact:email','email'],icon:'glyphicon glyphicon-envelope',href:'mailto:'});
   content += this.__genItems({tag:['contact:phone','phone'],icon:'glyphicon glyphicon-phone-alt',href:'tel:'});
   content += this.__genItems({tag:['contact:website','website'],icon:'glyphicon glyphicon-globe',href:''});
+
+  content += this.__genItems({tag:['contact:facebook'],icon:'glyphicon glyphicon-globe',name:"Facebook",href:'',hrefFunc: 
+    function(nn){return ((nn.indexOf('/') === -1)?"http://facebook.com/":"")+nn;}});
 
   content += this.__genItems({tag:['cuisine']});
   content += this.__genItems({tag:['sport']});

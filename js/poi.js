@@ -9,10 +9,42 @@ function POI(element){
   this.element = element;
 }
 
+POI.prototype.__genItems = function(opt){
+  if(typeof opt.tag === 'undefined')
+    return "";
+
+  var added = 0;
+  var ret = "";
+  //If more then one tag to icon
+  for (var i = 0; i < opt.tag.length; ++i){
+    if(this.element.tags.hasOwnProperty(opt.tag[i])){
+      var items = this.element.tags[opt.tag[i]].split(";");
+      //First item
+      if(added==0){
+        ret+=((typeof opt.icon != 'undefined') ? '<i class="'+opt.icon+'"></i>' : "");
+        ret+="<ul>"
+      }
+      added++;
+      for (var j = 0; j < items.length; ++j){
+        ret += "<li>";
+        if(typeof opt.href != 'undefined'){
+          ret += '<a href="'+opt.href+items[j]+'">';
+          ret += items[j];
+          ret += "</a>";
+        }else{
+          ret += items[j];
+        }
+        ret += "</li>"
+      }
+    }
+  }
+  if(added > 0)
+    ret+="</ul><br/>";
+  return ret;
+}
+
 POI.prototype.getInfoBox = function(){
-  var name="";
-  if(this.element.tags.hasOwnProperty("name"))
-    name=this.element.tags["name"];
+  var name=this.getName();
 
   var tabs='<ul class="nav nav-tabs" id="poiTab"><li class="active"><a href="#basic" data-toggle="tab">'+lang_basic+'</a></li>';
   //If opening hours exist
@@ -33,52 +65,15 @@ POI.prototype.getInfoBox = function(){
 
   //net
   content+='<div>';
-  content+=((this.element.tags.hasOwnProperty("contact:email"))?'<i class="glyphicon glyphicon-envelope"></i>'+this.element.tags["contact:email"]+'<br />':"");
-  //content+=((e.tags.hasOwnProperty("contact:phone"))?'<i class="glyphicon glyphicon-phone-alt"></i>'+e.tags["contact:phone"]+'<br />':"");
-  if (this.element.tags.hasOwnProperty("contact:phone") || this.element.tags.hasOwnProperty("phone"))
-      {
-        var phoneItems = [];
-        if (this.element.tags.hasOwnProperty("contact:phone"))
-        {
-          phoneItems = phoneItems.concat(this.element.tags["contact:phone"].split(";"));
-        }
-        if (this.element.tags.hasOwnProperty("phone"))
-        {
-          phoneItems = phoneItems.concat(this.element.tags["phone"].split(";"));
-        }
-        var phoneContent = '<i class="glyphicon glyphicon-phone-alt"></i>';
-        phoneContent += '<ul>';
-        for (var i = 0; i < phoneItems.length; ++i)
-        {
-          phoneContent += '<li>' + phoneItems[i] + '</li>';
-        }
-        phoneContent += '</ul>';
-        phoneContent += '<br />';
-        content += phoneContent;
-      }
-      content+=((this.element.tags.hasOwnProperty("contact:website"))?'<i class="glyphicon glyphicon-globe"></i><a href="'+this.element.tags["contact:website"]+'">'+this.element.tags["contact:website"]+'</a><br />':"");
-      //Alternative contact
-      content+=((this.element.tags.hasOwnProperty("email"))?'<i class="glyphicon glyphicon-envelope"></i>'+this.element.tags["email"]+'<br />':"");
-      //content+=((e.tags.hasOwnProperty("phone"))?'<i class="glyphicon glyphicon-phone-alt"></i>'+e.tags["phone"]+'<br />':"");
-      content+=((this.element.tags.hasOwnProperty("website"))?'<i class="glyphicon glyphicon-globe"></i><a href="'+this.element.tags["website"]+'">'+this.element.tags["website"]+'</a><br />':"");
+  content += this.__genItems({tag:['contact:email','email'],icon:'glyphicon glyphicon-envelope',href:'mailto:'});
+  content += this.__genItems({tag:['contact:phone','phone'],icon:'glyphicon glyphicon-phone-alt',href:'tel:'});
+  content += this.__genItems({tag:['contact:website','website'],icon:'glyphicon glyphicon-globe',href:''});
 
-	  if (this.element.tags.hasOwnProperty("cuisine"))
-	  {
-        var cuisineItems = this.element.tags["cuisine"].split(";");
-        var cuisineContent = '<i class="glyphicon glyphicon-cutlery"></i>';
-        cuisineContent += '<ul>';
-        for (var i = 0; i < cuisineItems.length; ++i)
-        {
-          cuisineContent += '<li>' + cuisineItems[i] + '</li>';
-        }
-        cuisineContent += '</ul>';
-        cuisineContent += '<br />';
-        content += cuisineContent;
-      }
-      content+='</div>';
-	  
-      //sports
-      content+=((this.element.tags.hasOwnProperty("sport"))?'Sports: </i>'+this.element.tags["sport"]+'<br />':"");
+  content += this.__genItems({tag:['cuisine']});
+  content += this.__genItems({tag:['sport']});
+  content+='</div>';
+
+
       content+='<br/><br/><a onclick="showNoteMessage(\''+lang_report+'\',note_body,function n(){add('+this.element.lon+','+this.element.lat+",'"+name+"'"+');},'+this.element.lon+','+this.element.lat+')">'+lang_add_missing_data+'</a></div>'      
       //hours
       if(typeof opening != 'undefined' && e.tags.hasOwnProperty("opening_hours")){

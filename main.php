@@ -525,6 +525,7 @@ if(file_exists("lang/".$lang.".php"))
 
   <div style="height: 100%" id="map"></div>
   <script src="js/own_bootstrap.js"></script>
+  <script src="js/query.js"></script>
   <script src="js/main.js"></script>
   </body>
 </html>

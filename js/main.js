@@ -5,134 +5,6 @@ var n=false;
 (function(i){var e=/iPhone/i,n=/iPod/i,o=/iPad/i,t=/(?=.*\bAndroid\b)(?=.*\bMobile\b)/i,r=/Android/i,d=/BlackBerry/i,s=/Opera Mini/i,a=/IEMobile/i,b=/(?=.*\bFirefox\b)(?=.*\bMobile\b)/i,h=RegExp("(?:Nexus 7|BNTV250|Kindle Fire|Silk|GT-P1000)","i"),c=function(i,e){return i.test(e)},l=function(i){var l=i||navigator.userAgent;this.apple={phone:c(e,l),ipod:c(n,l),tablet:c(o,l),device:c(e,l)||c(n,l)||c(o,l)},this.android={phone:c(t,l),tablet:!c(t,l)&&c(r,l),device:c(t,l)||c(r,l)},this.other={blackberry:c(d,l),opera:c(s,l),windows:c(a,l),firefox:c(b,l),device:c(d,l)||c(s,l)||c(a,l)||c(b,l)},this.seven_inch=c(h,l),this.any=this.apple.device||this.android.device||this.other.device||this.seven_inch},v=i.isMobile=new l;v.Class=l})(window);
 
 
-function getTagArray(tag,typetag,excludetag){
-  //To do few combinations
-  if(typeof typetag==='undefined') typetag="normal";
-  if(typeof excludetag==='undefined') excludetag=[];
-  else
-    excludetag = excludetag.split("@");
-
-  var p=tag.split("@");
-  if(p.length>1){
-    var a=[];
-    for(var n in p)
-      a.push({tag:p[n],type:typetag,exclude:excludetag });
-    return a;
-  }
-  return [{tag:tag,type:typetag,exclude:excludetag }];
-}
-
-function getTagFromElement(el,state){
-  //Tag-pair=null - means no value
-  var typetag=el.data("tag-type");
-  var fulltag=el.data("tag-pair");
-  var excludetag=el.data("tag-exclude");
-  if(fulltag=="$$") return "";
-  //Visible=false - hidden (null)
-
-  if(el.attr('id')=="int_yes"){
-    console.log(el.closest(".main"));
-  }
-  if(el.closest(".dropdown").css('display')=="none") {return "";}
-  if(el.parent().css('display')=="none") return "";
-  if(el.closest(".main").css('display')=="none") return "";
-
-  //Tag-pair=* return tag
-  if(typeof fulltag!='undefined') return getTagArray(fulltag,typetag,excludetag);
-  //If multistate get tag-pair-state value
-  if(state!=-1){
-    fulltag=el.data("tag-pair-s"+state);
-    if(typeof fulltag!='undefined') return getTagArray(fulltag,typetag,excludetag);
-  }
-  //INIT
-  var valuetag=el.data("tag-value");
-  var keytag=el.data("tag-key");
-  if(typeof keytag==='undefined'&&el.closest(".tag-parent").length>0)
-    keytag=el.closest(".tag-parent").data("tag-key");
-  var chartag=el.data("tag-char");
-  if(typeof chartag==='undefined')
-    chartag=el.closest(".tag-parent").data("tag-char");
-  if(typeof chartag==='undefined') chartag="=";
-
-  //if tag-key does not exists
-  if(typeof keytag==='undefined')  return "";
-  //if tag-value is defined
-  if(typeof valuetag!='undefined'){
-    if(valuetag=="@")//if value is from input
-      return getTagArray("['"+keytag+"'"+chartag+"'"+el.val()+"']",typetag,excludetag);
-    //other case
-    return getTagArray("['"+keytag+"'"+chartag+"'"+valuetag+"']",typetag,excludetag);
-  }
-  //use ID becouse tag-value not found
-  return getTagArray("['"+keytag+"'"+chartag+"'"+el.attr("id")+"']",typetag,excludetag);
-}
-
-//FIXME
-function tagsjoin(tags,newt){
-  if(newt==="")return tags;
-  if(tags==="")tags=[];
-  for(var key in newt){
-    tags.push(newt[key]);
-  }
-  return tags;
-}
-
-function getTags(from,parent){
-  var tags=[];
-  for(var key in from){
-    if(typeof global_menu_data[key] === 'object'){
-      tags=tagsjoin(tags,getTags(from[key],key));
-    }else{
-      if(typeof from[key]==='string' && from[key]!=""){
-        //Values
-        var p=$('.global-menu-data #'+from[key]);
-        if(p.length>0){
-          tags=tagsjoin(tags,getTagFromElement(p,-1));
-        }else{
-          p=$('.global-menu-data #'+key);
-          if(p.length>0){
-            tags=tagsjoin(tags,getTagFromElement(p,from[key]));
-          }
-        }
-      }else if(typeof from[key]==='number'){
-        var p=$('.global-menu-data #'+key);
-        if(p.length>0){
-          tags=tagsjoin(tags,getTagFromElement(p,from[key]));
-        }
-      }
-    }
-  }
-  return tags;
-}
-
-
-function getQuery(){
-  var tags=getTags(global_menu_data,"");
-  var tagarr=[];
-  for(var key in tags){
-    if(tags[key].type=="main"){
-      var str=tags[key].tag;
-      for(var key2 in tags){
-        if(tags[key2].type!="main"){
-          var exclude=false;
-          for(var pp in tags[key2].exclude)
-            if(tags[key].tag==tags[key2].exclude[pp])
-              exclude=true;
-          if(!exclude)
-            str+=tags[key2].tag;
-        }
-      }
-      tagarr.push(str);
-    }
-  }
-  var query="data=[out:json];(";
-  for(var key in tagarr)
-    query+="DATATYPE(BBOX)"+tagarr[key]+";";
-  query+=");";
-  return url+query;
-}
-
-
 
 var shop_icons=["alcohol",'antiques',"art","baby_goods","bag","bakery","beauty","bicycle","books","boutique","butcher","car","car_parts","car_repair","chemist","clothes","computer","confectionery","convenience","copyshop","dog_hairdresser","doityourself","fabric","farm","fishing","florist","funeral_directors","furniture","garden_centre","gift","greengrocer","haberdashery","hairdresser","hardware","hearing_aids","interior_decoration","jewelry","kiosk","mall","mobile_phone","motorcycle","music","musical_instruments","newsagent","optician","pet","second_hand","shoes","seafood","supermarket","tobacco","toys","travel_agency","tyres","video"];
 var leisure_icons=['pitch','swimming_pool','stadium','track','sports_centre'];
@@ -430,9 +302,11 @@ function add(lonv,latv,name){
 
 var easyOverpass;
 var nn=0;
+
 function ustaw(){
   if(!n)return;
-  var a=getQuery();
+  var queryC=new Query({url:url});
+  var a=queryC.getQuery(global_menu_data);
   easyOverpass.options.query=a.replace(/(DATATYPE)/g, 'node');
   easyOverpass.options.queryWays=a.replace(/(DATATYPE)/g, 'way');
   easyOverpass.clear();

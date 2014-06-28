@@ -77,7 +77,12 @@ EasyOverpass.prototype.addElement = function(el){
 }
 
 EasyOverpass.prototype.download = function(url, context, success){
+  if(typeof this.options.onDownload != 'undefined' && this.jobs == 0){
+    this.options.onDownload();
+  }
+
   this.jobs = this.jobs+1;
+  var self = this;
   $.ajax({
     url: url,
     context: context,
@@ -85,8 +90,11 @@ EasyOverpass.prototype.download = function(url, context, success){
     dataType: "json",
     data: {},
     success: success
-  }).done(function(){
-       this.jobs = this.jobs-1;
+  }).always(function(){
+       self.jobs = self.jobs-1;
+       if(typeof self.options.onDownloadFinished != 'undefined' && self.jobs == 0){
+         self.options.onDownloadFinished();
+       }
      });
 }
 

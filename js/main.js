@@ -648,6 +648,8 @@ $(window).load(function() {
     newElement: addElement,
     layer:markers,
     autoclick: idd,
+    onDownload: function(){$("#info").html("Loading...");},
+    onDownloadFinished: function(){$("#info").html("");},
     minzoom:10,
     minfullzoom:15,
   });

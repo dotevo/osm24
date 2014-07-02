@@ -1,15 +1,9 @@
 <?php
-$lang='en_EN';
-if(isset($_GET['lang'])){
-  $lang=$_GET['lang'];
-  $lang=preg_replace('/[^A-Za-z0-9\-\_]/', '', $lang);
-}
-if(file_exists("lang/".$lang.".php"))
-  include("lang/".$lang.".php");
+include("language.php");
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $_SESSION['slang']; ?>">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,8 +14,8 @@ if(file_exists("lang/".$lang.".php"))
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
     <title>osm24.eu</title>
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/leaflet.css" />
     <link rel="stylesheet" href="css/MarkerCluster.css"/>
     <link rel="stylesheet" href="css/MarkerCluster.Default.css"/>
     <link rel="stylesheet" href="css/leaflet.contextmenu.css"/>
@@ -31,8 +25,8 @@ if(file_exists("lang/".$lang.".php"))
 
     <script src="js_lang.php?lang=<?php echo $lang;?>"></script>
     <script src="http://code.jquery.com/jquery-2.0.2.js">{"parsetags": "explicit"}</script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
-    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/leaflet.js"></script>
     <script src="js/leaflet.markercluster.js"></script>
     <script src="http://coinwidget.com/widget/coin.js"></script>
     <script src="js/leaflet-hash.js"></script>
@@ -463,10 +457,21 @@ if(file_exists("lang/".$lang.".php"))
             </li>
          </ul>
 
-        <button onclick="ustaw()" type="button" class="btn btn-primary navbar-btn"><?php echo BUTTON_SET;?></button>
-        <button onclick="locate_toggle()" id="locate-button" type="button"  class="btn"><?php echo BUTTON_LOCATE;?></button>
-        <ul class="nav navbar-nav navbar-right">
-            <li><button onclick="$('#myModal').modal('show');" data-toggle="modal"  class="btn btn-primary btn-lg"><?php echo BUTTON_ABOUT;?></button></li>
+         <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" style="padding: 4px; margin: 0px" data-toggle="dropdown">
+              <img src="img/flags/<?php echo $_SESSION['lang'];?>.png"/>
+            <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu flags">
+              <li><a href="?lang=en_EN"><img src="img/flags/en_EN.png"/></a></li>
+              <li><a href="?lang=it_IT"><img src="img/flags/it_IT.png"/></a></li>
+            </ul>
+          </li>
+>
+          <li><button onclick="ustaw()" type="button" class="btn btn-primary navbar-btn"><?php echo BUTTON_SET;?></button></li>
+          <li><button onclick="locate_toggle()" id="locate-button" type="button"  class="btn navbar-btn"><?php echo BUTTON_LOCATE;?></button></li>
+          <li><button onclick="$('#myModal').modal('show');" data-toggle="modal"  class="btn btn-primary btn-lg"><?php echo BUTTON_ABOUT;?></button></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>

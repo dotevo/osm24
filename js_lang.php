@@ -1,11 +1,5 @@
 <?php
-$lang='en_EN';
-if(isset($_GET['lang'])){
-  $lang=$_GET['lang'];
-  $lang=preg_replace('/[^A-Za-z0-9\-\_]/', '', $lang);
-}
-if(file_exists("lang/".$lang.".php"))
-  include("lang/".$lang.".php");
+include("language.php");
 ?>
 
 var note_body='<?php echo addslashes(JS_ADD_NOTE_BODY);?><hr/><?php echo addslashes(JS_ADD_NOTE_LIST);?><br/><div id="notes-message"><?php echo addslashes(PLEASE_WAIT);?></div><hr/><div class="form-group"><label for="text1"><?php echo addslashes(JS_ADD_NOTE_LABEL);?></label><input type="text" class="form-control" id="text1" placeholder="<?php echo addslashes(JS_ADD_NOTE_LABEL);?>"></div>';

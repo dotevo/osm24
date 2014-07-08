@@ -30,6 +30,7 @@ include("language.php");
     <script src="js/leaflet.markercluster.js"></script>
     <script src="http://coinwidget.com/widget/coin.js"></script>
     <script src="js/leaflet-hash.js"></script>
+    <script src="js/suncalc.js"></script>
     <script src="js/leaflet.label.min.js"></script>
     <script src="js/leaflet.contextmenu.js"></script>
     <?php

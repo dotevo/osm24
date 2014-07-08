@@ -11,6 +11,9 @@ Query.prototype.getTagArray = function(tag,typetag,excludetag){
 
   var p=tag.split("@");
   if(p.length>1){
+    if(typetag=="normal")
+      return [{tag:p,type:typetag,exclude:excludetag }]
+
     var a=[];
     for(var n in p)
       a.push({tag:p[n],type:typetag,exclude:excludetag });
@@ -106,19 +109,34 @@ Query.prototype.getQuery = function(data){
   var tags=this.getTags(data,"");
   var tagarr=[];
   for(var key in tags){
+    //get main tag
     if(tags[key].type=="main"){
-      var str=tags[key].tag;
+      var str=[tags[key].tag];
       for(var key2 in tags){
+        //get normal tag
         if(tags[key2].type!="main"){
           var exclude=false;
           for(var pp in tags[key2].exclude)
             if(tags[key].tag==tags[key2].exclude[pp])
               exclude=true;
-          if(!exclude)
-            str+=tags[key2].tag;
+          if(!exclude){
+            if(typeof tags[key2].tag != 'string'){
+               var tmparr=[];
+               for(var t in tags[key2].tag)
+                  for(var s in str){
+                     tmparr.push(str[s]+tags[key2].tag[t]);
+                  }
+               str=tmparr;
+            }else{
+               for(var s in str){
+                  str[s]+=tags[key2].tag;
+               }
+            }
+          }
         }
       }
-      tagarr.push(str);
+      for(var s in str)
+         tagarr.push(str[s]);
     }
   }
   var query="data=[out:json];(";

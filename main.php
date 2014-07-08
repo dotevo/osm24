@@ -199,19 +199,19 @@ include("language.php");
               <ul class="dropdown-menu dropdown-always-on  tag-parent">
                 <li class="dropdown-header"><?php echo PANEL_DIET_HEADER;?></li>
                 <li class="select-multi-state">
-<a id="pescetarian" data-tag-pair-s1="['diet:pescetarian'~'yes|only']" data-tag-pair-s2="['diet:pescetarian'='only']">
+<a id="pescetarian" data-tag-pair-s1="['diet:vegetarian'~'yes|only']@['diet:ovo_vegetarian'~'yes|only']@['diet:lacto_vegetarian'~'yes|only']@['diet:vegan'~'yes|only']@['diet:fruitarian'~'yes|only']" data-tag-pair-s2="['diet:pescetarian'='only']">
 <span style="display:none;" class="glyphicon glyphicon-ok state1"></span><span style="display:none;" class="glyphicon glyphicon-ok-sign state2"></span><?php echo PANEL_DIET_PESCETARIAN;?></a></li>
                 <li class="select-multi-state">
-<a id="vegetarian" data-tag-pair-s1="['diet:vegetarian'~'yes|only']" data-tag-pair-s2="['diet:vegetarian'='only']">
+<a id="vegetarian" data-tag-pair-s1="['diet:vegetarian'~'yes|only']@['diet:ovo_vegetarian'~'yes|only']@['diet:lacto_vegetarian'~'yes|only']@['diet:vegan'~'yes|only']@['diet:fruitarian'~'yes|only']" data-tag-pair-s2="['diet:vegetarian'='only']">
 <span style="display:none;" class="glyphicon glyphicon-ok state1"></span><span style="display:none;" class="glyphicon glyphicon-ok-sign state2"></span><?php echo PANEL_DIET_VEGETARIAN;?></a></li>
                 <li class="select-multi-state">
-<a id="lacto_vegetarian" data-tag-pair-s1="['diet:lacto_vegetarian'~'yes|only']" data-tag-pair-s2="['diet:lacto_vegetarian'='only']">
+<a id="lacto_vegetarian" data-tag-pair-s1="['diet:lacto_vegetarian'~'yes|only']@['diet:vegan'~'yes|only']@['diet:fruitarian'~'yes|only']" data-tag-pair-s2="['diet:lacto_vegetarian'='only']">
 <span style="display:none;" class="glyphicon glyphicon-ok state1"></span><span style="display:none;" class="glyphicon glyphicon-ok-sign state2"></span><?php echo PANEL_DIET_LACTO_VEGETARIAN;?></a></li>
 				<li class="select-multi-state">
-<a id="ovo_vegetarian" data-tag-pair-s1="['diet:ovo_vegetarian'~'yes|only']" data-tag-pair-s2="['diet:ovo_vegetarian'='only']">
+<a id="ovo_vegetarian" data-tag-pair-s1="['diet:ovo_vegetarian'~'yes|only']@['diet:vegan'~'yes|only']@['diet:fruitarian'~'yes|only']" data-tag-pair-s2="['diet:ovo_vegetarian'='only']">
 <span style="display:none;" class="glyphicon glyphicon-ok state1"></span><span style="display:none;" class="glyphicon glyphicon-ok-sign state2"></span><?php echo PANEL_DIET_OVO_VEGETARIAN;?></a></li>
                 <li class="select-multi-state">
-<a id="vegan" data-tag-pair-s1="['diet:vegan'~'yes|only']" data-tag-pair-s2="['diet:vegan'='only']">
+<a id="vegan" data-tag-pair-s1="['diet:vegan'~'yes|only']@['diet:fruitarian'~'yes|only']" data-tag-pair-s2="['diet:vegan'='only']">
 <span style="display:none;" class="glyphicon glyphicon-ok state1"></span><span style="display:none;" class="glyphicon glyphicon-ok-sign state2"></span><?php echo PANEL_DIET_VEGAN;?></a></li>
                 <li class="select-multi-state">
 <a id="fruitarian" data-tag-pair-s1="['diet:fruitarian'~'yes|only']" data-tag-pair-s2="['diet:fruitarian'='only']">

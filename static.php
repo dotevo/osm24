@@ -6,6 +6,11 @@ function print_poi($tags,$lat,$lon,$id,$type){
   if(isset($_GET['id'])){
     $ret.="<br/><span itemprop=\"name\">".$tags['name']."</span><br/>";
 
+    //GEO
+    $ret.="<span itemprop=\"geo\" itemscope itemtype=\"http://schema.org/GeoCoordinates\">";
+    $ret.="<meta itemprop=\"latitude\" content=\"".$lat."\" />";
+    $ret.="<meta itemprop=\"longitude\" content=\"".$lon."\" />";
+    $ret .= "</span>";
     //ADDR
     $ret.="<span itemprop=\"address\" itemscope itemtype=\"http://data-vocabulary.org/Address\">";
     if(isset($tags['addr:street']))

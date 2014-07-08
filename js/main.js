@@ -216,6 +216,18 @@ $(window).load(function() {
     }]
   }).setView([51.505, 21], 7);
 
+  var legend = L.control({position: 'bottomright'});
+  legend.onAdd = function (map) {
+    var div = L.DomUtil.create('div', 'info legend');
+
+    div.innerHTML +='<i class="map-icon-open" style="background-size: 18px 18px;"></i> Open <br/>'+
+    '<i class="map-icon-last" style="background-size: 18px 18px;"></i> Last hour <br/>'+
+    '<i class="map-icon-closed" style="background-size: 18px 18px;"></i> Close <br/>'+
+    '<i class="map-icon-nd" style="background-size: 18px 18px;"></i> No data <br/>';
+    return div;
+  };
+  legend.addTo(map);
+
   map.on("zoomend", function (e) {
    if(10>map.getZoom()){
      $("#info").html("Please, zoom in.");

@@ -228,6 +228,14 @@ $(window).load(function() {
   };
   legend.addTo(map);
 
+  var statusA = L.control({position: 'topleft'});
+  statusA.onAdd = function (map) {
+    var div = L.DomUtil.create('div', 'info status');
+    div.innerHTML +='<i id="info"></i>';
+    return div;
+  };
+  statusA.addTo(map);
+
   map.on("zoomend", function (e) {
    if(10>map.getZoom()){
      $("#info").html("Please, zoom in.");

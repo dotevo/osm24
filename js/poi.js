@@ -176,7 +176,7 @@ POI.prototype.getInfoBox = function(){
   content+='</div>';
 
 
-      content+='<br/><br/><a onclick="showNoteMessage(\''+lang_report+'\',note_body,function n(){add('+this.element.lon+','+this.element.lat+",'"+name+"'"+');},'+this.element.lon+','+this.element.lat+')">'+lang_add_missing_data+'</a></div>'      
+      content+='<br/><br/><a onclick="showNoteMessage(\''+lang_report+'\',note_body,function n(){add('+this.element.lon+','+this.element.lat+",'"+name.replace('\'','/')+"'"+');},'+this.element.lon+','+this.element.lat+')">'+lang_add_missing_data+'</a></div>'      
       //hours
       if(typeof this.oh != 'undefined' && this.element.tags.hasOwnProperty("opening_hours")){
         content+='<div class="tab-pane" id="hours">';

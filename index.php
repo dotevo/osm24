@@ -1,10 +1,8 @@
 <?php
 error_reporting(E_ALL);
-//if you are googlebot
-if(!isset($_GET['_escaped_fragment_'])){
+if(!isset($_GET['_escaped_fragment_'])&&!strpos($_SERVER["HTTP_USER_AGENT"],"bot")&&!strpos($_SERVER["HTTP_USER_AGENT"],"Google-StructuredDataTestingTool")){
   include("main.php");
 }
-//Normal user
 else{
   include("static.php");
 }

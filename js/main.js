@@ -15,6 +15,7 @@ function addElement(e){
   if(isMobile.any){
     marker=new L.marker(pos, {icon: m_icon,riseOnHover: true}).
                         bindLabel(poi.getName());
+    marker.el = poi;
     marker.on("click",function(){
               this.label.close();
               ga('send', 'pageview', {
@@ -36,6 +37,7 @@ function addElement(e){
   }else{
     marker=new L.marker(pos, {icon: m_icon,riseOnHover: true}).
                         bindLabel(poi.getName()).bindPopup(popup, {minWidth: 300});
+    marker.el = poi;
     marker.on("click",function(){
               this.label.close();
               ga('send', 'pageview', {
@@ -54,14 +56,10 @@ function addElement(e){
   return marker;
 }
 
-
-
 Date.prototype.addHours= function(h){
     this.setHours(this.getHours()+h);
     return this;
 }
-
-
 
 var $msg2Modal = $('#dynModal').modal({
       backdrop: false,
@@ -204,8 +202,47 @@ function report_poi (e) {
 }
 
 var locate=0;
+var markers = new L.MarkerClusterGroup({ disableClusteringAtZoom: 14 });
+
+function reloadList(){
+  $('#poilist').html('');
+  var a={};
+  markers.eachLayer(function (layer) {
+    if(map.getBounds().contains(layer.getLatLng())){
+    a[layer.el.getName()]=$('<li class="list-group-item">'+
+              '<div class="">'+
+              '<span class="name">'+layer.el.getIconDiv()+layer.el.getName()+'</span>'+
+              '</div>'+
+              '</li>');}});
+
+  var sorted_keys = Object.keys(a).sort();
+  for(var i=0;i<sorted_keys.length;++i){
+    $('#poilist').append(a[sorted_keys[i]]);
+  }
+}
+
+function getCSV(){
+  var str="";
+  markers.eachLayer(function (layer) {
+    if(map.getBounds().contains(layer.getLatLng())){
+       str+=layer.el.getName()+"\t";
+       if(layer.el.element.tags.hasOwnProperty("opening_hours"))
+         str+=layer.el.element.tags["opening_hours"];
+       str+="\t";
+       str+="\n";
+    }});
+  return encodeURI(str);
+}
+
 
 $(window).load(function() {
+$("#export_csv").click(function(){
+  console.log("A");
+  document.location = 'data:Application/csv;charset=utf-8,' +
+                         getCSV();
+});
+
+
   map = new L.Map('map',{
     zoomControl: false,
     contextmenu: true,
@@ -315,7 +352,7 @@ var zoomControl = L.control.zoom({
     ustaw();
     hash.onMapMove();
   };
-  var markers = new L.MarkerClusterGroup({ disableClusteringAtZoom: 14 });
+
   map.addLayer(markers);
 
   var idd=0;
@@ -329,7 +366,7 @@ var zoomControl = L.control.zoom({
     layer:markers,
     autoclick: idd,
     onDownload: function(){$("#info").html("Loading...");},
-    onDownloadFinished: function(){$("#info").html("");},
+    onDownloadFinished: function(){$("#info").html("");reloadList();},
     minzoom:10,
     minfullzoom:15,
   });
@@ -374,3 +411,26 @@ function locate_toggle(){
     
   }
 }
+
+var snapper = new Snap({
+  element: document.getElementById('content')
+});
+
+var addEvent = function addEvent(element, eventName, func) {
+	if (element.addEventListener) {
+    	return element.addEventListener(eventName, func, false);
+    } else if (element.attachEvent) {
+        return element.attachEvent("on" + eventName, func);
+    }
+};
+
+var l_opened=false;
+
+addEvent(document.getElementById('open-left'), 'click', function(){
+    if(l_opened){
+      snapper.close('left');
+    }
+    else
+       snapper.open('left');
+    l_opened=!l_opened;
+});

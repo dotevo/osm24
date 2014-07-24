@@ -213,7 +213,7 @@ POI.prototype.getInfoBox = function(){
       return [container[0], 'http://osm24.eu/index.php?id='+this.element.id+'#!18/'+this.element.lat+'/'+this.element.lon+'/' ];
 }
 
-POI.prototype.getIcon = function(){
+POI.prototype.getIconSource = function(){
   var icon_name="null";
   if(this.element.tags.hasOwnProperty("amenity")&&amenity_icons.indexOf(this.element.tags["amenity"]) != -1){
     icon_name="amenity_"+this.element.tags["amenity"];
@@ -231,6 +231,16 @@ POI.prototype.getIcon = function(){
   
   if(icon_name==="null")
     icon_name="other";
+  return icon_name;
+}
+
+POI.prototype.getIconDiv = function(){
+  var icon_name = this.getIconSource();
+  return "<div class='map-icon map-icon-"+this.shadow+"'><div class='map-icon' style='background-image: url(img/icons/"+icon_name+".png);'></div></div>";
+}
+
+POI.prototype.getIcon = function(){
+  var icon_name = this.getIconSource();
 
   return L.divIcon({
     className: "map-icon map-icon-"+this.shadow,html:"<div class='map-icon' style='background-image: url(img/icons/"+icon_name+".png);'></div>",

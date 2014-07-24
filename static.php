@@ -27,8 +27,12 @@ function print_poi($tags,$lat,$lon,$id,$type){
 
     $ret .= "<br/><br/>";
     foreach ($tags as $key => $value) {
-      $ret.=$key."  =  ".$value."<br/>";
+      $ret.=$key."  ".$value."<br/>";
     }
+    $lat=round($lat,2);
+    $lon=round($lon,2);    
+    $ret.="<a href='index.php#!16/".$lat."/".($lon)."/'>back</a><br/>";
+
   }else
     $ret.="<br/><h4><a href='?id=".$id."#!18/".$lat."/".$lon."/".$type."'>".$tags['name']."</a></h4><br/>";
     
@@ -98,13 +102,19 @@ if(isset($_GET['id'])){
     <meta name="description" content="POI map with opening hours for <?php echo $title; ?>">
     <meta name="author" content="dotevo">
     <meta name="fragment" content="!">
+    <meta name="keywords" content="opening hours map restaurant shop browser find" />
+<?php
+if(!isset($_GET['id'])){
+  echo '<meta name="robots" content="noindex,follow" />';
+}
+?>
     <title>Find <?php echo $title; ?> </title>
   </head>
 <body>
-<h1>Your favorite places on the map. Opening hours.</h1><br/>
+<h1>Your favourite places on the map with Opening hours.</h1><br/>
+<h2><?php echo $title; ?></h2>
 <?php
 echo $content;
 ?>
-<br/><br/>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.<br/>This website uses Overpass API. Dotevo
 </body>
 </html>

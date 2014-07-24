@@ -31,6 +31,7 @@ include("language.php");
     <script src="http://coinwidget.com/widget/coin.js"></script>
     <script src="js/leaflet-hash.js"></script>
     <script src="js/suncalc.js"></script>
+    <script src="js/snap.min.js"></script>
     <script src="js/leaflet.label.min.js"></script>
     <script src="js/leaflet.contextmenu.js"></script>
     <?php
@@ -61,15 +62,26 @@ include("language.php");
 </script>
   </head>
   <body>
+  <div class="snap-drawers">
+    <div class="snap-drawer snap-drawer-left">
+      <h4>POI List</h4>
+      <div class="item active">
+        <ul class="list-group scroll-menu" id="poilist">
+        </ul>
+      </div>
+      <button class="btn navbar-btn" id="export_csv"><i class="glyphicon glyphicon-export"></i></button>
+    </div>
+  </div>
+
+  <div id="content" class="snap-content" style="padding-top: 50px;">
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header" style="width: 250px">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="">osm24.eu</a>
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle" style="height:40px" data-toggle="collapse" data-target=".navbar-collapse">
+-            Menu
+-          </button><table><tr><td>
+          <a id="open-left"></a></td><td>
+          <i class="navbar-brand">osm24.eu</i></td></tr></table>
         </div>
         <div class="collapse navbar-collapse global-menu-data">
           <ul class="nav navbar-nav">
@@ -477,6 +489,8 @@ include("language.php");
       </div><!--/.nav-collapse -->
     </div>
   </div>
+  <div style="height: 100%" id="map"></div>
+  </div>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -529,7 +543,6 @@ include("language.php");
   </div>
 
 
-  <div style="height: 100%" id="map"></div>
   <script src="js/own_bootstrap.js"></script>
   <script src="js/query.js"></script>
   <script src="js/poi.js"></script>

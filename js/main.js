@@ -293,7 +293,7 @@ var zoomControl = L.control.zoom({
   //modal.modal('show'); 
   $('#mapper').removeAttr("checked");
 
-  var attrib = 'ODbL OpenStreetMap, Data: <a href="http://www.overpass-api.de/">OverpassAPI</a>"';
+  var attrib = 'ODbL OpenStreetMap, Data: <a href="http://www.overpass-api.de/">OverpassAPI</a>';
   var osm = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19, subdomains: 'abc', attribution: attrib,   detectRetina: true});
 
 /*              URL_UPDATE           */

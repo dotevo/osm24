@@ -1,9 +1,10 @@
 <?php
 function print_poi($tags,$lat,$lon,$id,$type){
-  $ret="<div itemscope itemtype=\"http://data-vocabulary.org/Organization\">";
+  $ret="";
   if($type!="")
     $type="type=".$type."/";
   if(isset($_GET['id'])){
+    $ret.="<div itemscope itemtype=\"http://data-vocabulary.org/Organization\">";
     $ret.="<br/><span itemprop=\"name\">".$tags['name']."</span><br/>";
 
     //GEO
@@ -32,7 +33,7 @@ function print_poi($tags,$lat,$lon,$id,$type){
     $lat=round($lat,2);
     $lon=round($lon,2);    
     $ret.="<a href='index.php#!16/".$lat."/".($lon)."/'>back</a><br/>";
-
+    $ret.="</div>";
   }else
     $ret.="<br/><h4><a href='?id=".$id."#!18/".$lat."/".$lon."/".$type."'>".$tags['name']."</a></h4><br/>";
     
@@ -105,7 +106,7 @@ if(isset($_GET['id'])){
     <meta name="keywords" content="opening hours map restaurant shop browser find" />
 <?php
 if(!isset($_GET['id'])){
-  echo '<meta name="robots" content="noindex,follow" />';
+ // echo '<meta name="robots" content="noindex,follow" />';
 }
 ?>
     <title>Find <?php echo $title; ?> </title>

@@ -10,6 +10,7 @@ define('PANEL_NEED','Needs');
 define('PANEL_EMERGENCY', 'Emergency');
 define('PANEL_MONEY','Money');
 define('PANEL_CULTURE','Culture');
+define('PANEL_EDUCATION','Education');
 define('PANEL_ALL', 'All');
 
 define('PANEL_CUISINE','Cuisine');
@@ -266,6 +267,14 @@ define('PANEL_THEATRE_GENRE_FIGURE','Figure');
 define('PANEL_THEATRE_GENRE_PUPPET','Puppet');
 define('PANEL_THEATRE_GENRE_MARIONETTE','Marionette');
 define('PANEL_THEATRE_GENRE_SHADOW_PLAY','Shadow play');
+
+define('PANEL_EDUCATION_TYPE','Type');
+define('PANEL_EDUCATION_TYPE_HEADER','Exclude');
+define('PANEL_EDUCATION_TYPE_LIBRARY','Library');
+define('PANEL_EDUCATION_TYPE_KINDERGARTEN','Kindergarten');
+define('PANEL_EDUCATION_TYPE_SCHOOL','School');
+define('PANEL_EDUCATION_TYPE_UNIVERSITY','University');
+define('PANEL_EDUCATION_TYPE_COLLEGE','Collage');
 
 define('PANEL_OTHER','Other');
 define('PANEL_OTHER_HEADER','No set/Yes');

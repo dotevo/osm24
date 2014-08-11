@@ -9,6 +9,7 @@ define('PANEL_NEED','Necessità');
 define('PANEL_EMERGENCY', 'Emergenza');
 define('PANEL_MONEY','Soldi');
 define('PANEL_CULTURE','Culture'); //FIXME
+define('PANEL_EDUCATION','Education'); //FIXME
 define('PANEL_ALL', 'Tutto');
 
 define('PANEL_CUISINE','Cucina');
@@ -264,6 +265,14 @@ define('PANEL_THEATRE_GENRE_FIGURE','Figure'); // FIXME
 define('PANEL_THEATRE_GENRE_PUPPET','Puppet'); // FIXME
 define('PANEL_THEATRE_GENRE_MARIONETTE','Marionette'); // FIXME
 define('PANEL_THEATRE_GENRE_SHADOW_PLAY','Shadow play'); // FIXME
+
+define('PANEL_EDUCATION_TYPE','Type'); // FIXME
+define('PANEL_EDUCATION_TYPE_HEADER','Exclude'); // FIXME
+define('PANEL_EDUCATION_TYPE_LIBRARY','Library'); // FIXME
+define('PANEL_EDUCATION_TYPE_KINDERGARTEN','Kindergarten'); // FIXME
+define('PANEL_EDUCATION_TYPE_SCHOOL','School'); // FIXME
+define('PANEL_EDUCATION_TYPE_UNIVERSITY','University'); // FIXME
+define('PANEL_EDUCATION_TYPE_COLLEGE','Collage'); // FIXME
 
 define('PANEL_OTHER','Altro');
 define('PANEL_OTHER_HEADER','Non selezionato/Sì');

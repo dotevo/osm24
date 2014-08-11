@@ -88,7 +88,7 @@ include("language.php");
             <li class="dropdown  btn-group btn-group-own ">
               <a class="dropdown-toggle btn-select" id="type" data-toggle="dropdown"><?php echo PANEL_EAT;?><span class="caret"></span></a>
               <ul class="dropdown-menu select-one-change sort">
-                <li><a id="all"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']@[shop]@[office]@[craft]@[sport]@[amenity=toilets]@[amenity=drinking_water]@['amenity'='pub']@['amenity'='bar']@['amenity'='nightclub']@['amenity'='biergarten']@['amenity'='stripclub']@[amenity='pharmacy']@[amenity='fuel']@['amenity'='bank']@['amenity'='atm']@['amenity'='cinema']@['amenity'='theatre']" data-tag-type="main"><?php echo PANEL_ALL;?></a></li>
+                <li><a id="all"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']@[shop]@[office]@[craft]@[sport]@[amenity=toilets]@[amenity=drinking_water]@['amenity'='pub']@['amenity'='bar']@['amenity'='nightclub']@['amenity'='biergarten']@['amenity'='stripclub']@[amenity='pharmacy']@[amenity='fuel']@['amenity'='bank']@['amenity'='atm']@['amenity'='cinema']@['amenity'='theatre']@['amenity'='college']@['amenity'='library']@['amenity'='university']@['amenity'='kindergarten']" data-tag-type="main"><?php echo PANEL_ALL;?></a></li>
                 <li class="divider"></li>                
                 <li><a id="craft"><?php echo PANEL_CRAFT;?></a></li>
                 <li><a id="emergency"><?php echo PANEL_EMERGENCY;?></a></li>
@@ -98,6 +98,7 @@ include("language.php");
                 <li><a id="office"><?php echo PANEL_OFFICE;?></a></li>
                 <li><a id="party"><?php echo PANEL_PARTY;?></a></li>
                 <li><a id="exercise"><?php echo PANEL_EXERCISE;?></a></li>
+                <li><a id="education"><?php echo PANEL_EDUCATION;?></a></li>
                 <li><a id="buy"><?php echo PANEL_BUY;?></a></li>
                 <li><a id="culture" data-tag-pair="['amenity'='cinema']@['amenity'='theatre']" data-tag-type="main"><?php echo PANEL_CULTURE;?></a></li>
               </ul>
@@ -461,6 +462,18 @@ include("language.php");
                 <li><a id="theatre_genre_puppet" data-tag-pair="['theatre:genre'~'puppet']"><?php echo PANEL_THEATRE_GENRE_PUPPET;?></a></li>
                 <li><a id="theatre_genre_marionette" data-tag-pair="['theatre:genre'~'marionette']"><?php echo PANEL_THEATRE_GENRE_MARIONETTE;?></a></li>
                 <li><a id="theatre_genre_shadow_play" data-tag-pair="['theatre:genre'~'shadow_play']"><?php echo PANEL_THEATRE_GENRE_SHADOW_PLAY;?></a></li>
+              </ul>
+            </li>
+
+            <li style="display:none;" class="dropdown  btn-group btn-group-own  visible-education">
+              <a class="dropdown-toggle btn-select" id="education_type" data-toggle="dropdown" ><?php echo PANEL_EDUCATION_TYPE;?><span class="caret"></span></a>
+              <ul class="dropdown-menu dropdown-always-on  tag-parent">
+                <li class="dropdown-header"><?php echo PANEL_EDUCATION_TYPE_HEADER;?></li>
+                <li class="select-multi-state"><a id="library" data-tag-pair-s0="['amenity'='library']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_EDUCATION_TYPE_LIBRARY;?></a></li> 
+                <li class="select-multi-state"><a id="kindergarten"  data-tag-pair-s0="['amenity'='kindergarten']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_EDUCATION_TYPE_KINDERGARTEN;?></a></li>		
+                <li class="select-multi-state"><a id="school"  data-tag-pair-s0="['amenity'='school']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_EDUCATION_TYPE_SCHOOL;?></a></li>
+                <li class="select-multi-state"><a id="university"  data-tag-pair-s0="['amenity'='university']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_EDUCATION_TYPE_UNIVERSITY;?></a></li>
+                <li class="select-multi-state"><a id="college"  data-tag-pair-s0="['amenity'='college']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_EDUCATION_TYPE_COLLEGE;?></a></li>
               </ul>
             </li>
 

@@ -11,6 +11,7 @@ define('PANEL_EMERGENCY', 'Emergency');
 define('PANEL_MONEY','Money');
 define('PANEL_CULTURE','Culture');
 define('PANEL_EDUCATION','Education');
+define('PANEL_TOURISM','Tourism');
 define('PANEL_ALL', 'All');
 
 define('PANEL_CUISINE','Cuisine');
@@ -275,6 +276,12 @@ define('PANEL_EDUCATION_TYPE_KINDERGARTEN','Kindergarten');
 define('PANEL_EDUCATION_TYPE_SCHOOL','School');
 define('PANEL_EDUCATION_TYPE_UNIVERSITY','University');
 define('PANEL_EDUCATION_TYPE_COLLEGE','Collage');
+
+define('PANEL_TOURISM','Tourism');
+define('PANEL_TOURISM_ALL','All');
+define('PANEL_TOURISM_ATTRACTION','Attraction');
+define('PANEL_TOURISM_ACCOMMODATION','Accommodation');
+define('PANEL_TOURISM_INFORMATION','Information');
 
 define('PANEL_OTHER','Other');
 define('PANEL_OTHER_HEADER','No set/Yes');

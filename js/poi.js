@@ -4,6 +4,7 @@ var amenity_icons=['school','university','college','kindergarten','library','atm
 var office_icons=[];
 var craft_icons=['key_cutter','clockmaker','glaziery','photographer','shoemaker','tailor'];
 var emergency_icons=['defibrillator'];
+var tourism_icons=['guest_house','motel','hotel','caravan_site','camp_site','information','attraction','theme_park','zoo','museum','artwork'];
 
 function POI(element){
   this.element = element;
@@ -227,6 +228,8 @@ POI.prototype.getIconSource = function(){
       icon_name="office_"+this.element.tags["office"];
   }else if(this.element.tags.hasOwnProperty("craft")&&craft_icons.indexOf(this.element.tags["craft"]) != -1){
       icon_name="craft_"+this.element.tags["craft"];
+  }else if(this.element.tags.hasOwnProperty("tourism")&&tourism_icons.indexOf(this.element.tags["tourism"]) != -1){
+      icon_name="tourism_"+this.element.tags["tourism"];
   }
   
   if(icon_name==="null")

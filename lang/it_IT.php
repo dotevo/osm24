@@ -10,6 +10,7 @@ define('PANEL_EMERGENCY', 'Emergenza');
 define('PANEL_MONEY','Soldi');
 define('PANEL_CULTURE','Culture'); //FIXME
 define('PANEL_EDUCATION','Education'); //FIXME
+define('PANEL_TOURISM','Tourism'); //FIXME
 define('PANEL_ALL', 'Tutto');
 
 define('PANEL_CUISINE','Cucina');
@@ -273,6 +274,12 @@ define('PANEL_EDUCATION_TYPE_KINDERGARTEN','Kindergarten'); // FIXME
 define('PANEL_EDUCATION_TYPE_SCHOOL','School'); // FIXME
 define('PANEL_EDUCATION_TYPE_UNIVERSITY','University'); // FIXME
 define('PANEL_EDUCATION_TYPE_COLLEGE','Collage'); // FIXME
+
+define('PANEL_TOURISM','Tourism'); // FIXME
+define('PANEL_TOURISM_ALL','All'); // FIXME
+define('PANEL_TOURISM_ATTRACTION','Attraction'); // FIXME
+define('PANEL_TOURISM_ACCOMMODATION','Accommodation'); // FIXME
+define('PANEL_TOURISM_INFORMATION','Information'); // FIXME
 
 define('PANEL_OTHER','Altro');
 define('PANEL_OTHER_HEADER','Non selezionato/Sì');

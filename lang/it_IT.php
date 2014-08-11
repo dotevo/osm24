@@ -8,6 +8,7 @@ define('PANEL_CRAFT','Craft');
 define('PANEL_NEED','Necessità');
 define('PANEL_EMERGENCY', 'Emergenza');
 define('PANEL_MONEY','Soldi');
+define('PANEL_CULTURE','Culture'); //FIXME
 define('PANEL_ALL', 'Tutto');
 
 define('PANEL_CUISINE','Cucina');
@@ -239,6 +240,30 @@ define('PANEL_SPORT_VOLLEYBALL','Pallavolo');
 define('PANEL_SPORT_WATER_SKI','Sci d\'acqua');
 define('PANEL_SPORT_WEIGHTLIFTING','Sollevamento pesi');
 define('PANEL_SPORT_WRESTLING','Wrestling');
+
+define('PANEL_THEATRE_GENRE','Theatre genre'); // FIXME
+define('PANEL_THEATRE_GENRE_ALL','All'); // FIXME
+define('PANEL_SPEECH_THEATRE','Speech theatre'); // FIXME
+define('PANEL_THEATRE_GENRE_DRAMA','Drama'); // FIXME
+define('PANEL_THEATRE_GENRE_COMEDY','Comedy'); // FIXME
+define('PANEL_MUSIC_THEATRE','Music theatre'); // FIXME
+define('PANEL_THEATRE_GENRE_OPERA','Opera'); // FIXME
+define('PANEL_THEATRE_GENRE_MUSICAL','Musical'); // FIXME
+define('PANEL_THEATRE_GENRE_BALLET','Ballet'); // FIXME
+define('PANEL_THEATRE_GENRE_PHILHARMONIC','Philharmonic'); // FIXME
+define('PANEL_THEATRE_GENRE_CHAMBER_MUSIC','Chamber music'); // FIXME
+define('PANEL_OTHER_THEATRE','Other theatre'); // FIXME
+define('PANEL_THEATRE_GENRE_CABARET','Cabaret'); // FIXME
+define('PANEL_THEATRE_GENRE_BOULEVARD','Boulevard'); // FIXME
+define('PANEL_THEATRE_GENRE_CIRCUS','Circus'); // FIXME
+define('PANEL_THEATRE_GENRE_STAND_UP_COMEDY','Stand up comedy'); // FIXME
+define('PANEL_THEATRE_GENRE_POLITICAL','Political'); // FIXME
+define('PANEL_THEATRE_GENRE_VARIATE','Variaté'); // FIXME
+define('PANEL_PUPPET_THEATRE','Figure theatre'); // FIXME
+define('PANEL_THEATRE_GENRE_FIGURE','Figure'); // FIXME
+define('PANEL_THEATRE_GENRE_PUPPET','Puppet'); // FIXME
+define('PANEL_THEATRE_GENRE_MARIONETTE','Marionette'); // FIXME
+define('PANEL_THEATRE_GENRE_SHADOW_PLAY','Shadow play'); // FIXME
 
 define('PANEL_OTHER','Altro');
 define('PANEL_OTHER_HEADER','Non selezionato/Sì');

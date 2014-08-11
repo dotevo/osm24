@@ -9,6 +9,7 @@ define('PANEL_CRAFT','Craft');
 define('PANEL_NEED','Needs');
 define('PANEL_EMERGENCY', 'Emergency');
 define('PANEL_MONEY','Money');
+define('PANEL_CULTURE','Culture');
 define('PANEL_ALL', 'All');
 
 define('PANEL_CUISINE','Cuisine');
@@ -241,6 +242,30 @@ define('PANEL_SPORT_VOLLEYBALL','Volleyball');
 define('PANEL_SPORT_WATER_SKI','Water ski');
 define('PANEL_SPORT_WEIGHTLIFTING','Weightlifting');
 define('PANEL_SPORT_WRESTLING','Wrestling');
+
+define('PANEL_THEATRE_GENRE','Theatre genre');
+define('PANEL_THEATRE_GENRE_ALL','All');
+define('PANEL_SPEECH_THEATRE','Speech theatre');
+define('PANEL_THEATRE_GENRE_DRAMA','Drama');
+define('PANEL_THEATRE_GENRE_COMEDY','Comedy');
+define('PANEL_MUSIC_THEATRE','Music theatre');
+define('PANEL_THEATRE_GENRE_OPERA','Opera');
+define('PANEL_THEATRE_GENRE_MUSICAL','Musical');
+define('PANEL_THEATRE_GENRE_BALLET','Ballet');
+define('PANEL_THEATRE_GENRE_PHILHARMONIC','Philharmonic');
+define('PANEL_THEATRE_GENRE_CHAMBER_MUSIC','Chamber music');
+define('PANEL_OTHER_THEATRE','Other theatre');
+define('PANEL_THEATRE_GENRE_CABARET','Cabaret');
+define('PANEL_THEATRE_GENRE_BOULEVARD','Boulevard');
+define('PANEL_THEATRE_GENRE_CIRCUS','Circus');
+define('PANEL_THEATRE_GENRE_STAND_UP_COMEDY','Stand up comedy');
+define('PANEL_THEATRE_GENRE_POLITICAL','Political');
+define('PANEL_THEATRE_GENRE_VARIATE','Variaté');
+define('PANEL_PUPPET_THEATRE','Figure theatre');
+define('PANEL_THEATRE_GENRE_FIGURE','Figure');
+define('PANEL_THEATRE_GENRE_PUPPET','Puppet');
+define('PANEL_THEATRE_GENRE_MARIONETTE','Marionette');
+define('PANEL_THEATRE_GENRE_SHADOW_PLAY','Shadow play');
 
 define('PANEL_OTHER','Other');
 define('PANEL_OTHER_HEADER','No set/Yes');

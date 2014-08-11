@@ -88,7 +88,7 @@ include("language.php");
             <li class="dropdown  btn-group btn-group-own ">
               <a class="dropdown-toggle btn-select" id="type" data-toggle="dropdown"><?php echo PANEL_EAT;?><span class="caret"></span></a>
               <ul class="dropdown-menu select-one-change sort">
-                <li><a id="all"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']@[shop]@[office]@[craft]@[sport]@[amenity=toilets]@[amenity=drinking_water]@['amenity'='pub']@['amenity'='bar']@['amenity'='nightclub']@['amenity'='biergarten']@['amenity'='stripclub']@[amenity='pharmacy']@[amenity='fuel']@['amenity'='bank']@['amenity'='atm']" data-tag-type="main"><?php echo PANEL_ALL;?></a></li>
+                <li><a id="all"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']@[shop]@[office]@[craft]@[sport]@[amenity=toilets]@[amenity=drinking_water]@['amenity'='pub']@['amenity'='bar']@['amenity'='nightclub']@['amenity'='biergarten']@['amenity'='stripclub']@[amenity='pharmacy']@[amenity='fuel']@['amenity'='bank']@['amenity'='atm']@['amenity'='cinema']@['amenity'='theatre']" data-tag-type="main"><?php echo PANEL_ALL;?></a></li>
                 <li class="divider"></li>                
                 <li><a id="craft"><?php echo PANEL_CRAFT;?></a></li>
                 <li><a id="emergency"><?php echo PANEL_EMERGENCY;?></a></li>
@@ -99,6 +99,7 @@ include("language.php");
                 <li><a id="party"><?php echo PANEL_PARTY;?></a></li>
                 <li><a id="exercise"><?php echo PANEL_EXERCISE;?></a></li>
                 <li><a id="buy"><?php echo PANEL_BUY;?></a></li>
+                <li><a id="culture" data-tag-pair="['amenity'='cinema']@['amenity'='theatre']" data-tag-type="main"><?php echo PANEL_CULTURE;?></a></li>
               </ul>
             </li>
 
@@ -432,6 +433,36 @@ include("language.php");
               </ul>
             </li>
 
+
+            <li style="display:none;" class="dropdown  btn-group btn-group-own  visible-culture">
+              <a class="dropdown-toggle btn-select tag-default" id="theatre_genre" data-toggle="dropdown" data-default-id="theatre_genre_all" data-arrow><?php echo PANEL_THEATRE_GENRE;?><span class="caret"></span></a>
+              <ul class="dropdown-menu select-one dropdown-menu-long tag-parent">
+                <li><a id="theatre_genre_all"><?php echo PANEL_THEATRE_GENRE_ALL;?></a></li>
+                <li class="divider"></li>
+                <li><?php echo PANEL_SPEECH_THEATRE;?></li>
+                <li><a id="theatre_genre_drama" data-tag-pair="['theatre:genre'~'drama']"><?php echo PANEL_THEATRE_GENRE_DRAMA;?></a></li>
+                <li><a id="theatre_genre_comedy" data-tag-pair="['theatre:genre'~'comedy']"><?php echo PANEL_THEATRE_GENRE_COMEDY;?></a></li>
+                <li><?php echo PANEL_MUSIC_THEATRE;?></li>
+                <li><a id="theatre_genre_opera" data-tag-pair="['theatre:genre'~'opera']"><?php echo PANEL_THEATRE_GENRE_OPERA;?></a></li>
+                <li><a id="theatre_genre_musical" data-tag-pair="['theatre:genre'~'musical']"><?php echo PANEL_THEATRE_GENRE_MUSICAL;?></a></li>
+                <li><a id="theatre_genre_ballet" data-tag-pair="['theatre:genre'~'ballet']"><?php echo PANEL_THEATRE_GENRE_BALLET;?></a></li>
+                <li><a id="theatre_genre_philharmonic" data-tag-pair="['theatre:genre'~'philharmonic']"><?php echo PANEL_THEATRE_GENRE_PHILHARMONIC;?></a></li>
+                <li><a id="theatre_genre_chamber_music" data-tag-pair="['theatre:genre'~'chamber_music']"><?php echo PANEL_THEATRE_GENRE_CHAMBER_MUSIC;?></a></li>
+                <li><?php echo PANEL_OTHER_THEATRE;?></li>
+                <li><a id="theatre_genre_cabaret" data-tag-pair="['theatre:genre'~'cabaret']"><?php echo PANEL_THEATRE_GENRE_CABARET;?></a></li>
+                <li><a id="theatre_genre_boulevard" data-tag-pair="['theatre:genre'~'boulevard']"><?php echo PANEL_THEATRE_GENRE_BOULEVARD;?></a></li>
+                <li><a id="theatre_genre_circus" data-tag-pair="['theatre:genre'~'circus']"><?php echo PANEL_THEATRE_GENRE_CIRCUS;?></a></li>
+                <li><a id="theatre_genre_stand_up_comedy" data-tag-pair="['theatre:genre'~'stand_up_comedy']"><?php echo PANEL_THEATRE_GENRE_STAND_UP_COMEDY;?></a></li>
+                <li><a id="theatre_genre_political" data-tag-pair="['theatre:genre'~'political']"><?php echo PANEL_THEATRE_GENRE_POLITICAL;?></a></li>
+                <li><a id="theatre_genre_variaté" data-tag-pair="['theatre:genre'~'variaté']"><?php echo PANEL_THEATRE_GENRE_VARIATE;?></a></li>
+
+                <li><?php echo PANEL_PUPPET_THEATRE;?></li>
+                <li><a id="theatre_genre_figure" data-tag-pair="['theatre:genre'~'figure']"><?php echo PANEL_THEATRE_GENRE_FIGURE;?></a></li>
+                <li><a id="theatre_genre_puppet" data-tag-pair="['theatre:genre'~'puppet']"><?php echo PANEL_THEATRE_GENRE_PUPPET;?></a></li>
+                <li><a id="theatre_genre_marionette" data-tag-pair="['theatre:genre'~'marionette']"><?php echo PANEL_THEATRE_GENRE_MARIONETTE;?></a></li>
+                <li><a id="theatre_genre_shadow_play" data-tag-pair="['theatre:genre'~'shadow_play']"><?php echo PANEL_THEATRE_GENRE_SHADOW_PLAY;?></a></li>
+              </ul>
+            </li>
 
             <li class="dropdown  btn-group btn-group-own ">
               <a class="dropdown-toggle btn-select" id="other" data-toggle="dropdown" ><?php echo PANEL_OTHER;?><span class="caret"></span></a>

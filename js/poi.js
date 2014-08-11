@@ -1,6 +1,6 @@
 var shop_icons=["alcohol",'antiques',"art","baby_goods","bag","bakery","beauty","bicycle","books","boutique","butcher","car","car_parts","car_repair","chemist","clothes","computer","confectionery","convenience","copyshop","dog_hairdresser","doityourself","fabric","farm","fishing","florist","funeral_directors","furniture","garden_centre","gift","greengrocer","haberdashery","hairdresser","hardware","hearing_aids","interior_decoration","jewelry","kiosk","mall","mobile_phone","motorcycle","music","musical_instruments","newsagent","optician","pet","second_hand","shoes","seafood","supermarket","tobacco","toys","travel_agency","tyres","video"];
 var leisure_icons=['pitch','swimming_pool','stadium','track','sports_centre'];
-var amenity_icons=['atm','toilets','drinking_water','shelter','bar','bank','pub','restaurant','fast_food','fuel','cafe','nightclub','pharmacy','biergarten','stripclub','ice_cream'];
+var amenity_icons=['atm','toilets','drinking_water','shelter','bar','bank','pub','restaurant','fast_food','fuel','cafe','nightclub','pharmacy','biergarten','stripclub','ice_cream','theatre','cinema'];
 var office_icons=[];
 var craft_icons=['key_cutter','clockmaker','glaziery','photographer','shoemaker','tailor'];
 var emergency_icons=['defibrillator'];

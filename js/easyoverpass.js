@@ -43,7 +43,7 @@ EasyOverpass.prototype.dataDownloadWays = function(data){
       lon /= j;
       lat /= j;
 
-      el={id:"w"+data.elements[i].id,
+      var el={id:"w"+data.elements[i].id,
           tags:data.elements[i].tags, lon:lon, lat:lat};
       this.instance.addElement(el);
     }
@@ -81,7 +81,7 @@ EasyOverpass.prototype.download = function(url, context, success){
     this.options.onDownload();
   }
 
-  this.jobs = this.jobs+1;
+  this.jobs++;
   var self = this;
   $.ajax({
     url: url,
@@ -91,7 +91,7 @@ EasyOverpass.prototype.download = function(url, context, success){
     data: {},
     success: success
   }).always(function(){
-       self.jobs = self.jobs-1;
+       self.jobs--;
        if(typeof self.options.onDownloadFinished != 'undefined' && self.jobs == 0){
          self.options.onDownloadFinished();
        }

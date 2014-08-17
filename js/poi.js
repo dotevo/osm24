@@ -79,12 +79,13 @@ POI.prototype.__genItems = function(opt){
   if(added > 0)
     ret+="</ul><br/>";
   return ret;
-}
+};
 
 var months = ['Jan', 'Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 var weekdays = ['Mo','Tu','We','Th','Fr','Sa','Su'];
-function pad(n) { return n < 10 ? '0'+n : n; };
+function pad(n) { return n < 10 ? '0'+n : n; }
 
+// See https://github.com/ypid/opening_hours.js/blob/master/js/opening_hours_table.js.
 POI.prototype.drawTable = function(oh, date_today) {
   var date_today = new Date(date_today);
   date_today.setHours(0, 0, 0, 0);
@@ -141,7 +142,7 @@ POI.prototype.drawTable = function(oh, date_today) {
   }
   ret+='</table>';
   return ret;
-}
+};
 
 POI.prototype.getInfoBox = function(){
   var name=this.getName();
@@ -212,7 +213,7 @@ POI.prototype.getInfoBox = function(){
       var container = $('<div />');
       container.html('<div class="tabbable tabs-below">'+content+tabs+'</div>'+link);
       return [container[0], 'http://osm24.eu/index.php?id='+this.element.id+'#!18/'+this.element.lat+'/'+this.element.lon+'/' ];
-}
+};
 
 POI.prototype.getIconSource = function(){
   var icon_name="null";
@@ -235,12 +236,12 @@ POI.prototype.getIconSource = function(){
   if(icon_name==="null")
     icon_name="other";
   return icon_name;
-}
+};
 
 POI.prototype.getIconDiv = function(){
   var icon_name = this.getIconSource();
   return "<div class='map-icon map-icon-"+this.shadow+"'><div class='map-icon' style='background-image: url(img/icons/"+icon_name+".png);'></div></div>";
-}
+};
 
 POI.prototype.getIcon = function(){
   var icon_name = this.getIconSource();
@@ -250,7 +251,7 @@ POI.prototype.getIcon = function(){
     iconSize: [32, 37],
     iconAnchor: [16, 37],
   });
-}
+};
 
 POI.prototype.getName = function(){
   var name="Unnamed";
@@ -261,4 +262,4 @@ POI.prototype.getName = function(){
   else if(this.element.tags.hasOwnProperty("operator"))
     name=this.element.tags["operator"];
   return name;
-}
+};

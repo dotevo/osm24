@@ -8,7 +8,7 @@ L.LatLngBounds.prototype.toOverpassBBoxString = function (){
   var a = this._southWest,
       b = this._northEast;
   return [a.lat, a.lng, b.lat, b.lng].join(",");
-}
+};
 
 //Constructor
 function EasyOverpass(options){
@@ -48,7 +48,7 @@ EasyOverpass.prototype.dataDownloadWays = function(data){
       this.instance.addElement(el);
     }
   }
-}
+};
 
 //Nodes to elements
 EasyOverpass.prototype.dataDownloadNodes = function(data){
@@ -57,7 +57,7 @@ EasyOverpass.prototype.dataDownloadNodes = function(data){
   for(i=0;i<data.elements.length;i++){
      this.instance.addElement(data.elements[i]);
   }
-}
+};
 
 
 EasyOverpass.prototype.addElement = function(el){
@@ -74,7 +74,7 @@ EasyOverpass.prototype.addElement = function(el){
     marker.fire('click');
     this.options.autoclick = 0;
   }
-}
+};
 
 EasyOverpass.prototype.download = function(url, context, success){
   if(typeof this.options.onDownload != 'undefined' && this.jobs == 0){
@@ -96,7 +96,7 @@ EasyOverpass.prototype.download = function(url, context, success){
          self.options.onDownloadFinished();
        }
      });
-}
+};
 
 EasyOverpass.prototype.onMoveEnd = function(){
   if (typeof this.options.layer === 'undefined') {
@@ -127,7 +127,7 @@ EasyOverpass.prototype.onMoveEnd = function(){
       this.download(query_a, { instance: this, query: this.options.queryWays }, this.dataDownloadWays);
     }
   }
-}
+};
 
 EasyOverpass.prototype.downloadID = function(id){
   if(typeof id != 'undefined'){
@@ -144,9 +144,9 @@ EasyOverpass.prototype.downloadID = function(id){
        this.download(out, { instance: this, query: "perm"}, this.dataDownloadWays);
     }
   }
-}
+};
 
 EasyOverpass.prototype.clear = function(){
   this.options.layer.clearLayers();
   this._ids={};
-}
+};

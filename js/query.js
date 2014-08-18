@@ -12,7 +12,7 @@ Query.prototype.getTagArray = function(tag,typetag,excludetag){
   var p=tag.split("@");
   if(p.length>1){
     if(typetag=="normal")
-      return [{tag:p,type:typetag,exclude:excludetag }]
+      return [{tag:p,type:typetag,exclude:excludetag }];
 
     var a=[];
     for(var n in p)
@@ -20,7 +20,7 @@ Query.prototype.getTagArray = function(tag,typetag,excludetag){
     return a;
   }
   return [{tag:tag,type:typetag,exclude:excludetag }];
-}
+};
 
 Query.prototype.getTagFromElement = function(el,state){
   //Tag-pair=null - means no value
@@ -65,7 +65,7 @@ Query.prototype.getTagFromElement = function(el,state){
   }
   //use ID becouse tag-value not found
   return this.getTagArray("['"+keytag+"'"+chartag+"'"+el.attr("id")+"']",typetag,excludetag);
-}
+};
 
 //FIXME
 Query.prototype.tagsjoin = function(tags,newt){
@@ -75,7 +75,7 @@ Query.prototype.tagsjoin = function(tags,newt){
     tags.push(newt[key]);
   }
   return tags;
-}
+};
 
 Query.prototype.getTags = function(from,parent){
   var tags=[];
@@ -103,7 +103,7 @@ Query.prototype.getTags = function(from,parent){
     }
   }
   return tags;
-}
+};
 
 Query.prototype.getQuery = function(data){
   var tags=this.getTags(data,"");
@@ -144,4 +144,4 @@ Query.prototype.getQuery = function(data){
     query+="DATATYPE(BBOX)"+tagarr[key]+";";
   query+=");";
   return this.options.url+query;
-}
+};

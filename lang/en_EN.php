@@ -277,7 +277,6 @@ define('PANEL_EDUCATION_TYPE_SCHOOL','School');
 define('PANEL_EDUCATION_TYPE_UNIVERSITY','University');
 define('PANEL_EDUCATION_TYPE_COLLEGE','Collage');
 
-define('PANEL_TOURISM','Tourism');
 define('PANEL_TOURISM_ALL','All');
 define('PANEL_TOURISM_ATTRACTION','Attraction');
 define('PANEL_TOURISM_ACCOMMODATION','Accommodation');

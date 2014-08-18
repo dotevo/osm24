@@ -275,7 +275,6 @@ define('PANEL_EDUCATION_TYPE_SCHOOL','School'); // FIXME
 define('PANEL_EDUCATION_TYPE_UNIVERSITY','University'); // FIXME
 define('PANEL_EDUCATION_TYPE_COLLEGE','Collage'); // FIXME
 
-define('PANEL_TOURISM','Tourism'); // FIXME
 define('PANEL_TOURISM_ALL','All'); // FIXME
 define('PANEL_TOURISM_ATTRACTION','Attraction'); // FIXME
 define('PANEL_TOURISM_ACCOMMODATION','Accommodation'); // FIXME

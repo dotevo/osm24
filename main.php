@@ -38,7 +38,7 @@ include("language.php");
       if(isset($_GET['id'])){
         $id=intval($_GET['id']);
         if($_GET['id'][0]=='w')
-          $id='w'+intval($_GET['id']);
+          $id='w'.intval(substr($_GET['id'],1));
         echo "<script type=\"text/javascript\">var permalink_object_id='".$id."';</script>";
       }
       if(isset($_GET['locate'])){

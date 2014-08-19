@@ -21,7 +21,7 @@ function EasyOverpass(options){
 //Ways -> Elements
 EasyOverpass.prototype.dataDownloadWays = function(data){
   //If query has changed
-  if(this.query != this.instance.options.queryWays){return;}
+  if(this.query != this.instance.options.queryWays && this.query != "perm"){return;}
   //Get nodes
   var nodes = {};
   for(var i=0;i<data.elements.length;i++) {

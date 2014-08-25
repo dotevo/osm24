@@ -8,31 +8,7 @@ var tourism_icons=['guest_house','motel','hotel','caravan_site','camp_site','inf
 
 function POI(element){
   this.element = element;
-  //Opening h
-  var now = new Date();
-  var next_hour = (new Date().addHours(1));
-  this.oh;
-  this.shadow="nd";
-  if(this.element.tags.hasOwnProperty("opening_hours")){
-    try{
-      this.oh = new opening_hours(this.element.tags['opening_hours']);}
-    catch(err){
-      console.log("Unsupported:" + this.element.tags['opening_hours']);
-      this.oh=undefined;
-    }
-    //Status
-    if(typeof this.oh != 'undefined'){
-      var is_open = this.oh.getState(now);
-      this.shadow="closed";
-      if(is_open==true){
-        is_open = this.oh.getState(next_hour);
-        this.shadow="last";
-        if(is_open==true){
-          this.shadow="open";
-        }
-      }
-    }
-  }
+  //this.updateShadow(new Date());
 }
 
 POI.prototype.__genItems = function(opt){
@@ -262,4 +238,34 @@ POI.prototype.getName = function(){
   else if(this.element.tags.hasOwnProperty("operator"))
     name=this.element.tags["operator"];
   return name;
+};
+
+POI.prototype.updateShadow = function (now){	
+	var old=this.shadow;
+	var next_hour = ((new Date(now)).addHours(1));
+	this.oh;
+	this.shadow = "nd";
+	if (this.element.tags.hasOwnProperty("opening_hours")) {
+		try {
+			this.oh = new opening_hours(this.element.tags['opening_hours']);
+		} catch (err) {
+			console.log("Unsupported:" + this.element.tags['opening_hours']);
+			this.oh = undefined;
+		}
+		// Status
+		if (typeof this.oh != 'undefined') {
+			var is_open = this.oh.getState(now);
+			this.shadow = "closed";
+			if (is_open == true) {
+				is_open = this.oh.getState(next_hour);
+				this.shadow = "last";
+				if (is_open == true) {
+					this.shadow = "open";
+				}
+			}
+		}
+	}
+	if(this.shadow==old)
+		return false;
+	return true;
 };

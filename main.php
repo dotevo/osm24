@@ -19,6 +19,8 @@ include("language.php");
     <link rel="stylesheet" href="css/MarkerCluster.css"/>
     <link rel="stylesheet" href="css/MarkerCluster.Default.css"/>
     <link rel="stylesheet" href="css/leaflet.contextmenu.css"/>
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
     <!--[if lte IE 8]>
       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
     <![endif]-->
@@ -30,9 +32,12 @@ include("language.php");
     <script src="js/leaflet.markercluster.js"></script>
     <script src="http://coinwidget.com/widget/coin.js"></script>
     <script src="js/leaflet-hash.js"></script>
+    <script src="js/leaflet-timeslider.js"></script>
     <script src="js/suncalc.js"></script>
     <script src="js/snap.min.js"></script>
     <script src="js/leaflet.label.min.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/leaflet.contextmenu.js"></script>
     <?php
       if(isset($_GET['id'])){

@@ -325,3 +325,27 @@ table, tr, th, td {
 	color: #99907e;
 }
 
+
+.ll-button {
+    padding: 5px;
+    background: white;
+    background: rgba(255,255,255);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 40px;
+    height: 35px;
+}
+
+.ll-bt-txt{
+	float: right;
+	font-size:20px;	
+}
+
+.ll-box {
+    padding: 5px;
+    background: white;
+    background: rgba(255,255,255);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 250px;
+}

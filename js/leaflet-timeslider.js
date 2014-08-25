@@ -133,6 +133,7 @@ L.Control.Timeslider = L.Control.extend({	options : {
 					$('#times').slider("disable");
 					$("#txt-dp").attr('disabled');
 					_this.currenttime=true;
+					_this._setDateFromObj(new Date());
 				}
 			});
 			$('#timecb').trigger('change');

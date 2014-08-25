@@ -542,7 +542,6 @@ include("language.php");
               <li><a href="?lang=it_IT"><img src="img/flags/it_IT.png"/></a></li>
             </ul>
           </li>
->
           <li><button onclick="ustaw()" type="button" class="btn btn-primary navbar-btn"><?php echo BUTTON_SET;?></button></li>
         </ul>
       </div><!--/.nav-collapse -->

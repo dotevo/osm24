@@ -544,8 +544,6 @@ include("language.php");
           </li>
 >
           <li><button onclick="ustaw()" type="button" class="btn btn-primary navbar-btn"><?php echo BUTTON_SET;?></button></li>
-          <li><button onclick="locate_toggle()" id="locate-button" type="button"  class="btn navbar-btn"><?php echo BUTTON_LOCATE;?></button></li>
-          <li><button onclick="$('#myModal').modal('show');" data-toggle="modal"  class="btn btn-primary btn-lg"><?php echo BUTTON_ABOUT;?></button></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>

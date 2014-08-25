@@ -172,7 +172,6 @@ var location_circle;
 
 
 function onLocationFound(e) {
-  console.log(locate+":");
   if(locate==3){map.stopLocate();return;}
   var radius = e.accuracy / 2;
   if(typeof location_marker != 'undefined')
@@ -184,7 +183,7 @@ function onLocationFound(e) {
   map.addLayer(location_marker);
   location_circle = new L.circle(e.latlng,radius , {color: '#136AEC', fillColor: '#136AEC',fillOpacity: 0.05,  weight: 2, opacity: 0.5,radius: radius*2 })
   map.addLayer(location_circle);
-  $("#locate-button").text(lang_stop_locate);
+  $("#locate-button").html("<span class=\"glyphicon glyphicon-screenshot\" style=\"color: #FF0000;\"></span>");
   console.log("aaa");
   console.log(locate);
   if(locate==0){
@@ -280,6 +279,22 @@ $("#export_csv").click(function(){
 	  callback: dateChanged
   });
   timeslider.addTo(map);
+  
+  var aboutB = L.control({ position: 'topright' });
+  aboutB.onAdd = function (map) {
+      this._div = L.DomUtil.create('div', 'control-bt');
+      this._div.innerHTML = '<button onclick="$(\'#myModal\').modal(\'show\');"><span class="glyphicon glyphicon-info-sign"></span></button>';
+      return this._div;
+  };
+  aboutB.addTo(map);
+  
+  var locateB = L.control({ position: 'topright' });
+  locateB.onAdd = function (map) {
+      this._div = L.DomUtil.create('div', 'control-bt');
+      this._div.innerHTML = '<button onclick="locate_toggle()" id="locate-button" type="button"><span class="glyphicon glyphicon-screenshot"></span></button>';
+      return this._div;
+  };
+  locateB.addTo(map);
 
   var statusA = L.control({position: 'topleft'});
   statusA.onAdd = function (map) {
@@ -413,7 +428,7 @@ function locate_toggle(){
     locate=0;
     map.locate({setView:true,maxZoom: 16, enableHighAccuracy: true, maximumAge: 30000, timeout: 3000000,});
   }else{
-    $("#locate-button").text(lang_locate);
+    $("#locate-button").html("<span class=\"glyphicon glyphicon-screenshot\"></span>");
     map.stopLocate();
     locate=3;
     if(typeof location_marker != 'undefined'){

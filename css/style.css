@@ -13,6 +13,24 @@ body {
     height:25px;
 }
 
+.control-bt {
+	padding: 5px;
+	font-size: 20px;
+	box-shadow: 0 1px 7px rgba(0,0,0,0.4);
+	background: #f8f8f9;
+	width: 40px;
+	height: 40px;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	}
+	
+.control-bt button {
+	width:30px;
+	height:30px;
+    border : 0px;
+    background: #f8f8f8;
+}
+
 .nav > li.disabled.nav-header > a {
     cursor: default;
     font-size: 12px;

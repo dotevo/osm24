@@ -102,7 +102,7 @@ L.Control.Timeslider = L.Control.extend({	options : {
 			this.div.innerHTML = "<i id='time-text'>"+hour+":"+Math.floor(((this.time-hour)*60))+"</i>";
 			this.div.appendChild(this._build_button());
 			var dd = L.DomUtil.create('div');
-			dd.innerHTML += '<input type="checkbox" id="timecb"/>Use different time';
+			dd.innerHTML += '<input type="checkbox" id="timecb"'+(_this.currenttime?'':'checked')+'/>Use different time';
 			dd.innerHTML +='<br/><input id="times" data-slider-id="timeslider" type="text" data-slider-min="0" data-slider-max="23.5" data-slider-step="0.5" data-slider-value="'+this.time+'"/><br/>'+
 			  '<div class="input-group date" id="dp"><input type="text" class="form-control" id="txt-dp"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></div>';
 			

@@ -303,6 +303,9 @@ $("#export_csv").click(function(){
     return div;
   };
   statusA.addTo(map);
+  
+  var geocoder = new L.Control.NominatimGeocoder({position:"topleft"});
+  map.addControl(geocoder);
 
   map.on("zoomend", function (e) {
    if(10>map.getZoom()){

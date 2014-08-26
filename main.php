@@ -19,6 +19,7 @@ include("language.php");
     <link rel="stylesheet" href="css/MarkerCluster.css"/>
     <link rel="stylesheet" href="css/MarkerCluster.Default.css"/>
     <link rel="stylesheet" href="css/leaflet.contextmenu.css"/>
+    <link rel="stylesheet" href="css/Control.NominatimGeocoder.css"/>
     <link href="css/slider.css" rel="stylesheet">
     <link href="css/datepicker.css" rel="stylesheet">
     <!--[if lte IE 8]>
@@ -33,6 +34,7 @@ include("language.php");
     <script src="http://coinwidget.com/widget/coin.js"></script>
     <script src="js/leaflet-hash.js"></script>
     <script src="js/leaflet-timeslider.js"></script>
+    <script src="js/Control.NominatimGeocoder.js"></script>
     <script src="js/suncalc.js"></script>
     <script src="js/snap.min.js"></script>
     <script src="js/leaflet.label.min.js"></script>

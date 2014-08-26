@@ -205,21 +205,44 @@ function report_poi (e) {
 var locate=0;
 var markers = new L.MarkerClusterGroup({ disableClusteringAtZoom: 14 });
 
-function reloadList(){
-  $('#poilist').html('');
-  var a={};
-  markers.eachLayer(function (layer) {
-    if(map.getBounds().contains(layer.getLatLng())){
-    a[layer.el.getName()]=$('<li class="list-group-item">'+
-              '<div class="">'+
-              '<span class="name">'+layer.el.getIconDiv()+layer.el.getName()+'</span>'+
-              '</div>'+
-              '</li>');}});
+function reloadList() {
+	$('#poilist').html('');
+	var a = {};
+	markers.eachLayer(function(layer) {
+		if (map.getBounds().contains(layer.getLatLng())) {
+			a[layer.el.getName()] = $('<li class="list-group-item" data-id="'
+					+ layer._leaflet_id + '">' + '<div class="">'
+					+ '<span class="name"><a class="poilist-item">'
+					+ layer.el.getIconDiv() + layer.el.getName()
+					+ '</a></span>' + '</div>' + '</li>');
+			a[layer.el.getName()].click(function() {
+				var id = $(this).data("id");
+				var layer = markers._featureGroup._layers[id];
+				layer.fire('click');
+			});
 
-  var sorted_keys = Object.keys(a).sort();
-  for(var i=0;i<sorted_keys.length;++i){
-    $('#poilist').append(a[sorted_keys[i]]);
-  }
+			a[layer.el.getName()].on("mouseenter", function() {
+				var id = $(this).data("id");
+				var layer = markers._featureGroup._layers[id];
+				layer.fire('mouseover');
+				layer._bringToFront();
+			});
+
+			a[layer.el.getName()].on("mouseleave", function() {
+				var id = $(this).data("id");
+				var layer = markers._featureGroup._layers[id];
+				layer.hideLabel();
+				layer._resetZIndex();
+			});
+
+		}
+	});
+
+	var sorted_keys = Object.keys(a).sort();
+	for ( var i = 0; i < sorted_keys.length; ++i) {
+		$('#poilist').append(a[sorted_keys[i]]);
+	}
+
 }
 
 function getCSV(){

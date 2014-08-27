@@ -205,6 +205,26 @@ function report_poi (e) {
 var locate=0;
 var markers = new L.MarkerClusterGroup({ disableClusteringAtZoom: 14 });
 
+function funcClick() {
+	var id = $(this).data("id");
+	var layer = markers._featureGroup._layers[id];
+	layer.fire('click');
+}
+
+function funcMouseOver() {
+	var id = $(this).data("id");
+	var layer = markers._featureGroup._layers[id];
+	layer.fire('mouseover');
+	layer._bringToFront();
+}
+
+function funcMouseLeave() {
+	var id = $(this).data("id");
+	var layer = markers._featureGroup._layers[id];
+	layer.hideLabel();
+	layer._resetZIndex();
+}
+
 function reloadList() {
 	$('#poilist').html('');
 	var a = {};
@@ -215,25 +235,11 @@ function reloadList() {
 					+ '<span class="name"><a class="poilist-item">'
 					+ layer.el.getIconDiv() + layer.el.getName()
 					+ '</a></span>' + '</div>' + '</li>');
-			a[layer.el.getName()].click(function() {
-				var id = $(this).data("id");
-				var layer = markers._featureGroup._layers[id];
-				layer.fire('click');
-			});
+			a[layer.el.getName()].click(funcClick);
 
-			a[layer.el.getName()].on("mouseenter", function() {
-				var id = $(this).data("id");
-				var layer = markers._featureGroup._layers[id];
-				layer.fire('mouseover');
-				layer._bringToFront();
-			});
+			a[layer.el.getName()].on("mouseenter", funcMouseOver);
 
-			a[layer.el.getName()].on("mouseleave", function() {
-				var id = $(this).data("id");
-				var layer = markers._featureGroup._layers[id];
-				layer.hideLabel();
-				layer._resetZIndex();
-			});
+			a[layer.el.getName()].on("mouseleave", funcMouseLeave);
 
 		}
 	});

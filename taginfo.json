@@ -1,6 +1,6 @@
 {
     "data_format": 1,
-    "data_url": "http://osm24.eu/project_tags.json",
+    "data_url": "http://osm24.eu/taginfo.json",
     "project": {
         "name": "OSM24",
         "project_url": "http://osm24.eu",

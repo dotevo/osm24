@@ -3,6 +3,7 @@
     "data_url": "http://osm24.eu/taginfo.json",
     "project": {
         "name": "OSM24",
+		"description": "POIs map with opening hours and filtering.",
         "project_url": "http://osm24.eu",
         "contact_name": "Adam Jordanek",
         "contact_email": "dotevo@gmail.com"
@@ -12,18 +13,12 @@
             "key": "opening_hours"
         },
         {
-            "key": "diet:vegetarian"
-        },
-        {
             "key": "diet:vegetarian",
             "value": "yes"
         },
         {
             "key": "diet:vegetarian",
             "value": "only"
-        },
-        {
-            "key": "diet:ovo_vegetarian"
         },
         {
             "key": "diet:ovo_vegetarian",
@@ -34,18 +29,12 @@
             "value": "only"
         },
         {
-            "key": "diet:lacto_vegetarian"
-        },
-        {
             "key": "diet:lacto_vegetarian",
             "value": "yes"
         },
         {
             "key": "diet:lacto_vegetarian",
             "value": "only"
-        },
-        {
-            "key": "diet:vegan"
         },
         {
             "key": "diet:vegan",
@@ -56,18 +45,12 @@
             "value": "only"
         },
         {
-            "key": "diet:fruitarian"
-        },
-        {
             "key": "diet:fruitarian",
             "value": "yes"
         },
         {
             "key": "diet:fruitarian",
             "value": "only"
-        },
-        {
-            "key": "diet:gluten_free"
         },
         {
             "key": "diet:gluten_free",
@@ -78,9 +61,6 @@
             "value": "only"
         },
         {
-            "key": "diet:dairy_free"
-        },
-        {
             "key": "diet:dairy_free",
             "value": "yes"
         },
@@ -89,18 +69,12 @@
             "value": "only"
         },
         {
-            "key": "diet:lactose_free"
-        },
-        {
             "key": "diet:lactose_free",
             "value": "yes"
         },
         {
             "key": "diet:lactose_free",
             "value": "only"
-        },
-        {
-            "key": "diet:halal"
         },
         {
             "key": "diet:halal",
@@ -307,28 +281,19 @@
             "value": "wrestling"
         },
         {
-            "key": "real_ale"
-        },
-        {
             "key": "real_ale",
             "value": "yes"
-        },
-        {
-            "key": "real_cider"
         },
         {
             "key": "real_cider",
             "value": "yes"
         },
         {
-            "key": "microbrewery"
-        },
-        {
             "key": "microbrewery",
             "value": "yes"
         },
         {
-            "key": "male"
+            "key": "brewery"
         },
         {
             "key": "male",
@@ -339,18 +304,12 @@
             "value": "only"
         },
         {
-            "key": "female"
-        },
-        {
             "key": "female",
             "value": "yes"
         },
         {
             "key": "female",
             "value": "only"
-        },
-        {
-            "key": "gay"
         },
         {
             "key": "gay",
@@ -363,9 +322,6 @@
         {
             "key": "gay",
             "value": "welcome"
-        },
-        {
-            "key": "theatre:genre"
         },
         {
             "key": "theatre:genre",
@@ -436,28 +392,16 @@
             "value": "shadow_play"
         },
         {
-            "key": "takeaway"
-        },
-        {
             "key": "takeaway",
             "value": "yes"
-        },
-        {
-            "key": "delivery"
         },
         {
             "key": "delivery",
             "value": "yes"
         },
         {
-            "key": "wheelchair"
-        },
-        {
             "key": "wheelchair",
             "value": "yes"
-        },
-        {
-            "key": "internet_access"
         },
         {
             "key": "internet_access",
@@ -480,14 +424,8 @@
             "value": "terminal"
         },
         {
-            "key": "internet_access:fee"
-        },
-        {
             "key": "internet_access:fee",
             "value": "no"
-        },
-        {
-            "key": "smoking"
         },
         {
             "key": "smoking",

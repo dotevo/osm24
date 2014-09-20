@@ -1,0 +1,1218 @@
+{
+    "data_format": 1,
+    "data_url": "http://osm24.eu/project_tags.json",
+    "project": {
+        "name": "OSM24",
+        "project_url": "http://osm24.eu",
+        "contact_name": "Adam Jordanek",
+        "contact_email": "dotevo@gmail.com"
+    },
+    "tags": [
+        {
+            "key": "opening_hours"
+        },
+        {
+            "key": "diet:vegetarian"
+        },
+        {
+            "key": "diet:vegetarian",
+            "value": "yes"
+        },
+        {
+            "key": "diet:vegetarian",
+            "value": "only"
+        },
+        {
+            "key": "diet:ovo_vegetarian"
+        },
+        {
+            "key": "diet:ovo_vegetarian",
+            "value": "yes"
+        },
+        {
+            "key": "diet:ovo_vegetarian",
+            "value": "only"
+        },
+        {
+            "key": "diet:lacto_vegetarian"
+        },
+        {
+            "key": "diet:lacto_vegetarian",
+            "value": "yes"
+        },
+        {
+            "key": "diet:lacto_vegetarian",
+            "value": "only"
+        },
+        {
+            "key": "diet:vegan"
+        },
+        {
+            "key": "diet:vegan",
+            "value": "yes"
+        },
+        {
+            "key": "diet:vegan",
+            "value": "only"
+        },
+        {
+            "key": "diet:fruitarian"
+        },
+        {
+            "key": "diet:fruitarian",
+            "value": "yes"
+        },
+        {
+            "key": "diet:fruitarian",
+            "value": "only"
+        },
+        {
+            "key": "diet:gluten_free"
+        },
+        {
+            "key": "diet:gluten_free",
+            "value": "yes"
+        },
+        {
+            "key": "diet:gluten_free",
+            "value": "only"
+        },
+        {
+            "key": "diet:dairy_free"
+        },
+        {
+            "key": "diet:dairy_free",
+            "value": "yes"
+        },
+        {
+            "key": "diet:dairy_free",
+            "value": "only"
+        },
+        {
+            "key": "diet:lactose_free"
+        },
+        {
+            "key": "diet:lactose_free",
+            "value": "yes"
+        },
+        {
+            "key": "diet:lactose_free",
+            "value": "only"
+        },
+        {
+            "key": "diet:halal"
+        },
+        {
+            "key": "diet:halal",
+            "value": "yes"
+        },
+        {
+            "key": "diet:halal",
+            "value": "only"
+        },
+        {
+            "key": "sport",
+            "value": "aikido"
+        },
+        {
+            "key": "sport",
+            "value": "archery"
+        },
+        {
+            "key": "sport",
+            "value": "athletics"
+        },
+        {
+            "key": "sport",
+            "value": "base"
+        },
+        {
+            "key": "sport",
+            "value": "badminton"
+        },
+        {
+            "key": "sport",
+            "value": "baseball"
+        },
+        {
+            "key": "sport",
+            "value": "basketball"
+        },
+        {
+            "key": "sport",
+            "value": "beachvolleyball"
+        },
+        {
+            "key": "sport",
+            "value": "bmx"
+        },
+        {
+            "key": "sport",
+            "value": "boules"
+        },
+        {
+            "key": "sport",
+            "value": "bowls"
+        },
+        {
+            "key": "sport",
+            "value": "boxing"
+        },
+        {
+            "key": "sport",
+            "value": "canoe"
+        },
+        {
+            "key": "sport",
+            "value": "chess"
+        },
+        {
+            "key": "sport",
+            "value": "climbing"
+        },
+        {
+            "key": "sport",
+            "value": "cricket"
+        },
+        {
+            "key": "sport",
+            "value": "croquet"
+        },
+        {
+            "key": "sport",
+            "value": "cycling"
+        },
+        {
+            "key": "sport",
+            "value": "diving"
+        },
+        {
+            "key": "sport",
+            "value": "fencing"
+        },
+        {
+            "key": "sport",
+            "value": "equestrian"
+        },
+        {
+            "key": "sport",
+            "value": "golf"
+        },
+        {
+            "key": "sport",
+            "value": "gymnastics"
+        },
+        {
+            "key": "sport",
+            "value": "hockey"
+        },
+        {
+            "key": "sport",
+            "value": "horseshoes"
+        },
+        {
+            "key": "sport",
+            "value": "judo"
+        },
+        {
+            "key": "sport",
+            "value": "karting"
+        },
+        {
+            "key": "sport",
+            "value": "kitesurfing"
+        },
+        {
+            "key": "sport",
+            "value": "korfball"
+        },
+        {
+            "key": "sport",
+            "value": "motor"
+        },
+        {
+            "key": "sport",
+            "value": "orienteering"
+        },
+        {
+            "key": "sport",
+            "value": "paragliding"
+        },
+        {
+            "key": "sport",
+            "value": "pelota"
+        },
+        {
+            "key": "sport",
+            "value": "racquet"
+        },
+        {
+            "key": "sport",
+            "value": "rowing"
+        },
+        {
+            "key": "sport",
+            "value": "running"
+        },
+        {
+            "key": "sport",
+            "value": "shooting"
+        },
+        {
+            "key": "sport",
+            "value": "skating"
+        },
+        {
+            "key": "sport",
+            "value": "skateboard"
+        },
+        {
+            "key": "sport",
+            "value": "skiing"
+        },
+        {
+            "key": "sport",
+            "value": "soccer"
+        },
+        {
+            "key": "sport",
+            "value": "surfing"
+        },
+        {
+            "key": "sport",
+            "value": "swimming"
+        },
+        {
+            "key": "sport",
+            "value": "taekwondo"
+        },
+        {
+            "key": "sport",
+            "value": "tennis"
+        },
+        {
+            "key": "sport",
+            "value": "toboggan"
+        },
+        {
+            "key": "sport",
+            "value": "volleyball"
+        },
+        {
+            "key": "sport",
+            "value": "weightlifting"
+        },
+        {
+            "key": "sport",
+            "value": "wrestling"
+        },
+        {
+            "key": "real_ale"
+        },
+        {
+            "key": "real_ale",
+            "value": "yes"
+        },
+        {
+            "key": "real_cider"
+        },
+        {
+            "key": "real_cider",
+            "value": "yes"
+        },
+        {
+            "key": "microbrewery"
+        },
+        {
+            "key": "microbrewery",
+            "value": "yes"
+        },
+        {
+            "key": "male"
+        },
+        {
+            "key": "male",
+            "value": "yes"
+        },
+        {
+            "key": "male",
+            "value": "only"
+        },
+        {
+            "key": "female"
+        },
+        {
+            "key": "female",
+            "value": "yes"
+        },
+        {
+            "key": "female",
+            "value": "only"
+        },
+        {
+            "key": "gay"
+        },
+        {
+            "key": "gay",
+            "value": "yes"
+        },
+        {
+            "key": "gay",
+            "value": "only"
+        },
+        {
+            "key": "gay",
+            "value": "welcome"
+        },
+        {
+            "key": "theatre:genre"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "drama"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "comedy"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "opera"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "musical"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "ballet"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "philharmonic"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "chamber_music"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "cabaret"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "boulevard"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "circus"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "stand_up_comedy"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "political"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "variaté"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "figure"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "puppet"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "marionette"
+        },
+        {
+            "key": "theatre:genre",
+            "value": "shadow_play"
+        },
+        {
+            "key": "takeaway"
+        },
+        {
+            "key": "takeaway",
+            "value": "yes"
+        },
+        {
+            "key": "delivery"
+        },
+        {
+            "key": "delivery",
+            "value": "yes"
+        },
+        {
+            "key": "wheelchair"
+        },
+        {
+            "key": "wheelchair",
+            "value": "yes"
+        },
+        {
+            "key": "internet_access"
+        },
+        {
+            "key": "internet_access",
+            "value": "wlan"
+        },
+        {
+            "key": "internet_access",
+            "value": "yes"
+        },
+        {
+            "key": "internet_access",
+            "value": "wired"
+        },
+        {
+            "key": "internet_access",
+            "value": "public"
+        },
+        {
+            "key": "internet_access",
+            "value": "terminal"
+        },
+        {
+            "key": "internet_access:fee"
+        },
+        {
+            "key": "internet_access:fee",
+            "value": "no"
+        },
+        {
+            "key": "smoking"
+        },
+        {
+            "key": "smoking",
+            "value": "yes"
+        },
+        {
+            "key": "smoking",
+            "value": "dedicated"
+        },
+        {
+            "key": "smoking",
+            "value": "isolated"
+        },
+        {
+            "key": "smoking",
+            "value": "separated"
+        },
+        {
+            "key": "contact:facebook"
+        },
+        {
+            "key": "contact:phone"
+        },
+        {
+            "key": "contact:website"
+        },
+        {
+            "key": "contact:email"
+        },
+        {
+            "key": "alcohol",
+            "value": "yes"
+        },
+        {
+            "key": "atm",
+            "value": "yes"
+        },
+        {
+            "key": "cuisine"
+        },
+        {
+            "key": "cuisine",
+            "value": "bagel"
+        },
+        {
+            "key": "cuisine",
+            "value": "barbecue"
+        },
+        {
+            "key": "cuisine",
+            "value": "bougatsa"
+        },
+        {
+            "key": "cuisine",
+            "value": "burger"
+        },
+        {
+            "key": "cuisine",
+            "value": "cake"
+        },
+        {
+            "key": "cuisine",
+            "value": "chicken"
+        },
+        {
+            "key": "cuisine",
+            "value": "crepe"
+        },
+        {
+            "key": "cuisine",
+            "value": "couscous"
+        },
+        {
+            "key": "cuisine",
+            "value": "curry"
+        },
+        {
+            "key": "cuisine",
+            "value": "donut"
+        },
+        {
+            "key": "cuisine",
+            "value": "doughnut"
+        },
+        {
+            "key": "cuisine",
+            "value": "empanada"
+        },
+        {
+            "key": "cuisine",
+            "value": "friture"
+        },
+        {
+            "key": "cuisine",
+            "value": "kebab"
+        },
+        {
+            "key": "cuisine",
+            "value": "mediterranean"
+        },
+        {
+            "key": "cuisine",
+            "value": "noodle"
+        },
+        {
+            "key": "cuisine",
+            "value": "pancake"
+        },
+        {
+            "key": "cuisine",
+            "value": "pasta"
+        },
+        {
+            "key": "cuisine",
+            "value": "pie"
+        },
+        {
+            "key": "cuisine",
+            "value": "pizza"
+        },
+        {
+            "key": "cuisine",
+            "value": "regional"
+        },
+        {
+            "key": "cuisine",
+            "value": "sandwich"
+        },
+        {
+            "key": "cuisine",
+            "value": "sausage"
+        },
+        {
+            "key": "cuisine",
+            "value": "seafood"
+        },
+        {
+            "key": "cuisine",
+            "value": "sushi"
+        },
+        {
+            "key": "cuisine",
+            "value": "divider"
+        },
+        {
+            "key": "cuisine",
+            "value": "african"
+        },
+        {
+            "key": "cuisine",
+            "value": "american"
+        },
+        {
+            "key": "cuisine",
+            "value": "arab"
+        },
+        {
+            "key": "cuisine",
+            "value": "argentinian"
+        },
+        {
+            "key": "cuisine",
+            "value": "asian"
+        },
+        {
+            "key": "cuisine",
+            "value": "baiana"
+        },
+        {
+            "key": "cuisine",
+            "value": "balkan"
+        },
+        {
+            "key": "cuisine",
+            "value": "basque"
+        },
+        {
+            "key": "cuisine",
+            "value": "bavarian"
+        },
+        {
+            "key": "cuisine",
+            "value": "brazilian"
+        },
+        {
+            "key": "cuisine",
+            "value": "cantonese"
+        },
+        {
+            "key": "cuisine",
+            "value": "capixaba"
+        },
+        {
+            "key": "cuisine",
+            "value": "caribbean"
+        },
+        {
+            "key": "cuisine",
+            "value": "chinese"
+        },
+        {
+            "key": "cuisine",
+            "value": "croatian"
+        },
+        {
+            "key": "cuisine",
+            "value": "czech"
+        },
+        {
+            "key": "cuisine",
+            "value": "french"
+        },
+        {
+            "key": "cuisine",
+            "value": "german"
+        },
+        {
+            "key": "cuisine",
+            "value": "greek"
+        },
+        {
+            "key": "cuisine",
+            "value": "gaucho"
+        },
+        {
+            "key": "cuisine",
+            "value": "hunan"
+        },
+        {
+            "key": "cuisine",
+            "value": "hungarian"
+        },
+        {
+            "key": "cuisine",
+            "value": "indian"
+        },
+        {
+            "key": "cuisine",
+            "value": "international"
+        },
+        {
+            "key": "cuisine",
+            "value": "iranian"
+        },
+        {
+            "key": "cuisine",
+            "value": "italian"
+        },
+        {
+            "key": "cuisine",
+            "value": "japanese"
+        },
+        {
+            "key": "cuisine",
+            "value": "korean"
+        },
+        {
+            "key": "cuisine",
+            "value": "lebanese"
+        },
+        {
+            "key": "cuisine",
+            "value": "mexican"
+        },
+        {
+            "key": "cuisine",
+            "value": "mineira"
+        },
+        {
+            "key": "cuisine",
+            "value": "peruvian"
+        },
+        {
+            "key": "cuisine",
+            "value": "polish"
+        },
+        {
+            "key": "cuisine",
+            "value": "portuguese"
+        },
+        {
+            "key": "cuisine",
+            "value": "russian"
+        },
+        {
+            "key": "cuisine",
+            "value": "shandong"
+        },
+        {
+            "key": "cuisine",
+            "value": "sichuan"
+        },
+        {
+            "key": "cuisine",
+            "value": "spanish"
+        },
+        {
+            "key": "cuisine",
+            "value": "thai"
+        },
+        {
+            "key": "cuisine",
+            "value": "turkish"
+        },
+        {
+            "key": "sport"
+        },
+        {
+            "key": "office"
+        },
+        {
+            "key": "shop"
+        },
+        {
+            "key": "shop",
+            "value": "alcohol"
+        },
+        {
+            "key": "shop",
+            "value": "antiques"
+        },
+        {
+            "key": "shop",
+            "value": "art"
+        },
+        {
+            "key": "shop",
+            "value": "baby_goods"
+        },
+        {
+            "key": "shop",
+            "value": "bag"
+        },
+        {
+            "key": "shop",
+            "value": "bakery"
+        },
+        {
+            "key": "shop",
+            "value": "beauty"
+        },
+        {
+            "key": "shop",
+            "value": "bicycle"
+        },
+        {
+            "key": "shop",
+            "value": "books"
+        },
+        {
+            "key": "shop",
+            "value": "boutique"
+        },
+        {
+            "key": "shop",
+            "value": "butcher"
+        },
+        {
+            "key": "shop",
+            "value": "car"
+        },
+        {
+            "key": "shop",
+            "value": "car_parts"
+        },
+        {
+            "key": "shop",
+            "value": "car_repair"
+        },
+        {
+            "key": "shop",
+            "value": "chemist"
+        },
+        {
+            "key": "shop",
+            "value": "clothes"
+        },
+        {
+            "key": "shop",
+            "value": "computer"
+        },
+        {
+            "key": "shop",
+            "value": "confectionery"
+        },
+        {
+            "key": "shop",
+            "value": "convenience"
+        },
+        {
+            "key": "shop",
+            "value": "copyshop"
+        },
+        {
+            "key": "shop",
+            "value": "dog_hairdresser"
+        },
+        {
+            "key": "shop",
+            "value": "doityourself"
+        },
+        {
+            "key": "shop",
+            "value": "fabric"
+        },
+        {
+            "key": "shop",
+            "value": "farm"
+        },
+        {
+            "key": "shop",
+            "value": "fishing"
+        },
+        {
+            "key": "shop",
+            "value": "florist"
+        },
+        {
+            "key": "shop",
+            "value": "funeral_directors"
+        },
+        {
+            "key": "shop",
+            "value": "furniture"
+        },
+        {
+            "key": "shop",
+            "value": "garden_centre"
+        },
+        {
+            "key": "shop",
+            "value": "gift"
+        },
+        {
+            "key": "shop",
+            "value": "greengrocer"
+        },
+        {
+            "key": "shop",
+            "value": "haberdashery"
+        },
+        {
+            "key": "shop",
+            "value": "hairdresser"
+        },
+        {
+            "key": "shop",
+            "value": "hardware"
+        },
+        {
+            "key": "shop",
+            "value": "hearing_aids"
+        },
+        {
+            "key": "shop",
+            "value": "interior_decoration"
+        },
+        {
+            "key": "shop",
+            "value": "jewelry"
+        },
+        {
+            "key": "shop",
+            "value": "kiosk"
+        },
+        {
+            "key": "shop",
+            "value": "mall"
+        },
+        {
+            "key": "shop",
+            "value": "mobile_phone"
+        },
+        {
+            "key": "shop",
+            "value": "motorcycle"
+        },
+        {
+            "key": "shop",
+            "value": "music"
+        },
+        {
+            "key": "shop",
+            "value": "musical_instruments"
+        },
+        {
+            "key": "shop",
+            "value": "newsagent"
+        },
+        {
+            "key": "shop",
+            "value": "optician"
+        },
+        {
+            "key": "shop",
+            "value": "pet"
+        },
+        {
+            "key": "shop",
+            "value": "second_hand"
+        },
+        {
+            "key": "shop",
+            "value": "shoes"
+        },
+        {
+            "key": "shop",
+            "value": "seafood"
+        },
+        {
+            "key": "shop",
+            "value": "supermarket"
+        },
+        {
+            "key": "shop",
+            "value": "tobacco"
+        },
+        {
+            "key": "shop",
+            "value": "toys"
+        },
+        {
+            "key": "shop",
+            "value": "travel_agency"
+        },
+        {
+            "key": "shop",
+            "value": "tyres"
+        },
+        {
+            "key": "shop",
+            "value": "video"
+        },
+        {
+            "key": "amenity",
+            "value": "school"
+        },
+        {
+            "key": "amenity",
+            "value": "university"
+        },
+        {
+            "key": "amenity",
+            "value": "college"
+        },
+        {
+            "key": "amenity",
+            "value": "kindergarten"
+        },
+        {
+            "key": "amenity",
+            "value": "library"
+        },
+        {
+            "key": "amenity",
+            "value": "atm"
+        },
+        {
+            "key": "amenity",
+            "value": "toilets"
+        },
+        {
+            "key": "amenity",
+            "value": "drinking_water"
+        },
+        {
+            "key": "amenity",
+            "value": "shelter"
+        },
+        {
+            "key": "amenity",
+            "value": "bar"
+        },
+        {
+            "key": "amenity",
+            "value": "bank"
+        },
+        {
+            "key": "amenity",
+            "value": "pub"
+        },
+        {
+            "key": "amenity",
+            "value": "restaurant"
+        },
+        {
+            "key": "amenity",
+            "value": "fast_food"
+        },
+        {
+            "key": "amenity",
+            "value": "fuel"
+        },
+        {
+            "key": "amenity",
+            "value": "cafe"
+        },
+        {
+            "key": "amenity",
+            "value": "nightclub"
+        },
+        {
+            "key": "amenity",
+            "value": "pharmacy"
+        },
+        {
+            "key": "amenity",
+            "value": "biergarten"
+        },
+        {
+            "key": "amenity",
+            "value": "stripclub"
+        },
+        {
+            "key": "amenity",
+            "value": "ice_cream"
+        },
+        {
+            "key": "amenity",
+            "value": "theatre"
+        },
+        {
+            "key": "amenity",
+            "value": "cinema"
+        },
+        {
+            "key": "leisure"
+        },
+        {
+            "key": "leisure",
+            "value": "stadium"
+        },
+        {
+            "key": "leisure",
+            "value": "pitch"
+        },
+        {
+            "key": "leisure",
+            "value": "swimming_pool"
+        },
+        {
+            "key": "leisure",
+            "value": "track"
+        },
+        {
+            "key": "leisure",
+            "value": "sports_centre"
+        },
+        {
+            "key": "craft"
+        },
+        {
+            "key": "craft",
+            "value": "key_cutter"
+        },
+        {
+            "key": "craft",
+            "value": "clockmaker"
+        },
+        {
+            "key": "craft",
+            "value": "glaziery"
+        },
+        {
+            "key": "craft",
+            "value": "photographer"
+        },
+        {
+            "key": "craft",
+            "value": "shoemaker"
+        },
+        {
+            "key": "craft",
+            "value": "tailor"
+        },
+        {
+            "key": "emergency",
+            "value": "defibrillator"
+        },
+        {
+            "key": "tourism"
+        },
+        {
+            "key": "tourism",
+            "value": "guest_house"
+        },
+        {
+            "key": "tourism",
+            "value": "motel"
+        },
+        {
+            "key": "tourism",
+            "value": "hotel"
+        },
+        {
+            "key": "tourism",
+            "value": "caravan_site"
+        },
+        {
+            "key": "tourism",
+            "value": "camp_site"
+        },
+        {
+            "key": "tourism",
+            "value": "information"
+        },
+        {
+            "key": "tourism",
+            "value": "attraction"
+        },
+        {
+            "key": "tourism",
+            "value": "theme_park"
+        },
+        {
+            "key": "tourism",
+            "value": "zoo"
+        },
+        {
+            "key": "tourism",
+            "value": "museum"
+        },
+        {
+            "key": "tourism",
+            "value": "artwork"
+        }
+    ]
+}

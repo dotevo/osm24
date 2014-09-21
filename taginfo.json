@@ -392,6 +392,54 @@
             "value": "shadow_play"
         },
         {
+            "key": "payment:coins",
+            "value": "yes"
+        },
+        {
+            "key": "payment:coins",
+            "value": "only"
+        },
+        {
+            "key": "payment:debit_cards",
+            "value": "yes"
+        },
+        {
+            "key": "payment:debit_cards",
+            "value": "only"
+        },
+        {
+            "key": "payment:credit_cards",
+            "value": "yes"
+        },
+        {
+            "key": "payment:credit_cards",
+            "value": "only"
+        },
+        {
+            "key": "payment:bitcoin",
+            "value": "yes"
+        },
+        {
+            "key": "payment:bitcoin",
+            "value": "only"
+        },
+        {
+            "key": "payment:litecoin",
+            "value": "yes"
+        },
+        {
+            "key": "payment:litecoin",
+            "value": "only"
+        },
+        {
+            "key": "payment:peercoin",
+            "value": "yes"
+        },
+        {
+            "key": "payment:peercoin",
+            "value": "only"
+        },
+        {
             "key": "takeaway",
             "value": "yes"
         },

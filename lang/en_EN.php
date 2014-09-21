@@ -282,6 +282,15 @@ define('PANEL_TOURISM_ATTRACTION','Attraction');
 define('PANEL_TOURISM_ACCOMMODATION','Accommodation');
 define('PANEL_TOURISM_INFORMATION','Information');
 
+define('PANEL_PAYMENT','Payment');
+define('PANEL_PAYMENT_HEADER','Select');
+define('PANEL_PAYMENT_COINS','Coins');
+define('PANEL_PAYMENT_DEBIT_CARDS','Debit cards');
+define('PANEL_PAYMENT_CREDIT_CARDS','Credit cards');
+define('PANEL_PAYMENT_BITCOIN','Bitcoin');
+define('PANEL_PAYMENT_LITECOIN','Litecoin');
+define('PANEL_PAYMENT_PEERCOIN','Peercoin');
+
 define('PANEL_OTHER','Other');
 define('PANEL_OTHER_HEADER','No set/Yes');
 define('PANEL_OTHER_TAKE_AWAY','Take away');

@@ -280,6 +280,15 @@ define('PANEL_TOURISM_ATTRACTION','Attraction'); // FIXME
 define('PANEL_TOURISM_ACCOMMODATION','Accommodation'); // FIXME
 define('PANEL_TOURISM_INFORMATION','Information'); // FIXME
 
+define('PANEL_PAYMENT','Payment'); // FIXME
+define('PANEL_PAYMENT_HEADER','Select'); // FIXME
+define('PANEL_PAYMENT_COINS','Coins'); // FIXME
+define('PANEL_PAYMENT_DEBIT_CARDS','Debit cards'); // FIXME
+define('PANEL_PAYMENT_CREDIT_CARDS','Credit cards'); // FIXME
+define('PANEL_PAYMENT_BITCOIN','Bitcoin'); // FIXME
+define('PANEL_PAYMENT_LITECOIN','Litecoin'); // FIXME
+define('PANEL_PAYMENT_PEERCOIN','Peercoin'); // FIXME
+
 define('PANEL_OTHER','Altro');
 define('PANEL_OTHER_HEADER','Non selezionato/Sì');
 define('PANEL_OTHER_TAKE_AWAY','Asporto');

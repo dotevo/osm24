@@ -496,6 +496,19 @@ include("language.php");
               </ul>
             </li>
 
+            <li class="dropdown  btn-group btn-group-own">
+              <a class="dropdown-toggle btn-select" id="payment" data-toggle="dropdown" ><?php echo PANEL_PAYMENT;?><span class="caret"></span></a>
+              <ul class="dropdown-menu dropdown-always-on  tag-parent">
+                <li class="dropdown-header"><?php echo PANEL_PAYMENT_HEADER;?></li>
+                <li class="select-multi-state"><a id="payment_coins" data-tag-pair-s1="['payment:coins'~'yes|only']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span><?php echo PANEL_PAYMENT_COINS;?></a></li>
+                <li class="select-multi-state"><a id="payment_debit_cards" data-tag-pair-s1="['payment:debit_cards'~'yes|only']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span><?php echo PANEL_PAYMENT_DEBIT_CARDS;?></a></li>
+                <li class="select-multi-state"><a id="payment_credit_cards" data-tag-pair-s1="['payment:credit_cards'~'yes|only']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span><?php echo PANEL_PAYMENT_CREDIT_CARDS;?></a></li>
+                <li class="select-multi-state"><a id="payment_bitcoin" data-tag-pair-s1="['payment:bitcoin'~'yes|only']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span><?php echo PANEL_PAYMENT_BITCOIN;?></a></li>
+                <li class="select-multi-state"><a id="payment_litecoin" data-tag-pair-s1="['payment:litecoin'~'yes|only']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span><?php echo PANEL_PAYMENT_LITECOIN;?></a></li>
+                <li class="select-multi-state"><a id="payment_peercoin" data-tag-pair-s1="['payment:peercoin'~'yes|only']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span><?php echo PANEL_PAYMENT_PEERCOIN;?></a></li>
+              </ul>
+            </li>
+
             <li class="dropdown  btn-group btn-group-own ">
               <a class="dropdown-toggle btn-select" id="other" data-toggle="dropdown" ><?php echo PANEL_OTHER;?><span class="caret"></span></a>
               <ul class="dropdown-menu dropdown-always-on  tag-parent">

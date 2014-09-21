@@ -5,7 +5,7 @@ if(isset($_GET['lang'])){
   $_SESSION['lang'] = $lang;
 }
 
-if(isset($_SESSION['lang'])){
+if(!isset($_SESSION['lang'])){
   //Create supported langs array
   $files = scandir("lang");
   foreach($files as $file){
@@ -16,7 +16,7 @@ if(isset($_SESSION['lang'])){
       $supportedLangs[$filen[0]]=$file;
       //if type pl_PL
       if(count($filen)>1)
-        $supportedLangs[$filen[0]."-".$filen[1]]=$file;
+        $supportedLangs[$filen[0]."-".$filen[1]]=$filen[0]."_".$filen[1];
     }
   }
   //Language detection from browser

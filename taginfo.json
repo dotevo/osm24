@@ -440,6 +440,38 @@
             "value": "only"
         },
         {
+            "key": "amenity",
+            "value": "clinic"
+        },
+        {
+            "key": "amenity",
+            "value": "dentist"
+        },
+        {
+            "key": "amenity",
+            "value": "doctors"
+        },
+        {
+            "key": "amenity",
+            "value": "hospital"
+        },
+        {
+            "key": "amenity",
+            "value": "social_facility"
+        },
+        {
+            "key": "amenity",
+            "value": "veterinary"
+        },
+        {
+            "key": "emergency",
+            "value": "ambulance_station"
+        },
+        {
+            "key": "emergency",
+            "value": "defibrillator"
+        },
+        {
             "key": "takeaway",
             "value": "yes"
         },

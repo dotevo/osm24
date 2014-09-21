@@ -1,9 +1,19 @@
-var shop_icons=["alcohol",'antiques',"art","baby_goods","bag","bakery","beauty","bicycle","books","boutique","butcher","car","car_parts","car_repair","chemist","clothes","computer","confectionery","convenience","copyshop","dog_hairdresser","doityourself","fabric","farm","fishing","florist","funeral_directors","furniture","garden_centre","gift","greengrocer","haberdashery","hairdresser","hardware","hearing_aids","interior_decoration","jewelry","kiosk","mall","mobile_phone","motorcycle","music","musical_instruments","newsagent","optician","pet","second_hand","shoes","seafood","supermarket","tobacco","toys","travel_agency","tyres","video"];
+var shop_icons=["alcohol",'antiques',"art",
+"baby_goods","bag","bakery","beauty","bicycle","books","boutique","butcher",
+"car","car_parts","car_repair","chemist","clothes","computer","confectionery","convenience","copyshop",
+"dog_hairdresser","doityourself",
+"fabric","farm","fishing","florist","funeral_directors","furniture",
+"garden_centre","gift","greengrocer",
+"haberdashery","hairdresser","hardware","hearing_aids",
+"interior_decoration","jewelry","kiosk","mall","mobile_phone","motorcycle","music","musical_instruments",
+"newsagent","optician","pet","second_hand","shoes","seafood","supermarket","tobacco","toys","travel_agency","tyres","video"];
 var leisure_icons=['pitch','swimming_pool','stadium','track','sports_centre'];
-var amenity_icons=['school','university','college','kindergarten','library','atm','toilets','drinking_water','shelter','bar','bank','pub','restaurant','fast_food','fuel','cafe','nightclub','pharmacy','biergarten','stripclub','ice_cream','theatre','cinema'];
+var amenity_icons=['atm','bar','bank','biergarten','cafe','cinema','clinic','college','dentist','doctors','drinking_water',
+'fast_food','fuel','hospital','ice_cream','kindergarten','library','nightclub',
+'pub','pharmacy','restaurant','school','shelter','social_facility','stripclub','theatre','toilets','university','veterinary'];
 var office_icons=[];
 var craft_icons=['key_cutter','clockmaker','glaziery','photographer','shoemaker','tailor'];
-var emergency_icons=['defibrillator'];
+var emergency_icons=['ambulance_station','defibrillator'];
 var tourism_icons=['guest_house','motel','hotel','caravan_site','camp_site','information','attraction','theme_park','zoo','museum','artwork'];
 
 function POI(element){

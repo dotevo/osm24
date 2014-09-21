@@ -6,7 +6,7 @@ define('PANEL_EXERCISE','Sport');
 define('PANEL_OFFICE','Uffici');
 define('PANEL_CRAFT','Craft');
 define('PANEL_NEED','Necessità');
-define('PANEL_HEALTH', 'Health'); //FIXME
+define('PANEL_EMERGENCY', 'Emergenza');
 define('PANEL_MONEY','Soldi');
 define('PANEL_CULTURE','Culture'); //FIXME
 define('PANEL_EDUCATION','Education'); //FIXME
@@ -151,16 +151,9 @@ define('PANEL_NEED_TOILETS','Bagni');
 define('PANEL_NEED_DRINKING_WATER','Fontanelle');
 define('PANEL_NEED_SHELTER','Rifugio');
 
-define('PANEL_HEALTH_LIST','List'); // FIXME
-define('PANEL_HEALTH_LIST_HEADER','Include'); // FIXME
-define('PANEL_HEALTH_CLINIC','Clinic'); // FIXME
-define('PANEL_HEALTH_DENTIST','Dentist'); // FIXME
-define('PANEL_HEALTH_DOCTORS','Doctors'); // FIXME
-define('PANEL_HEALTH_PHARMACY','Pharmacy'); // FIXME
-define('PANEL_HEALTH_VETERINARY','Veterinary'); // FIXME
-define('PANEL_HEALTH_SOCIAL_FACILITY','Social facility'); // FIXME
-define('PANEL_HEALTH_AMBULANCE_STATION','Ambulance station'); // FIXME
-define('PANEL_HEALTH_DEFIBRILLATOR','Defibrillator'); // FIXME
+define('PANEL_EMERGENCY_LIST', 'Lista');
+define('PANEL_EMERGENCY_LIST_HEADER', 'Includi');
+define('PANEL_EMERGENCY_DEFIBRILLATOR', 'Defibrillatore');
 
 define('PANEL_ACCESS','Accesso');
 define('PANEL_ACCESS_HEADER','Non selezionato/Sì/Solo');

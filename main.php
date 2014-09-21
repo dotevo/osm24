@@ -98,7 +98,7 @@ include("language.php");
                 <li><a id="all"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']@[shop]@[office]@[craft]@[sport]@[amenity=toilets]@[amenity=drinking_water]@['amenity'='pub']@['amenity'='bar']@['amenity'='nightclub']@['amenity'='biergarten']@['amenity'='stripclub']@[amenity='pharmacy']@[amenity='fuel']@['amenity'='bank']@['amenity'='atm']@['amenity'='cinema']@['amenity'='theatre']@['amenity'='college']@['amenity'='library']@['amenity'='university']@['amenity'='kindergarten']@[tourism]" data-tag-type="main"><?php echo PANEL_ALL;?></a></li>
                 <li class="divider"></li>                
                 <li><a id="craft"><?php echo PANEL_CRAFT;?></a></li>
-                <li><a id="emergency"><?php echo PANEL_EMERGENCY;?></a></li>
+                <li><a id="health"><?php echo PANEL_HEALTH;?></a></li>
                 <li><a id="eat"  data-tag-pair="['amenity'='restaurant']@['amenity'='fast_food']@['amenity'='cafe']@['amenity'='ice_cream']" data-tag-type="main"><?php echo PANEL_EAT;?></a></li>
                 <li><a id="money"><?php echo PANEL_MONEY;?></a></li>
                 <li><a id="need"><?php echo PANEL_NEED;?></a></li>
@@ -195,7 +195,6 @@ include("language.php");
               </ul>
             </li>
 
-
             <li class="dropdown  btn-group btn-group-own  visible-money">
               <a class="dropdown-toggle btn-select tag-default" id="mon" data-toggle="dropdown" data-default-id="place_all" data-arrow><?php echo PANEL_PLACE_ALL;?><span class="caret"></span></a>
               <ul class="dropdown-menu select-one dropdown-menu-long tag-parent">
@@ -205,17 +204,6 @@ include("language.php");
                 <li><a id="atm" data-tag-pair="['amenity'='atm']@[atm=yes]" data-tag-type="main"><?php echo PANEL_PLACE_ATM;?></a></li>
               </ul>
             </li>
-
-<!--
-            <li class="dropdown  btn-group btn-group-own ">
-              <a class="dropdown-toggle btn-select" id="payment" data-toggle="dropdown" >Payment <span class="caret"></span></a>
-              <ul class="dropdown-menu select-multi">
-                <li><a id="card"><span style="display:none;" class="glyphicon glyphicon-ok"></span>Card</a></li>
-                <li><a id="card2"><span style="display:none;" class="glyphicon glyphicon-ok"></span>TODO</a></li>
-                <li><a id="card3"><span style="display:none;" class="glyphicon glyphicon-ok"></span>TODO</a></li>
-              </ul>
-            </li>
--->
 
             <li class="dropdown  btn-group btn-group-own  visible-eat">
               <a class="dropdown-toggle btn-select" id="diet" data-toggle="dropdown" ><?php echo PANEL_DIET;?><span class="caret"></span></a>
@@ -282,11 +270,18 @@ include("language.php");
               </ul>
             </li>
 
-            <li style="display:none;" class="dropdown  btn-group btn-group-own  visible-emergency">
-              <a class="dropdown-toggle btn-select" id="emergency-list" data-toggle="dropdown" ><?php echo PANEL_EMERGENCY_LIST;?><span class="caret"></span></a>
+            <li style="display:none;" class="dropdown  btn-group btn-group-own  visible-health">
+              <a class="dropdown-toggle btn-select" id="health-list" data-toggle="dropdown" ><?php echo PANEL_HEALTH_LIST;?><span class="caret"></span></a>
               <ul class="dropdown-menu dropdown-always-on  tag-parent">
-                <li class="dropdown-header"><?php echo PANEL_EMERGENCY_LIST_HEADER;?></li>
-                <li class="select-multi-state"><a id="defibrillator" data-tag-pair-s0="['emergency'='defibrillator']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_EMERGENCY_DEFIBRILLATOR;?></a></li>
+                <li class="dropdown-header"><?php echo PANEL_HEALTH_LIST_HEADER;?></li>
+                <li class="select-multi-state"><a id="hclinic" data-tag-pair-s0="['amenity'='clinic']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_HEALTH_CLINIC;?></a></li>
+                <li class="select-multi-state"><a id="hdentist" data-tag-pair-s0="['amenity'='dentist']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_HEALTH_DENTIST;?></a></li>
+                <li class="select-multi-state"><a id="hdoctors" data-tag-pair-s0="['amenity'='doctors']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_HEALTH_DOCTORS;?></a></li>
+                <li class="select-multi-state"><a id="hpharmacy" data-tag-pair-s0="['amenity'='pharmacy']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_HEALTH_PHARMACY;?></a></li>
+                <li class="select-multi-state"><a id="hvet" data-tag-pair-s0="['amenity'='veterinary']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_HEALTH_VETERINARY;?></a></li>
+                <li class="select-multi-state"><a id="hsocial" data-tag-pair-s0="['amenity'='social_facility']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_HEALTH_SOCIAL_FACILITY;?></a></li>
+                <li class="select-multi-state"><a id="hambulance" data-tag-pair-s0="['emergency'='ambulance_station']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_HEALTH_AMBULANCE_STATION;?></a></li>
+                <li class="select-multi-state"><a id="hdefibrillator" data-tag-pair-s0="['emergency'='defibrillator']" data-tag-type="main"><span class="glyphicon glyphicon-ok state0"></span><span style="display:none;" class="glyphicon glyphicon-remove state1"></span><?php echo PANEL_HEALTH_DEFIBRILLATOR;?></a></li>
               </ul>
             </li>
 

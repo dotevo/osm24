@@ -12,11 +12,12 @@ if(!isset($_SESSION['lang'])){
     $filen=explode(".",$file);
     //is lang
     if(strlen($filen[0])>0){
-      $filen=explode("_",$filen[0]);
-      $supportedLangs[$filen[0]]=$file;
+      $locale_code=$filen[0]; //Extention '.php' is dropeed, so 'pt_BR.php' becomes 'pt_BR'
+      $filen=explode("_",$locale_code);
+      $supportedLangs[$filen[0]]=$lan_code;
       //if type pl_PL
       if(count($filen)>1)
-        $supportedLangs[$filen[0]."-".$filen[1]]=$filen[0]."_".$filen[1];
+        $supportedLangs[$filen[0]."-".$filen[1]]=$locale_code;
     }
   }
   //Language detection from browser

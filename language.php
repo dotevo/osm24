@@ -14,7 +14,7 @@ if(!isset($_SESSION['lang'])){
     if(strlen($filen[0])>0){
       $locale_code=$filen[0]; //Extention '.php' is dropeed, so 'pt_BR.php' becomes 'pt_BR'
       $filen=explode("_",$locale_code);
-      $supportedLangs[$filen[0]]=$lan_code;
+      $supportedLangs[$filen[0]]=$locale_code;
       //if type pl_PL
       if(count($filen)>1)
         $supportedLangs[$filen[0]."-".$filen[1]]=$locale_code;

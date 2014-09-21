@@ -392,6 +392,86 @@
             "value": "shadow_play"
         },
         {
+            "key": "payment:coins",
+            "value": "yes"
+        },
+        {
+            "key": "payment:coins",
+            "value": "only"
+        },
+        {
+            "key": "payment:debit_cards",
+            "value": "yes"
+        },
+        {
+            "key": "payment:debit_cards",
+            "value": "only"
+        },
+        {
+            "key": "payment:credit_cards",
+            "value": "yes"
+        },
+        {
+            "key": "payment:credit_cards",
+            "value": "only"
+        },
+        {
+            "key": "payment:bitcoin",
+            "value": "yes"
+        },
+        {
+            "key": "payment:bitcoin",
+            "value": "only"
+        },
+        {
+            "key": "payment:litecoin",
+            "value": "yes"
+        },
+        {
+            "key": "payment:litecoin",
+            "value": "only"
+        },
+        {
+            "key": "payment:peercoin",
+            "value": "yes"
+        },
+        {
+            "key": "payment:peercoin",
+            "value": "only"
+        },
+        {
+            "key": "amenity",
+            "value": "clinic"
+        },
+        {
+            "key": "amenity",
+            "value": "dentist"
+        },
+        {
+            "key": "amenity",
+            "value": "doctors"
+        },
+        {
+            "key": "amenity",
+            "value": "hospital"
+        },
+        {
+            "key": "amenity",
+            "value": "social_facility"
+        },
+        {
+            "key": "amenity",
+            "value": "veterinary"
+        },
+        {
+            "key": "emergency",
+            "value": "ambulance_station"
+        },
+        {
+            "key": "emergency",
+            "value": "defibrillator"
+        },
+        {
             "key": "takeaway",
             "value": "yes"
         },

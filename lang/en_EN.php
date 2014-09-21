@@ -7,7 +7,7 @@ define('PANEL_EXERCISE','Sport');
 define('PANEL_OFFICE','Office');
 define('PANEL_CRAFT','Craft');
 define('PANEL_NEED','Needs');
-define('PANEL_EMERGENCY', 'Emergency');
+define('PANEL_HEALTH', 'Health');
 define('PANEL_MONEY','Money');
 define('PANEL_CULTURE','Culture');
 define('PANEL_EDUCATION','Education');
@@ -152,9 +152,16 @@ define('PANEL_NEED_TOILETS','Toilets');
 define('PANEL_NEED_DRINKING_WATER','Drinking water');
 define('PANEL_NEED_SHELTER','Shelter');
 
-define('PANEL_EMERGENCY_LIST', 'List');
-define('PANEL_EMERGENCY_LIST_HEADER', 'Include');
-define('PANEL_EMERGENCY_DEFIBRILLATOR', 'Defibrillator');
+define('PANEL_HEALTH_LIST','List');
+define('PANEL_HEALTH_LIST_HEADER','Include');
+define('PANEL_HEALTH_CLINIC','Clinic');
+define('PANEL_HEALTH_DENTIST','Dentist');
+define('PANEL_HEALTH_DOCTORS','Doctors');
+define('PANEL_HEALTH_PHARMACY','Pharmacy');
+define('PANEL_HEALTH_VETERINARY','Veterinary');
+define('PANEL_HEALTH_SOCIAL_FACILITY','Social facility');
+define('PANEL_HEALTH_AMBULANCE_STATION','Ambulance station');
+define('PANEL_HEALTH_DEFIBRILLATOR','Defibrillator');
 
 define('PANEL_ACCESS','Access');
 define('PANEL_ACCESS_HEADER','No set/Yes/Only');
@@ -281,6 +288,15 @@ define('PANEL_TOURISM_ALL','All');
 define('PANEL_TOURISM_ATTRACTION','Attraction');
 define('PANEL_TOURISM_ACCOMMODATION','Accommodation');
 define('PANEL_TOURISM_INFORMATION','Information');
+
+define('PANEL_PAYMENT','Payment');
+define('PANEL_PAYMENT_HEADER','Select');
+define('PANEL_PAYMENT_COINS','Coins');
+define('PANEL_PAYMENT_DEBIT_CARDS','Debit cards');
+define('PANEL_PAYMENT_CREDIT_CARDS','Credit cards');
+define('PANEL_PAYMENT_BITCOIN','Bitcoin');
+define('PANEL_PAYMENT_LITECOIN','Litecoin');
+define('PANEL_PAYMENT_PEERCOIN','Peercoin');
 
 define('PANEL_OTHER','Other');
 define('PANEL_OTHER_HEADER','No set/Yes');

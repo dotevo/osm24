@@ -205,6 +205,21 @@ include("language.php");
               </ul>
             </li>
 
+            <li class="dropdown  btn-group btn-group-own visible-money">
+              <a class="dropdown-toggle btn-select" id="currency" data-toggle="dropdown" ><?php echo PANEL_CURRENCY;?><span class="caret"></span></a>
+              <ul class="dropdown-menu dropdown-always-on  tag-parent">
+                <li class="dropdown-header"><?php echo PANEL_CURRENCY_HEADER;?></li>
+                <li class="select-multi-state"><a id="currency_eur" data-tag-pair-s1="['currency:EUR'~'yes|only']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span>EUR</a></li>
+                <li class="select-multi-state"><a id="currency_pln" data-tag-pair-s1="['currency:PLN'~'yes|only']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span>PLN</a></li>
+                <li class="select-multi-state"><a id="currency_rub" data-tag-pair-s1="['currency:RUB'~'yes|only']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span>RUB</a></li>
+                <li class="select-multi-state"><a id="currency_usd" data-tag-pair-s1="['currency:USD'~'yes|only']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span>USD</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header"><?php echo PANEL_CURRENCY_CRYPTO;?></li>
+                <li class="select-multi-state"><a id="currency_xbt" data-tag-pair-s1="['currency:XBT'~'yes|only']"><span style="display:none;" class="glyphicon glyphicon-ok state1"></span>XBT (BTC)</a></li>
+              </ul>
+            </li>
+
+
             <li class="dropdown  btn-group btn-group-own  visible-eat">
               <a class="dropdown-toggle btn-select" id="diet" data-toggle="dropdown" ><?php echo PANEL_DIET;?><span class="caret"></span></a>
               <ul class="dropdown-menu dropdown-always-on  tag-parent">

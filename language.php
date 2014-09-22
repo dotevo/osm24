@@ -5,18 +5,19 @@ if(isset($_GET['lang'])){
   $_SESSION['lang'] = $lang;
 }
 
-if(isset($_SESSION['lang'])){
+if(!isset($_SESSION['lang'])){
   //Create supported langs array
   $files = scandir("lang");
   foreach($files as $file){
     $filen=explode(".",$file);
     //is lang
     if(strlen($filen[0])>0){
-      $filen=explode("_",$filen[0]);
-      $supportedLangs[$filen[0]]=$file;
+      $locale_code=$filen[0]; //Extention '.php' is dropeed, so 'pt_BR.php' becomes 'pt_BR'
+      $filen=explode("_",$locale_code);
+      $supportedLangs[$filen[0]]=$locale_code;
       //if type pl_PL
       if(count($filen)>1)
-        $supportedLangs[$filen[0]."-".$filen[1]]=$file;
+        $supportedLangs[$filen[0]."-".$filen[1]]=$locale_code;
     }
   }
   //Language detection from browser

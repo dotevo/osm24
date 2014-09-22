@@ -108,6 +108,9 @@ define('PANEL_DIET_HALAL','Halal');
 define('PANEL_PLACE_ALL','All');
 define('PANEL_PLACE_ATM','ATM');
 define('PANEL_PLACE_BANK','Bank');
+define('PANEL_CURRENCY_CRYPTO','Cryptocurrencies');
+define('PANEL_CURRENCY_HEADER','Include');
+define('PANEL_CURRENCY','Currency');
 
 define('PANEL_WHERE','Where');
 define('PANEL_WHERE_HEADER','Exclude');
@@ -179,7 +182,6 @@ define('PANEL_STORE_ELECTRONIC','Electronic');
 define('PANEL_STORE_HEALTH_AND_BEAUTY','Health and beauty');
 define('PANEL_STORE_TRANSPORT','Transport');
 define('PANEL_STORE_TRAVEL','Travel');
-
 
 define('PANEL_SPORT','Sport');
 define('PANEL_SPORT_ALL','All');

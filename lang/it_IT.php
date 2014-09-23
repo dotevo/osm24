@@ -154,6 +154,7 @@ define('PANEL_NEED_SHELTER','Rifugio');
 define('PANEL_HEALTH_LIST','List'); // FIXME
 define('PANEL_HEALTH_LIST_HEADER','Include'); // FIXME
 define('PANEL_HEALTH_CLINIC','Clinic'); // FIXME
+define('PANEL_HEALTH_HOSPITAL','Hospital'); // FIXME
 define('PANEL_HEALTH_DENTIST','Dentist'); // FIXME
 define('PANEL_HEALTH_DOCTORS','Doctors'); // FIXME
 define('PANEL_HEALTH_PHARMACY','Pharmacy'); // FIXME

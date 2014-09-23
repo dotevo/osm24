@@ -158,6 +158,7 @@ define('PANEL_NEED_SHELTER','Shelter');
 define('PANEL_HEALTH_LIST','List');
 define('PANEL_HEALTH_LIST_HEADER','Include');
 define('PANEL_HEALTH_CLINIC','Clinic');
+define('PANEL_HEALTH_HOSPITAL','Hospital');
 define('PANEL_HEALTH_DENTIST','Dentist');
 define('PANEL_HEALTH_DOCTORS','Doctors');
 define('PANEL_HEALTH_PHARMACY','Pharmacy');

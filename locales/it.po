@@ -251,7 +251,7 @@ msgid "Croquet"
 msgstr "Croquet"
 
 msgid "Cryptocurrencies"
-msgstr "PANEL_CURRENCY_CRYPTO"
+msgstr "Cryptocurrencies"
 
 msgid "Cuisine"
 msgstr "Cucina"
@@ -260,7 +260,7 @@ msgid "Culture"
 msgstr "Culture"
 
 msgid "Currency"
-msgstr "PANEL_CURRENCY"
+msgstr "Currency"
 
 msgid "Curry"
 msgstr "Curry"

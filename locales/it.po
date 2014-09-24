@@ -1,0 +1,860 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "10pin"
+msgstr "10Pin"
+
+msgid "9pin"
+msgstr "9Pin"
+
+msgid "Access"
+msgstr "Accesso"
+
+msgid "Accommodation"
+msgstr "Accommodation"
+
+msgid "Accountant"
+msgstr "Contabile"
+
+msgid "Add"
+msgstr "Aggiungi"
+
+msgid "Administrative"
+msgstr "Amministrazione"
+
+msgid "African"
+msgstr "Africano"
+
+msgid "Aikido"
+msgstr "Aikido"
+
+msgid "Alcohol"
+msgstr "Alcool"
+
+msgid "All"
+msgstr "All"
+
+msgid "Ambulance station"
+msgstr "Ambulance station"
+
+msgid "American"
+msgstr "Americano"
+
+msgid "American football"
+msgstr "Football americano"
+
+msgid "Arab"
+msgstr "Arabo"
+
+msgid "Archery"
+msgstr "Tiro con l'arco"
+
+msgid "Architect"
+msgstr "Architetto"
+
+msgid "Argentinian"
+msgstr "Argentino"
+
+msgid "Art"
+msgstr "Arte"
+
+msgid "Asian"
+msgstr "Asiatico"
+
+msgid "Association"
+msgstr "Associazioni"
+
+msgid "Athletics"
+msgstr "Atletica"
+
+msgid "ATM"
+msgstr "Bancomat"
+
+msgid "Attraction"
+msgstr "Attraction"
+
+msgid "Australian football"
+msgstr "Football australiano"
+
+msgid "Badminton"
+msgstr "Badminton"
+
+msgid "Bagel"
+msgstr "Bagel"
+
+msgid "Baiana"
+msgstr "Baiano"
+
+msgid "Balkan"
+msgstr "Balcano"
+
+msgid "Ballet"
+msgstr "Ballet"
+
+msgid "Bank"
+msgstr "Banca"
+
+msgid "Bar"
+msgstr "Bar"
+
+msgid "Barbecue"
+msgstr "Barbecue"
+
+msgid "Base"
+msgstr "Base"
+
+msgid "Baseball"
+msgstr "Baseball"
+
+msgid "Basketball"
+msgstr "Basket"
+
+msgid "Basque"
+msgstr "Basco"
+
+msgid "Bavarian"
+msgstr "Bavarese"
+
+msgid "Beach volleyball"
+msgstr "Beach volley"
+
+msgid "Beer"
+msgstr "Birra"
+
+msgid "Biergarten"
+msgstr "Biergarten"
+
+msgid "Bitcoin"
+msgstr "Bitcoin"
+
+msgid "BMX"
+msgstr "BMX"
+
+msgid "Bougatsa"
+msgstr "Bougatsa"
+
+msgid "Boules"
+msgstr "Boules"
+
+msgid "Boulevard"
+msgstr "Boulevard"
+
+msgid "Bowls"
+msgstr "Bowling"
+
+msgid "Boxing"
+msgstr "Boxe"
+
+msgid "Brazilian"
+msgstr "Brasiliano"
+
+msgid "Burger"
+msgstr "Burger"
+
+msgid "Cabaret"
+msgstr "Cabaret"
+
+msgid "Cake"
+msgstr "Torta"
+
+msgid "Canadian football"
+msgstr "Football canadese"
+
+msgid "Canoe"
+msgstr "Canoa"
+
+msgid "Cantonese"
+msgstr "Cantonese"
+
+msgid "Capixaba"
+msgstr "Capixaba"
+
+msgid "Caribbean"
+msgstr "Caraibico"
+
+msgid "Carpenter"
+msgstr "Carpenteria"
+
+msgid "Chamber music"
+msgstr "Chamber music"
+
+msgid "Chess"
+msgstr "Scacchi"
+
+msgid "Chicken"
+msgstr "Pollo"
+
+msgid "Chinese"
+msgstr "Cinese"
+
+msgid "Cirsus"
+msgstr "Circus"
+
+msgid "Climbing"
+msgstr "Arrampicata"
+
+msgid "Clinic"
+msgstr "Clinic"
+
+msgid "Clockmaker"
+msgstr "Orologeria"
+
+msgid "Close"
+msgstr "Chiudi"
+
+msgid "Clothes"
+msgstr "Vestiti"
+
+msgid "Coffee shop"
+msgstr "Cafè"
+
+msgid "Coins"
+msgstr "Coins"
+
+msgid "Collage"
+msgstr "Collage"
+
+msgid "Comedy"
+msgstr "Comedy"
+
+msgid "Couscous"
+msgstr "Couscous"
+
+msgid "Craft"
+msgstr "Craft"
+
+msgid "Credit cards"
+msgstr "Credit cards"
+
+msgid "Crepe"
+msgstr "Crépe"
+
+msgid "Cricket"
+msgstr "Cricket"
+
+msgid "Cricket nets"
+msgstr "Rete di cricket"
+
+msgid "Croatian"
+msgstr "Croato"
+
+msgid "Croquet"
+msgstr "Croquet"
+
+msgid "Cryptocurrencies"
+msgstr "PANEL_CURRENCY_CRYPTO"
+
+msgid "Cuisine"
+msgstr "Cucina"
+
+msgid "Culture"
+msgstr "Culture"
+
+msgid "Currency"
+msgstr "PANEL_CURRENCY"
+
+msgid "Curry"
+msgstr "Curry"
+
+msgid "Cycling"
+msgstr "Ciclismo"
+
+msgid "Czech"
+msgstr "Ceco"
+
+msgid "Dairy free"
+msgstr "Senza prodotti caseari"
+
+msgid "Debit cards"
+msgstr "Debit cards"
+
+msgid "Dedicated"
+msgstr "Dedicato"
+
+msgid "Defibrillator"
+msgstr "Defibrillator"
+
+msgid "Delivery"
+msgstr "Domicilio"
+
+msgid "Dentist"
+msgstr "Dentist"
+
+msgid "Diet"
+msgstr "Dieta"
+
+msgid "Diving"
+msgstr "Tuffi/Apnea"
+
+msgid "Doctors"
+msgstr "Doctors"
+
+msgid "Dog racing"
+msgstr "Corsa dei cani"
+
+msgid "Donut"
+msgstr "Donut"
+
+msgid "Doughnut"
+msgstr "Doughnut"
+
+msgid "Drama"
+msgstr "Drama"
+
+msgid "Drinking water"
+msgstr "Fontanelle"
+
+msgid "Education"
+msgstr "Education"
+
+msgid "Electronic"
+msgstr "Elettronica"
+
+msgid "Empanada"
+msgstr "Empanada"
+
+msgid "Empty"
+msgstr "Vuoto"
+
+msgid "Equestrian"
+msgstr "Cavalli"
+
+msgid "EUR"
+msgstr "EUR"
+
+msgid "Exclude"
+msgstr "Escludi"
+
+msgid "Famale"
+msgstr "Donna"
+
+msgid "Fencing"
+msgstr "Scherma"
+
+msgid "Figure"
+msgstr "Figure"
+
+msgid "Fish and chips"
+msgstr "Fish and chips"
+
+msgid "Food"
+msgstr "Cibo"
+
+msgid "Free"
+msgstr "Libera"
+
+msgid "Free flying"
+msgstr "Volo libero"
+
+msgid "French"
+msgstr "Francese"
+
+msgid "Fried food"
+msgstr "Fritto"
+
+msgid "Friture"
+msgstr "Frittura"
+
+msgid "Fruitarian"
+msgstr "Fruttariano"
+
+msgid "Fun"
+msgstr "Divertimento"
+
+msgid "Gaelic games"
+msgstr "Giochi gaelici"
+
+msgid "Gaucho"
+msgstr "Gaucho"
+
+msgid "Gay"
+msgstr "Gay"
+
+msgid "Genre"
+msgstr "Theatre genre"
+
+msgid "German"
+msgstr "Tedesco"
+
+msgid "Glaziery"
+msgstr "Vetreria"
+
+msgid "Gluten free"
+msgstr "Senza glutine"
+
+msgid "Golf"
+msgstr "Golf"
+
+msgid "Greek"
+msgstr "Greco"
+
+msgid "Gymnastics"
+msgstr "Ginnastica"
+
+msgid "Halal"
+msgstr "Halal"
+
+msgid "Health"
+msgstr "Health"
+
+msgid "Health and beauty"
+msgstr "Salute e bellezza"
+
+msgid "Hockey"
+msgstr "Hockey"
+
+msgid "Horseshoes"
+msgstr "Ferri di cavallo"
+
+msgid "Horse racing"
+msgstr "Corsa dei cavalli"
+
+msgid "Hospital"
+msgstr "Hospital"
+
+msgid "Hunan"
+msgstr "Hunan"
+
+msgid "Hungarian"
+msgstr "Ungherese"
+
+msgid "Ice cream"
+msgstr "Gelato"
+
+msgid "Ice stock"
+msgstr "Stock sport"
+
+msgid "Include"
+msgstr "Include"
+
+msgid "Indian"
+msgstr "Indiano"
+
+msgid "Information"
+msgstr "Information"
+
+msgid "International"
+msgstr "Internazionale"
+
+msgid "Internet"
+msgstr "Accesso ad Internet"
+
+msgid "Iranian"
+msgstr "Iraniano"
+
+msgid "Isolated"
+msgstr "Isolato"
+
+msgid "Italian"
+msgstr "Italiano"
+
+msgid "Japanese"
+msgstr "Giapponese"
+
+msgid "Judo"
+msgstr "Judo"
+
+msgid "Karting"
+msgstr "Karting"
+
+msgid "Kebab"
+msgstr "Kebab"
+
+msgid "Kindergarten"
+msgstr "Kindergarten"
+
+msgid "Kitesurfing"
+msgstr "Kitesurfing"
+
+msgid "Korean"
+msgstr "Coreano"
+
+msgid "Korfball"
+msgstr "Korfball"
+
+msgid "Kyo ryouri"
+msgstr "Kyo ryouri"
+
+msgid "Lactose free"
+msgstr "Senza lattosio"
+
+msgid "Lacto vegetarian"
+msgstr "Lacto vegetariano"
+
+msgid "Latin american"
+msgstr "Latino-americano"
+
+msgid "Lawyer"
+msgstr "Avvocato"
+
+msgid "Lebanese"
+msgstr "Libanese"
+
+msgid "Library"
+msgstr "Library"
+
+msgid "List"
+msgstr "List"
+
+msgid "Litecoin"
+msgstr "Litecoin"
+
+msgid "Male"
+msgstr "Uomo"
+
+msgid "Marionette"
+msgstr "Marionette"
+
+msgid "Mediterranean"
+msgstr "Mediterraneo"
+
+msgid "Mexican"
+msgstr "Messicano"
+
+msgid "Microbrewery"
+msgstr "Microbirrificio"
+
+msgid "Mineira"
+msgstr "Mineira"
+
+msgid "Money"
+msgstr "Soldi"
+
+msgid "Motor"
+msgstr "Motori"
+
+msgid "Musical"
+msgstr "Musical"
+
+msgid "Music theatre"
+msgstr "Music theatre"
+
+msgid "Needs"
+msgstr "Necessità"
+
+msgid "Nightclub"
+msgstr "Nightclub"
+
+msgid "No"
+msgstr "No"
+
+msgid "Noodle"
+msgstr "Noodle"
+
+msgid "Notary"
+msgstr "Notarile"
+
+msgid "No set/Yes/Only"
+msgstr "Non selezionato/Sì/Solo"
+
+msgid "Obstacle course"
+msgstr "Corsa ad ostacoli"
+
+msgid "Office"
+msgstr "Uffici"
+
+msgid "Okinawa ryori"
+msgstr "Okinawa ryori"
+
+msgid "Opera"
+msgstr "Opera"
+
+msgid "Orienteering"
+msgstr "Orienting"
+
+msgid "Other"
+msgstr "Altro"
+
+msgid "Other theatre"
+msgstr "Other theatre"
+
+msgid "Ovo vegetarian"
+msgstr "Ovo vegetariano"
+
+msgid "Paddle tennis"
+msgstr "Paddle tennis"
+
+msgid "Pancake"
+msgstr "Pancake"
+
+msgid "Paragliding"
+msgstr "Parapendio"
+
+msgid "Pasta"
+msgstr "Pasta"
+
+msgid "Payment"
+msgstr "Payment"
+
+msgid "Peercoin"
+msgstr "Peercoin"
+
+msgid "Pelota"
+msgstr "Palota"
+
+msgid "Peruvian"
+msgstr "Peruviano"
+
+msgid "Pescetarian"
+msgstr "Pescetariano"
+
+msgid "Pharmacy"
+msgstr "Pharmacy"
+
+msgid "Philharmonic"
+msgstr "Philharmonic"
+
+msgid "Photographer"
+msgstr "Fotografia"
+
+msgid "Pie"
+msgstr "Torta di mele"
+
+msgid "Pitch"
+msgstr "Campo"
+
+msgid "Pizza"
+msgstr "Pizza"
+
+msgid "PLN"
+msgstr "PLN"
+
+msgid "Polish"
+msgstr "Polacco"
+
+msgid "Political"
+msgstr "Political"
+
+msgid "Portuguese"
+msgstr "Portoghese"
+
+msgid "Pub"
+msgstr "Pub"
+
+msgid "Puppet"
+msgstr "Puppet"
+
+msgid "Puppet theatre"
+msgstr "Figure theatre"
+
+msgid "Racquet"
+msgstr "Racchetta"
+
+msgid "Raw"
+msgstr "Crudista"
+
+msgid "Real ALE"
+msgstr "Vera ale"
+
+msgid "Real cider"
+msgstr "Sidro vero"
+
+msgid "Regional"
+msgstr "Regionale"
+
+msgid "Rowing"
+msgstr "Canottaggio"
+
+msgid "RUB"
+msgstr "RUB"
+
+msgid "Rugby league"
+msgstr "Rugby league"
+
+msgid "Rugby union"
+msgstr "Rugby union"
+
+msgid "Running"
+msgstr "Corsa"
+
+msgid "Russian"
+msgstr "Russo"
+
+msgid "Sandwich"
+msgstr "Sandwich"
+
+msgid "Sausage"
+msgstr "Salsiccia"
+
+msgid "Savory pancakes"
+msgstr "Pancake salato"
+
+msgid "School"
+msgstr "School"
+
+msgid "Scuba diving"
+msgstr "Scuba diving"
+
+msgid "Seafood"
+msgstr "Frutti di mare"
+
+msgid "Separated"
+msgstr "Separato"
+
+msgid "Set"
+msgstr "Imposta"
+
+msgid "Shadow play"
+msgstr "Shadow play"
+
+msgid "Shandong"
+msgstr "Shandong"
+
+msgid "Shelter"
+msgstr "Rifugio"
+
+msgid "Shooting"
+msgstr "Spari"
+
+msgid "Shop"
+msgstr "Spesa"
+
+msgid "Sichuan"
+msgstr "Sichuan"
+
+msgid "Skateboard"
+msgstr "Skateboard"
+
+msgid "Skating"
+msgstr "Skate"
+
+msgid "Skiing"
+msgstr "Sci"
+
+msgid "Smoking"
+msgstr "Fumatori"
+
+msgid "Soccer"
+msgstr "Calcio"
+
+msgid "Social facility"
+msgstr "Social facility"
+
+msgid "Spanish"
+msgstr "Spagnolo"
+
+msgid "Speech theatre"
+msgstr "Speech theatre"
+
+msgid "Sport"
+msgstr "Sport"
+
+msgid "Sport centre"
+msgstr "Centro sportivo"
+
+msgid "Stadium"
+msgstr "Stadio"
+
+msgid "Stand up comedy"
+msgstr "Stand up comedy"
+
+msgid "Steak house"
+msgstr "Steak house"
+
+msgid "Stripclub"
+msgstr "Stripclub"
+
+msgid "Surfing"
+msgstr "Surf"
+
+msgid "Sushi"
+msgstr "Sushi"
+
+msgid "Swimming"
+msgstr "Nuoto"
+
+msgid "Swimming pool"
+msgstr "Piscina"
+
+msgid "Table tennis"
+msgstr "Ping pong"
+
+msgid "Taekwondo"
+msgstr "Teakwondo"
+
+msgid "Take away"
+msgstr "Asporto"
+
+msgid "Team handball"
+msgstr "Pallamano"
+
+msgid "Tennis"
+msgstr "Tennis"
+
+msgid "Thai"
+msgstr "Thailandese"
+
+msgid "Toboggan"
+msgstr "Toboga"
+
+msgid "Toilets"
+msgstr "Bagni"
+
+msgid "Tourism"
+msgstr "Tourism"
+
+msgid "Track"
+msgstr "Traccia"
+
+msgid "Transport"
+msgstr "Trasporto"
+
+msgid "Travel"
+msgstr "Viaggio"
+
+msgid "Turkish"
+msgstr "Turco"
+
+msgid "University"
+msgstr "University"
+
+msgid "USD"
+msgstr "USD"
+
+msgid "Variate"
+msgstr "Variaté"
+
+msgid "Vegan"
+msgstr "Vegan"
+
+msgid "Vegetarian"
+msgstr "Vegetariano"
+
+msgid "Veterinary"
+msgstr "Veterinary"
+
+msgid "Volleyball"
+msgstr "Pallavolo"
+
+msgid "Water ski"
+msgstr "Sci d'acqua"
+
+msgid "Weightlifting"
+msgstr "Sollevamento pesi"
+
+msgid "Wheelchair"
+msgstr "Sedie a rotelle"
+
+msgid "Where"
+msgstr "Dove"
+
+msgid "Wlan"
+msgstr "Wlan"
+
+msgid "Wrestling"
+msgstr "Wrestling"
+
+msgid "XBT (BTC)"
+msgstr "XBT (BTC)"
+
+msgid "Yes"
+msgstr "Sì"

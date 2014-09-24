@@ -1,0 +1,860 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "10pin"
+msgstr "10Pin"
+
+msgid "9pin"
+msgstr "9Pin"
+
+msgid "Access"
+msgstr "Вход разрешен"
+
+msgid "Accommodation"
+msgstr "Ночлег"
+
+msgid "Accountant"
+msgstr "Бухгалтер"
+
+msgid "Add"
+msgstr "Добавить"
+
+msgid "Administrative"
+msgstr "Администрация"
+
+msgid "African"
+msgstr "Африканская"
+
+msgid "Aikido"
+msgstr "Айкидо"
+
+msgid "Alcohol"
+msgstr "Алкоголь"
+
+msgid "All"
+msgstr "Все объекты"
+
+msgid "Ambulance station"
+msgstr "Станция скорой помощи"
+
+msgid "American"
+msgstr "Американская"
+
+msgid "American football"
+msgstr "American football"
+
+msgid "Arab"
+msgstr "Арабская"
+
+msgid "Archery"
+msgstr "Стрельба из лука"
+
+msgid "Architect"
+msgstr "Архитектор"
+
+msgid "Argentinian"
+msgstr "Аргентинская"
+
+msgid "Art"
+msgstr "Искусство"
+
+msgid "Asian"
+msgstr "Азиатская"
+
+msgid "Association"
+msgstr "Association"
+
+msgid "Athletics"
+msgstr "Атлетика"
+
+msgid "ATM"
+msgstr "Банкомат"
+
+msgid "Attraction"
+msgstr "Достопримечательность"
+
+msgid "Australian football"
+msgstr "Австралийский футбол"
+
+msgid "Badminton"
+msgstr "Бадминтон"
+
+msgid "Bagel"
+msgstr "Бейгл"
+
+msgid "Baiana"
+msgstr "Бразильская (Баия)"
+
+msgid "Balkan"
+msgstr "Балканская"
+
+msgid "Ballet"
+msgstr "Балет"
+
+msgid "Bank"
+msgstr "Банк"
+
+msgid "Bar"
+msgstr "Бар"
+
+msgid "Barbecue"
+msgstr "Барбекю"
+
+msgid "Base"
+msgstr "Base"
+
+msgid "Baseball"
+msgstr "Бейсбол"
+
+msgid "Basketball"
+msgstr "Баскетбол"
+
+msgid "Basque"
+msgstr "Баскская"
+
+msgid "Bavarian"
+msgstr "Баварская"
+
+msgid "Beach volleyball"
+msgstr "Пляжный волейбол"
+
+msgid "Beer"
+msgstr "Пиво"
+
+msgid "Biergarten"
+msgstr "Пивной сад"
+
+msgid "Bitcoin"
+msgstr "Биткойн"
+
+msgid "BMX"
+msgstr "BMX"
+
+msgid "Bougatsa"
+msgstr "Бугаца"
+
+msgid "Boules"
+msgstr "Boules"
+
+msgid "Boulevard"
+msgstr "Бульвар"
+
+msgid "Bowls"
+msgstr "Bowls"
+
+msgid "Boxing"
+msgstr "Бокс"
+
+msgid "Brazilian"
+msgstr "Бразильская"
+
+msgid "Burger"
+msgstr "Бургеры"
+
+msgid "Cabaret"
+msgstr "Кабаре"
+
+msgid "Cake"
+msgstr "Пирожные"
+
+msgid "Canadian football"
+msgstr "Канадский футбол"
+
+msgid "Canoe"
+msgstr "Каноэ"
+
+msgid "Cantonese"
+msgstr "Китайская (Гуандун)"
+
+msgid "Capixaba"
+msgstr "Бразильская (Еспириту Санту)"
+
+msgid "Caribbean"
+msgstr "Карибская"
+
+msgid "Carpenter"
+msgstr "Плотник"
+
+msgid "Chamber music"
+msgstr "Камерная музыка"
+
+msgid "Chess"
+msgstr "Шахматы"
+
+msgid "Chicken"
+msgstr "Куриная"
+
+msgid "Chinese"
+msgstr "Китайская"
+
+msgid "Cirsus"
+msgstr "Цирк"
+
+msgid "Climbing"
+msgstr "Скалолазание"
+
+msgid "Clinic"
+msgstr "Поликлиника"
+
+msgid "Clockmaker"
+msgstr "Часовщик"
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Clothes"
+msgstr "Одежда/обувь"
+
+msgid "Coffee shop"
+msgstr "Кофейня"
+
+msgid "Coins"
+msgstr "Наличные"
+
+msgid "Collage"
+msgstr "Колледж"
+
+msgid "Comedy"
+msgstr "Комедия"
+
+msgid "Couscous"
+msgstr "Кускус"
+
+msgid "Craft"
+msgstr "Мастера"
+
+msgid "Credit cards"
+msgstr "Кредитные карты"
+
+msgid "Crepe"
+msgstr "Тонкие блинчики"
+
+msgid "Cricket"
+msgstr "Крикет"
+
+msgid "Cricket nets"
+msgstr "Cricket nets"
+
+msgid "Croatian"
+msgstr "Хорватская"
+
+msgid "Croquet"
+msgstr "Крокет"
+
+msgid "Cryptocurrencies"
+msgstr "Cryptocurrencies"
+
+msgid "Cuisine"
+msgstr "Кухня"
+
+msgid "Culture"
+msgstr "Культура"
+
+msgid "Currency"
+msgstr "Currency"
+
+msgid "Curry"
+msgstr "Карри"
+
+msgid "Cycling"
+msgstr "Велоспорт"
+
+msgid "Czech"
+msgstr "Чешская"
+
+msgid "Dairy free"
+msgstr "Без молока"
+
+msgid "Debit cards"
+msgstr "Дебитовые карты"
+
+msgid "Dedicated"
+msgstr "Dedicated"
+
+msgid "Defibrillator"
+msgstr "Дефибрилятор"
+
+msgid "Delivery"
+msgstr "Доставка"
+
+msgid "Dentist"
+msgstr "Стоматология"
+
+msgid "Diet"
+msgstr "Диета"
+
+msgid "Diving"
+msgstr "Дайвинг"
+
+msgid "Doctors"
+msgstr "Врач"
+
+msgid "Dog racing"
+msgstr "Собачьи бега"
+
+msgid "Donut"
+msgstr "Пончики"
+
+msgid "Doughnut"
+msgstr "Пончики"
+
+msgid "Drama"
+msgstr "Драма"
+
+msgid "Drinking water"
+msgstr "Питьевая вода"
+
+msgid "Education"
+msgstr "Образование"
+
+msgid "Electronic"
+msgstr "Электроника"
+
+msgid "Empanada"
+msgstr "Эмпанада"
+
+msgid "Empty"
+msgstr "Empty"
+
+msgid "Equestrian"
+msgstr "Верховая езда"
+
+msgid "EUR"
+msgstr "EUR"
+
+msgid "Exclude"
+msgstr "Exclude"
+
+msgid "Famale"
+msgstr "Жо"
+
+msgid "Fencing"
+msgstr "Фехтование"
+
+msgid "Figure"
+msgstr "Фигуры"
+
+msgid "Fish and chips"
+msgstr "Рыба и чипсы"
+
+msgid "Food"
+msgstr "Продукты"
+
+msgid "Free"
+msgstr "Бесплатно"
+
+msgid "Free flying"
+msgstr "Free flying"
+
+msgid "French"
+msgstr "Французская"
+
+msgid "Fried food"
+msgstr "Жареная пища"
+
+msgid "Friture"
+msgstr "Фритюр"
+
+msgid "Fruitarian"
+msgstr "Фруктовая"
+
+msgid "Fun"
+msgstr "Кутежи и разврат"
+
+msgid "Gaelic games"
+msgstr "Gaelic games"
+
+msgid "Gaucho"
+msgstr "Гаучо"
+
+msgid "Gay"
+msgstr "Ахтунги!"
+
+msgid "Genre"
+msgstr "Театральный жанр"
+
+msgid "German"
+msgstr "Немецкая"
+
+msgid "Glaziery"
+msgstr "Стекольщик"
+
+msgid "Gluten free"
+msgstr "Без глютена"
+
+msgid "Golf"
+msgstr "Гольф"
+
+msgid "Greek"
+msgstr "Греческая"
+
+msgid "Gymnastics"
+msgstr "Гимнастика"
+
+msgid "Halal"
+msgstr "Халяльная"
+
+msgid "Health"
+msgstr "Медицина"
+
+msgid "Health and beauty"
+msgstr "Здоровье и красота"
+
+msgid "Hockey"
+msgstr "Хокей"
+
+msgid "Horseshoes"
+msgstr "Horseshoes"
+
+msgid "Horse racing"
+msgstr "Скачки"
+
+msgid "Hospital"
+msgstr "Больница"
+
+msgid "Hunan"
+msgstr "Китайская (Хунань)"
+
+msgid "Hungarian"
+msgstr "Венгерская"
+
+msgid "Ice cream"
+msgstr "Мороженое"
+
+msgid "Ice stock"
+msgstr "Айсшток"
+
+msgid "Include"
+msgstr "Include"
+
+msgid "Indian"
+msgstr "Индийская"
+
+msgid "Information"
+msgstr "Информация"
+
+msgid "International"
+msgstr "Интернациональая"
+
+msgid "Internet"
+msgstr "Доступ в интернет"
+
+msgid "Iranian"
+msgstr "Иракская"
+
+msgid "Isolated"
+msgstr "Isolated"
+
+msgid "Italian"
+msgstr "Итальянская"
+
+msgid "Japanese"
+msgstr "Японская"
+
+msgid "Judo"
+msgstr "Дзюдо"
+
+msgid "Karting"
+msgstr "Картиг"
+
+msgid "Kebab"
+msgstr "Кебаб"
+
+msgid "Kindergarten"
+msgstr "Детский сад"
+
+msgid "Kitesurfing"
+msgstr "Кайтсёрфинг"
+
+msgid "Korean"
+msgstr "Корейская"
+
+msgid "Korfball"
+msgstr "Корфбол"
+
+msgid "Kyo ryouri"
+msgstr "Японская (Kyo)"
+
+msgid "Lactose free"
+msgstr "Без лактозы"
+
+msgid "Lacto vegetarian"
+msgstr "Молочно-вегетарианская"
+
+msgid "Latin american"
+msgstr "Латиноамериканская"
+
+msgid "Lawyer"
+msgstr "Юрист"
+
+msgid "Lebanese"
+msgstr "Ливанская"
+
+msgid "Library"
+msgstr "Библиотека"
+
+msgid "List"
+msgstr "Список"
+
+msgid "Litecoin"
+msgstr "Лайткойн"
+
+msgid "Male"
+msgstr "Эм"
+
+msgid "Marionette"
+msgstr "Марионетки"
+
+msgid "Mediterranean"
+msgstr "Средиземноморская"
+
+msgid "Mexican"
+msgstr "Мексиканская"
+
+msgid "Microbrewery"
+msgstr "Microbrewery"
+
+msgid "Mineira"
+msgstr "Бразильская (Mineira)"
+
+msgid "Money"
+msgstr "Деньги"
+
+msgid "Motor"
+msgstr "Автоспорт"
+
+msgid "Musical"
+msgstr "Мьюзикл"
+
+msgid "Music theatre"
+msgstr "Музыкальный театр"
+
+msgid "Needs"
+msgstr "Нужды"
+
+msgid "Nightclub"
+msgstr "Ночной клуб"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "Noodle"
+msgstr "Лапша"
+
+msgid "Notary"
+msgstr "Нотариус"
+
+msgid "No set/Yes/Only"
+msgstr "No set/Yes/Only"
+
+msgid "Obstacle course"
+msgstr "Полоса препятствий"
+
+msgid "Office"
+msgstr "Офисы"
+
+msgid "Okinawa ryori"
+msgstr "Окинавская"
+
+msgid "Opera"
+msgstr "Опера"
+
+msgid "Orienteering"
+msgstr "Ориентироваие"
+
+msgid "Other"
+msgstr "Еще фильтры"
+
+msgid "Other theatre"
+msgstr "Другие театры"
+
+msgid "Ovo vegetarian"
+msgstr "Вегетарианская+яйца"
+
+msgid "Paddle tennis"
+msgstr "Paddle tennis"
+
+msgid "Pancake"
+msgstr "Оладьи"
+
+msgid "Paragliding"
+msgstr "Параплан"
+
+msgid "Pasta"
+msgstr "Паста"
+
+msgid "Payment"
+msgstr "Оплата"
+
+msgid "Peercoin"
+msgstr "Пиркойн"
+
+msgid "Pelota"
+msgstr "Palota"
+
+msgid "Peruvian"
+msgstr "Перуанская"
+
+msgid "Pescetarian"
+msgstr "Пескетарианская"
+
+msgid "Pharmacy"
+msgstr "Аптека"
+
+msgid "Philharmonic"
+msgstr "Филармония"
+
+msgid "Photographer"
+msgstr "Фотограф"
+
+msgid "Pie"
+msgstr "Пироги"
+
+msgid "Pitch"
+msgstr "Поле"
+
+msgid "Pizza"
+msgstr "Пицца"
+
+msgid "PLN"
+msgstr "PLN"
+
+msgid "Polish"
+msgstr "Польская"
+
+msgid "Political"
+msgstr "Политический"
+
+msgid "Portuguese"
+msgstr "Португальская"
+
+msgid "Pub"
+msgstr "Пивная"
+
+msgid "Puppet"
+msgstr "Куклы"
+
+msgid "Puppet theatre"
+msgstr "Театры кукол"
+
+msgid "Racquet"
+msgstr "Ракетка"
+
+msgid "Raw"
+msgstr "Сырые продукты"
+
+msgid "Real ALE"
+msgstr "Real ale"
+
+msgid "Real cider"
+msgstr "Real cider"
+
+msgid "Regional"
+msgstr "Региональная"
+
+msgid "Rowing"
+msgstr "Гребля"
+
+msgid "RUB"
+msgstr "RUB"
+
+msgid "Rugby league"
+msgstr "Регби-13"
+
+msgid "Rugby union"
+msgstr "Регби-15"
+
+msgid "Running"
+msgstr "Бег"
+
+msgid "Russian"
+msgstr "Русская"
+
+msgid "Sandwich"
+msgstr "Сэндвичи"
+
+msgid "Sausage"
+msgstr "Sausage"
+
+msgid "Savory pancakes"
+msgstr "Пикантные оладьи"
+
+msgid "School"
+msgstr "Школа"
+
+msgid "Scuba diving"
+msgstr "Дайвинг (с аквалангом)"
+
+msgid "Seafood"
+msgstr "Морепродукты"
+
+msgid "Separated"
+msgstr "Separated"
+
+msgid "Set"
+msgstr "Установить"
+
+msgid "Shadow play"
+msgstr "Театр теней"
+
+msgid "Shandong"
+msgstr "Китайская (Шаньдун)"
+
+msgid "Shelter"
+msgstr "Укрытие"
+
+msgid "Shooting"
+msgstr "Стрельба"
+
+msgid "Shop"
+msgstr "Магазины"
+
+msgid "Sichuan"
+msgstr "Китайская (Сычуань)"
+
+msgid "Skateboard"
+msgstr "Скейтборд"
+
+msgid "Skating"
+msgstr "Коньки"
+
+msgid "Skiing"
+msgstr "Лыжный спорт"
+
+msgid "Smoking"
+msgstr "Smoking"
+
+msgid "Soccer"
+msgstr "Футбол"
+
+msgid "Social facility"
+msgstr "Социальное учреждение"
+
+msgid "Spanish"
+msgstr "Испанская"
+
+msgid "Speech theatre"
+msgstr "Драматический театр"
+
+msgid "Sport"
+msgstr "Виды спорта"
+
+msgid "Sport centre"
+msgstr "Спортивный клуб"
+
+msgid "Stadium"
+msgstr "Стадион"
+
+msgid "Stand up comedy"
+msgstr "Стендап"
+
+msgid "Steak house"
+msgstr "Стейк-хаус"
+
+msgid "Stripclub"
+msgstr "Стриптиз"
+
+msgid "Surfing"
+msgstr "Сёрфинг"
+
+msgid "Sushi"
+msgstr "Суши"
+
+msgid "Swimming"
+msgstr "Плавание"
+
+msgid "Swimming pool"
+msgstr "Бассейн"
+
+msgid "Table tennis"
+msgstr "Настольный тенис"
+
+msgid "Taekwondo"
+msgstr "Теквондо"
+
+msgid "Take away"
+msgstr "На вынос"
+
+msgid "Team handball"
+msgstr "Гандбол"
+
+msgid "Tennis"
+msgstr "Тенис"
+
+msgid "Thai"
+msgstr "Тайская"
+
+msgid "Toboggan"
+msgstr "Тобогган"
+
+msgid "Toilets"
+msgstr "Туалеты"
+
+msgid "Tourism"
+msgstr "Туризм"
+
+msgid "Track"
+msgstr "Трек/Трасса"
+
+msgid "Transport"
+msgstr "Транспорт"
+
+msgid "Travel"
+msgstr "Путешествия"
+
+msgid "Turkish"
+msgstr "Турецкая"
+
+msgid "University"
+msgstr "Университет"
+
+msgid "USD"
+msgstr "USD"
+
+msgid "Variate"
+msgstr "Варьете"
+
+msgid "Vegan"
+msgstr "Веганская"
+
+msgid "Vegetarian"
+msgstr "Вегетарианская"
+
+msgid "Veterinary"
+msgstr "Ветеринария"
+
+msgid "Volleyball"
+msgstr "Волейбол"
+
+msgid "Water ski"
+msgstr "Водные лыжи"
+
+msgid "Weightlifting"
+msgstr "Поднятие тяжестей"
+
+msgid "Wheelchair"
+msgstr "Для инвалидов-колясочников"
+
+msgid "Where"
+msgstr "Где"
+
+msgid "Wlan"
+msgstr "Wlan"
+
+msgid "Wrestling"
+msgstr "Рестлинг"
+
+msgid "XBT (BTC)"
+msgstr "XBT (BTC)"
+
+msgid "Yes"
+msgstr "Есть"

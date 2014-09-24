@@ -324,7 +324,7 @@ define('BUTTON_SET','Установить');
 define('BUTTON_LOCATE','Где я?');
 define('BUTTON_STOP_LOCATE','Stop locate');
 define('BUTTON_ABOUT','О сайте');
-define('POPUP_ABOUT_BODY','Data from <a href="http://osm.org">OpenStreetMap</a>\'s database licensed under ODbL. <a href="http://en.wikipedia.org/wiki/OpenStreetMap">About</a><br/>Only 40 POI are downloaded between 10-15 zoom. Full data available when minzoom=15.<br/>Key:<br/><span class="glyphicon glyphicon-ok">yes</span><br/><span  class="glyphicon glyphicon-ok-sign">only</span><br/><br/>Used libs and tools:<br/><a href="http://leafletjs.com">Leaflet</a>, <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://jquery.com/">jQuery</a>, <a href="https://github.com/ypid/opening_hours.js">opening_hours.js</a>, <a href="https://github.com/mlevans/leaflet-hash">Leaflet-hash</a>, <a href="https://github.com/kartenkarsten/leaflet-layer-overpass/">LeafLet-layer-overpass</a>, Overpass API, VIM :-)<br/>Icons: Maps Icons Collection <a href="http://mapicons.nicolasmollet.com">mapicons.nicolasmollet.com</a> and Tuuli<br/>Author: Adam Jordanek (dotevo)');
+define('POPUP_ABOUT_BODY','Данные <a href="http://ru.wikipedia.org/wiki/OpenStreetMap">OpenStreetMap</a> предоставлены по лицензии <a href="http://www.openstreetmap.org/copyright">ODbL</a>. <br/>Только 40 объектов показываются на зумах 10-14. Чтобы увидеть все объекты, приблизьте карту (minzoom=15).<br/><br/>Использованые библиотеки и инструменты:<br/><a href="http://leafletjs.com">Leaflet</a>, <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://jquery.com/">jQuery</a>, <a href="https://github.com/ypid/opening_hours.js">opening_hours.js</a>, <a href="https://github.com/mlevans/leaflet-hash">Leaflet-hash</a>, <a href="https://github.com/kartenkarsten/leaflet-layer-overpass/">LeafLet-layer-overpass</a>, Overpass API, VIM :-)<br/>Значки: Maps Icons Collection <a href="http://mapicons.nicolasmollet.com">mapicons.nicolasmollet.com</a> и Tuuli<br/>Автор: Adam Jordanek (dotevo)');
 define('BUTTON_CLOSE','Закрыть');
 define('BUTTON_ADD','Добавить');
 
@@ -336,11 +336,21 @@ define('JS_ADD_NOTE_PLACEHOLDER','Важная информация');
 
 define('JS_NOT_FOUND','Не найдено');
 define('JS_ADD_MISSING_DATA','Добавить недостающую информацию!');
-define('JS_REPORT','Report');
+define('JS_REPORT','Сообщение картографам');
 define('JS_KEY','Ключ');
 define('JS_VALUE','Значение');
 define('JS_OPENING_HOURS','Часы работы');
-define('JS_BASIC','Basic');
-define('JS_NOTE','Note');
+define('JS_BASIC','Основное');
+define('JS_COMMENTS','Отзывы');
+define('JS_ADVANCED','Теги');
+define('JS_NOTE','Заметка');
 define('JS_STATUS','Статус');
+
+define('JS_LOADING','Идет загрузка...');
+define('JS_PLEASE_ZOOM_IN','Приблизьте карту, чтобы увидеть объекты');
+define('JS_OPEN','Открыто');
+define('JS_LAST_HOUR','Последний час');
+define('JS_CLOSE','Закрыто');
+define('JS_NO_DATA','Нет данных');
+	
 ?>        

@@ -5,143 +5,92 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: Adam Jordanek <dotevo@gmail.com>\n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
-"Language: en\n"
 
-msgid "All"
-msgstr "All"
+msgid "10pin"
+msgstr "10Pin"
 
-msgid "Craft"
-msgstr "Craft"
+msgid "9pin"
+msgstr "9Pin"
 
-msgid "Health"
-msgstr "Health"
+msgid "Access"
+msgstr "Access"
 
-msgid "Food"
-msgstr "Food"
+msgid "Accommodation"
+msgstr "Accommodation"
 
-msgid "Money"
-msgstr "Money"
+msgid "Accountant"
+msgstr "Accountant"
 
-msgid "Needs"
-msgstr "Needs"
+msgid "Add"
+msgstr "Add"
 
-msgid "Office"
-msgstr "Office"
-
-msgid "Fun"
-msgstr "Fun"
-
-msgid "Sport"
-msgstr "Sport"
-
-msgid "Education"
-msgstr "Education"
-
-msgid "Tourism"
-msgstr "Tourism"
-
-msgid "Shop"
-msgstr "Shop"
-
-msgid "Culture"
-msgstr "Culture"
-
-msgid "Cuisine"
-msgstr "Cuisine"
-
-msgid "Bagel"
-msgstr "Bagel"
-
-msgid "Barbecue"
-msgstr "Barbecue"
-
-msgid "Bougatsa"
-msgstr "Bougatsa"
-
-msgid "Burger"
-msgstr "Burger"
-
-msgid "Cake"
-msgstr "Cake"
-
-msgid "Chicken"
-msgstr "Chicken"
-
-msgid "Crepe"
-msgstr "Crepe"
-
-msgid "Couscous"
-msgstr "Couscous"
-
-msgid "Curry"
-msgstr "Curry"
-
-msgid "Donut"
-msgstr "Donut"
-
-msgid "Doughnut"
-msgstr "Doughnut"
-
-msgid "Empanada"
-msgstr "Empanada"
-
-msgid "Friture"
-msgstr "Friture"
-
-msgid "Kebab"
-msgstr "Kebab"
-
-msgid "Mediterranean"
-msgstr "Mediterranean"
-
-msgid "Noodle"
-msgstr "Noodle"
-
-msgid "Pancake"
-msgstr "Pancake"
-
-msgid "Pasta"
-msgstr "Pasta"
-
-msgid "Pie"
-msgstr "Pie"
-
-msgid "Pizza"
-msgstr "Pizza"
-
-msgid "Regional"
-msgstr "Regional"
-
-msgid "Sandwich"
-msgstr "Sandwich"
-
-msgid "Sausage"
-msgstr "Sausage"
-
-msgid "Seafood"
-msgstr "Seafood"
-
-msgid "Sushi"
-msgstr "Sushi"
+msgid "Administrative"
+msgstr "Administrative"
 
 msgid "African"
 msgstr "African"
 
+msgid "Aikido"
+msgstr "Aikido"
+
+msgid "Alcohol"
+msgstr "Alcohol"
+
+msgid "All"
+msgstr "All"
+
+msgid "Ambulance station"
+msgstr "Ambulance station"
+
 msgid "American"
 msgstr "American"
+
+msgid "American football"
+msgstr "American football"
 
 msgid "Arab"
 msgstr "Arab"
 
+msgid "Archery"
+msgstr "Archery"
+
+msgid "Architect"
+msgstr "Architect"
+
 msgid "Argentinian"
 msgstr "Argentinian"
 
+msgid "Art"
+msgstr "Art"
+
 msgid "Asian"
 msgstr "Asian"
+
+msgid "Association"
+msgstr "Association"
+
+msgid "Athletics"
+msgstr "Athletics"
+
+msgid "ATM"
+msgstr "ATM"
+
+msgid "Attraction"
+msgstr "Attraction"
+
+msgid "Australian football"
+msgstr "Australian football"
+
+msgid "Badminton"
+msgstr "Badminton"
+
+msgid "Bagel"
+msgstr "Bagel"
 
 msgid "Baiana"
 msgstr "Baiana"
@@ -149,14 +98,80 @@ msgstr "Baiana"
 msgid "Balkan"
 msgstr "Balkan"
 
+msgid "Ballet"
+msgstr "Ballet"
+
+msgid "Bank"
+msgstr "Bank"
+
+msgid "Bar"
+msgstr "Bar"
+
+msgid "Barbecue"
+msgstr "Barbecue"
+
+msgid "Base"
+msgstr "Base"
+
+msgid "Baseball"
+msgstr "Baseball"
+
+msgid "Basketball"
+msgstr "Basketball"
+
 msgid "Basque"
 msgstr "Basque"
 
 msgid "Bavarian"
 msgstr "Bavarian"
 
+msgid "Beach volleyball"
+msgstr "Beachvolleyball"
+
+msgid "Beer"
+msgstr "Beer"
+
+msgid "Biergarten"
+msgstr "Biergarten"
+
+msgid "Bitcoin"
+msgstr "Bitcoin"
+
+msgid "BMX"
+msgstr "BMX"
+
+msgid "Bougatsa"
+msgstr "Bougatsa"
+
+msgid "Boules"
+msgstr "Boules"
+
+msgid "Boulevard"
+msgstr "Boulevard"
+
+msgid "Bowls"
+msgstr "Bowls"
+
+msgid "Boxing"
+msgstr "Boxing"
+
 msgid "Brazilian"
 msgstr "Brazilian"
+
+msgid "Burger"
+msgstr "Burger"
+
+msgid "Cabaret"
+msgstr "Cabaret"
+
+msgid "Cake"
+msgstr "Cake"
+
+msgid "Canadian football"
+msgstr "Canadian football"
+
+msgid "Canoe"
+msgstr "Canoe"
 
 msgid "Cantonese"
 msgstr "Cantonese"
@@ -167,317 +182,233 @@ msgstr "Capixaba"
 msgid "Caribbean"
 msgstr "Caribbean"
 
-msgid "Chinese"
-msgstr "Chinese"
-
-msgid "Croatian"
-msgstr "Croatian"
-
-msgid "Czech"
-msgstr "Czech"
-
-msgid "French"
-msgstr "French"
-
-msgid "German"
-msgstr "German"
-
-msgid "Greek"
-msgstr "Greek"
-
-msgid "Gaucho"
-msgstr "Gaucho"
-
-msgid "Hunan"
-msgstr "Hunan"
-
-msgid "Hungarian"
-msgstr "Hungarian"
-
-msgid "Indian"
-msgstr "Indian"
-
-msgid "International"
-msgstr "International"
-
-msgid "Iranian"
-msgstr "Iranian"
-
-msgid "Italian"
-msgstr "Italian"
-
-msgid "Japanese"
-msgstr "Japanese"
-
-msgid "Korean"
-msgstr "Korean"
-
-msgid "Lebanese"
-msgstr "Lebanese"
-
-msgid "Mexican"
-msgstr "Mexican"
-
-msgid "Mineira"
-msgstr "Mineira"
-
-msgid "Peruvian"
-msgstr "Peruvian"
-
-msgid "Polish"
-msgstr "Polish"
-
-msgid "Portuguese"
-msgstr "Portuguese"
-
-msgid "Russian"
-msgstr "Russian"
-
-msgid "Shandong"
-msgstr "Shandong"
-
-msgid "Sichuan"
-msgstr "Sichuan"
-
-msgid "Spanish"
-msgstr "Spanish"
-
-msgid "Thai"
-msgstr "Thai"
-
-msgid "Turkish"
-msgstr "Turkish"
-
-msgid "Bank"
-msgstr "Bank"
-
-msgid "ATM"
-msgstr "ATM"
-
-msgid "Currency"
-msgstr "Currency"
-
-msgid "Include"
-msgstr "Include"
-
-msgid "Cryptocurrencies"
-msgstr "Cryptocurrencies"
-
-msgid "Diet"
-msgstr "Diet"
-
-msgid "Pescetarian"
-msgstr "Pescetarian"
-
-msgid "Vegetarian"
-msgstr "Vegetarian"
-
-msgid "Vegan"
-msgstr "Vegan"
-
-msgid "Fruitarian"
-msgstr "Fruitarian"
-
-msgid "Raw"
-msgstr "Raw"
-
-msgid "Halal"
-msgstr "Halal"
-
-msgid "Where"
-msgstr "Where"
-
-msgid "Exclude"
-msgstr "Exclude"
-
-msgid "Pub"
-msgstr "Pub"
-
-msgid "Bar"
-msgstr "Bar"
-
-msgid "Nightclub"
-msgstr "Nightclub"
-
-msgid "Biergarten"
-msgstr "Biergarten"
-
-msgid "Stripclub"
-msgstr "Stripclub"
-
-msgid "Beer"
-msgstr "Beer"
-
-msgid "Microbrewery"
-msgstr "Microbrewery"
-
-msgid "List"
-msgstr "List"
-
-msgid "Clinic"
-msgstr "Clinic"
-
-msgid "Hospital"
-msgstr "Hospital"
-
-msgid "Dentist"
-msgstr "Dentist"
-
-msgid "Doctors"
-msgstr "Doctors"
-
-msgid "Pharmacy"
-msgstr "Pharmacy"
-
-msgid "Veterinary"
-msgstr "Veterinary"
-
-msgid "Defibrillator"
-msgstr "Defibrillator"
-
-msgid "Accountant"
-msgstr "Accountant"
-
-msgid "Administrative"
-msgstr "Administrative"
-
-msgid "Architect"
-msgstr "Architect"
-
-msgid "Association"
-msgstr "Association"
-
-msgid "Lawyer"
-msgstr "Lawyer"
-
-msgid "Notary"
-msgstr "Notary"
-
 msgid "Carpenter"
 msgstr "Carpenter"
 
-msgid "Clockmaker"
-msgstr "Clockmaker"
-
-msgid "Glaziery"
-msgstr "Glaziery"
-
-msgid "Photographer"
-msgstr "Photographer"
-
-msgid "Toilets"
-msgstr "Toilets"
-
-msgid "Shelter"
-msgstr "Shelter"
-
-msgid "Access"
-msgstr "Access"
-
-msgid "Male"
-msgstr "Male"
-
-msgid "Famale"
-msgstr "Female"
-
-msgid "Gay"
-msgstr "Gay"
-
-msgid "Alcohol"
-msgstr "Alcohol"
-
-msgid "Art"
-msgstr "Art"
-
-msgid "Clothes"
-msgstr "Clothes"
-
-msgid "Electronic"
-msgstr "Electronic"
-
-msgid "Transport"
-msgstr "Transport"
-
-msgid "Travel"
-msgstr "Travel"
-
-msgid "Pitch"
-msgstr "Pitch"
-
-msgid "Stadium"
-msgstr "Stadium"
-
-msgid "Track"
-msgstr "Track"
-
-msgid "Other"
-msgstr "Other"
-
-msgid "Aikido"
-msgstr "Aikido"
-
-msgid "Archery"
-msgstr "Archery"
-
-msgid "Athletics"
-msgstr "Athletics"
-
-msgid "Base"
-msgstr "Base"
-
-msgid "Badminton"
-msgstr "Badminton"
-
-msgid "Baseball"
-msgstr "Baseball"
-
-msgid "Basketball"
-msgstr "Basketball"
-
-msgid "BMX"
-msgstr "BMX"
-
-msgid "Boules"
-msgstr "Boules"
-
-msgid "Bowls"
-msgstr "Bowls"
-
-msgid "Boxing"
-msgstr "Boxing"
-
-msgid "Canoe"
-msgstr "Canoe"
+msgid "Chamber music"
+msgstr "Chamber music"
 
 msgid "Chess"
 msgstr "Chess"
 
+msgid "Chicken"
+msgstr "Chicken"
+
+msgid "Chinese"
+msgstr "Chinese"
+
+msgid "Cirsus"
+msgstr "Circus"
+
 msgid "Climbing"
 msgstr "Climbing"
+
+msgid "Clinic"
+msgstr "Clinic"
+
+msgid "Clockmaker"
+msgstr "Clockmaker"
+
+msgid "Close"
+msgstr "Close"
+
+msgid "Clothes"
+msgstr "Clothes"
+
+msgid "Coffee shop"
+msgstr "Caffe shop"
+
+msgid "Coins"
+msgstr "Coins"
+
+msgid "Collage"
+msgstr "Collage"
+
+msgid "Comedy"
+msgstr "Comedy"
+
+msgid "Couscous"
+msgstr "Couscous"
+
+msgid "Craft"
+msgstr "Craft"
+
+msgid "Credit cards"
+msgstr "Credit cards"
+
+msgid "Crepe"
+msgstr "Crepe"
 
 msgid "Cricket"
 msgstr "Cricket"
 
+msgid "Cricket nets"
+msgstr "Cricket nets"
+
+msgid "Croatian"
+msgstr "Croatian"
+
 msgid "Croquet"
 msgstr "Croquet"
+
+msgid "Cryptocurrencies"
+msgstr "Cryptocurrencies"
+
+msgid "Cuisine"
+msgstr "Cuisine"
+
+msgid "Culture"
+msgstr "Culture"
+
+msgid "Currency"
+msgstr "Currency"
+
+msgid "Curry"
+msgstr "Curry"
 
 msgid "Cycling"
 msgstr "Cycling"
 
+msgid "Czech"
+msgstr "Czech"
+
+msgid "Dairy free"
+msgstr "Dairy free"
+
+msgid "Debit cards"
+msgstr "Debit cards"
+
+msgid "Dedicated"
+msgstr "Dedicated"
+
+msgid "Defibrillator"
+msgstr "Defibrillator"
+
+msgid "Delivery"
+msgstr "Delivery"
+
+msgid "Dentist"
+msgstr "Dentist"
+
+msgid "Diet"
+msgstr "Diet"
+
 msgid "Diving"
 msgstr "Diving"
 
-msgid "Fencing"
-msgstr "Fencing"
+msgid "Doctors"
+msgstr "Doctors"
+
+msgid "Dog racing"
+msgstr "Dog racing"
+
+msgid "Donut"
+msgstr "Donut"
+
+msgid "Doughnut"
+msgstr "Doughnut"
+
+msgid "Drama"
+msgstr "Drama"
+
+msgid "Drinking water"
+msgstr "Drinking water"
+
+msgid "Education"
+msgstr "Education"
+
+msgid "Electronic"
+msgstr "Electronic"
+
+msgid "Empanada"
+msgstr "Empanada"
+
+msgid "Empty"
+msgstr "Empty"
 
 msgid "Equestrian"
 msgstr "Equestrian"
 
+msgid "EUR"
+msgstr "EUR"
+
+msgid "Exclude"
+msgstr "Exclude"
+
+msgid "Famale"
+msgstr "Female"
+
+msgid "Fencing"
+msgstr "Fencing"
+
+msgid "Figure"
+msgstr "Figure"
+
+msgid "Fish and chips"
+msgstr "Fish and chips"
+
+msgid "Food"
+msgstr "Food"
+
+msgid "Free"
+msgstr "Free"
+
+msgid "Free flying"
+msgstr "Free flying"
+
+msgid "French"
+msgstr "French"
+
+msgid "Fried food"
+msgstr "Fried food"
+
+msgid "Friture"
+msgstr "Friture"
+
+msgid "Fruitarian"
+msgstr "Fruitarian"
+
+msgid "Fun"
+msgstr "Fun"
+
+msgid "Gaelic games"
+msgstr "Gaelic games"
+
+msgid "Gaucho"
+msgstr "Gaucho"
+
+msgid "Gay"
+msgstr "Gay"
+
+msgid "Genre"
+msgstr "Theatre genre"
+
+msgid "German"
+msgstr "German"
+
+msgid "Glaziery"
+msgstr "Glaziery"
+
+msgid "Gluten free"
+msgstr "Gluten free"
+
 msgid "Golf"
 msgstr "Golf"
 
+msgid "Greek"
+msgstr "Greek"
+
 msgid "Gymnastics"
 msgstr "Gymnastics"
+
+msgid "Halal"
+msgstr "Halal"
+
+msgid "Health"
+msgstr "Health"
+
+msgid "Health and beauty"
+msgstr "Health and beauty"
 
 msgid "Hockey"
 msgstr "Hockey"
@@ -485,194 +416,287 @@ msgstr "Hockey"
 msgid "Horseshoes"
 msgstr "Horseshoes"
 
+msgid "Horse racing"
+msgstr "Horse racing"
+
+msgid "Hospital"
+msgstr "Hospital"
+
+msgid "Hunan"
+msgstr "Hunan"
+
+msgid "Hungarian"
+msgstr "Hungarian"
+
+msgid "Ice cream"
+msgstr "Ice cream"
+
+msgid "Ice stock"
+msgstr "Ice stock"
+
+msgid "Include"
+msgstr "Include"
+
+msgid "Indian"
+msgstr "Indian"
+
+msgid "Information"
+msgstr "Information"
+
+msgid "International"
+msgstr "International"
+
+msgid "Internet"
+msgstr "Internet access"
+
+msgid "Iranian"
+msgstr "Iranian"
+
+msgid "Isolated"
+msgstr "Isolated"
+
+msgid "Italian"
+msgstr "Italian"
+
+msgid "Japanese"
+msgstr "Japanese"
+
 msgid "Judo"
 msgstr "Judo"
 
 msgid "Karting"
 msgstr "Karting"
 
-msgid "Kitesurfing"
-msgstr "Kitesurfing"
-
-msgid "Korfball"
-msgstr "Korfball"
-
-msgid "Motor"
-msgstr "Motor"
-
-msgid "Orienteering"
-msgstr "Orienting"
-
-msgid "Paragliding"
-msgstr "Paragliding"
-
-msgid "Pelota"
-msgstr "Palota"
-
-msgid "Racquet"
-msgstr "Racquet"
-
-msgid "Rowing"
-msgstr "Rowing"
-
-msgid "Running"
-msgstr "Running"
-
-msgid "Shooting"
-msgstr "Shooting"
-
-msgid "Skating"
-msgstr "Skating"
-
-msgid "Skateboard"
-msgstr "Skateboard"
-
-msgid "Skiing"
-msgstr "Skiing"
-
-msgid "Soccer"
-msgstr "Soccer"
-
-msgid "Surfing"
-msgstr "Surfing"
-
-msgid "Swimming"
-msgstr "Swimming"
-
-msgid "Taekwondo"
-msgstr "Teakwondo"
-
-msgid "Tennis"
-msgstr "Tennis"
-
-msgid "Toboggan"
-msgstr "Toboggan"
-
-msgid "Volleyball"
-msgstr "Volleyball"
-
-msgid "Weightlifting"
-msgstr "Weightlifting"
-
-msgid "Wrestling"
-msgstr "Wrestling"
-
-msgid "Genre"
-msgstr "Theatre genre"
-
-msgid "Drama"
-msgstr "Drama"
-
-msgid "Comedy"
-msgstr "Comedy"
-
-msgid "Opera"
-msgstr "Opera"
-
-msgid "Musical"
-msgstr "Musical"
-
-msgid "Ballet"
-msgstr "Ballet"
-
-msgid "Philharmonic"
-msgstr "Philharmonic"
-
-msgid "Cabaret"
-msgstr "Cabaret"
-
-msgid "Boulevard"
-msgstr "Boulevard"
-
-msgid "Cirsus"
-msgstr "Circus"
-
-msgid "Political"
-msgstr "Political"
-
-msgid "Variate"
-msgstr "VariatĂŠ"
-
-msgid "Figure"
-msgstr "Figure"
-
-msgid "Puppet"
-msgstr "Puppet"
-
-msgid "Marionette"
-msgstr "Marionette"
-
-msgid "Library"
-msgstr "Library"
+msgid "Kebab"
+msgstr "Kebab"
 
 msgid "Kindergarten"
 msgstr "Kindergarten"
 
-msgid "School"
-msgstr "School"
+msgid "Kitesurfing"
+msgstr "Kitesurfing"
 
-msgid "University"
-msgstr "University"
+msgid "Korean"
+msgstr "Korean"
 
-msgid "Collage"
-msgstr "Collage"
+msgid "Korfball"
+msgstr "Korfball"
 
-msgid "Attraction"
-msgstr "Attraction"
+msgid "Kyo ryouri"
+msgstr "Kyo ryouri"
 
-msgid "Accommodation"
-msgstr "Accommodation"
+msgid "Lactose free"
+msgstr "Lactose free"
 
-msgid "Information"
-msgstr "Information"
+msgid "Lacto vegetarian"
+msgstr "Lacto vegetarian"
 
-msgid "Payment"
-msgstr "Payment"
+msgid "Latin american"
+msgstr "Latin american"
 
-msgid "Coins"
-msgstr "Coins"
+msgid "Lawyer"
+msgstr "Lawyer"
 
-msgid "Bitcoin"
-msgstr "Bitcoin"
+msgid "Lebanese"
+msgstr "Lebanese"
+
+msgid "Library"
+msgstr "Library"
+
+msgid "List"
+msgstr "List"
 
 msgid "Litecoin"
 msgstr "Litecoin"
 
-msgid "Peercoin"
-msgstr "Peercoin"
+msgid "Male"
+msgstr "Male"
 
-msgid "Delivery"
-msgstr "Delivery"
+msgid "Marionette"
+msgstr "Marionette"
 
-msgid "Wheelchair"
-msgstr "Wheelchair"
+msgid "Mediterranean"
+msgstr "Mediterranean"
 
-msgid "Internet"
-msgstr "Internet access"
+msgid "Mexican"
+msgstr "Mexican"
 
-msgid "Empty"
-msgstr "Empty"
+msgid "Microbrewery"
+msgstr "Microbrewery"
+
+msgid "Mineira"
+msgstr "Mineira"
+
+msgid "Money"
+msgstr "Money"
+
+msgid "Motor"
+msgstr "Motor"
+
+msgid "Musical"
+msgstr "Musical"
+
+msgid "Music theatre"
+msgstr "Music theatre"
+
+msgid "Needs"
+msgstr "Needs"
+
+msgid "Nightclub"
+msgstr "Nightclub"
 
 msgid "No"
 msgstr "No"
 
-msgid "Yes"
-msgstr "Yes"
+msgid "Noodle"
+msgstr "Noodle"
 
-msgid "Free"
-msgstr "Free"
+msgid "Notary"
+msgstr "Notary"
 
-msgid "Wlan"
-msgstr "Wlan"
+msgid "No set/Yes/Only"
+msgstr "No set/Yes/Only"
 
-msgid "Smoking"
-msgstr "Smoking"
+msgid "Obstacle course"
+msgstr "Obstacle course"
 
-msgid "Dedicated"
-msgstr "Dedicated"
+msgid "Office"
+msgstr "Office"
 
-msgid "Isolated"
-msgstr "Isolated"
+msgid "Okinawa ryori"
+msgstr "Okinawa ryori"
+
+msgid "Opera"
+msgstr "Opera"
+
+msgid "Orienteering"
+msgstr "Orienting"
+
+msgid "Other"
+msgstr "Other"
+
+msgid "Other theatre"
+msgstr "Other theatre"
+
+msgid "Ovo vegetarian"
+msgstr "Ovo vegetarian"
+
+msgid "Paddle tennis"
+msgstr "Paddle tennis"
+
+msgid "Pancake"
+msgstr "Pancake"
+
+msgid "Paragliding"
+msgstr "Paragliding"
+
+msgid "Pasta"
+msgstr "Pasta"
+
+msgid "Payment"
+msgstr "Payment"
+
+msgid "Peercoin"
+msgstr "Peercoin"
+
+msgid "Pelota"
+msgstr "Palota"
+
+msgid "Peruvian"
+msgstr "Peruvian"
+
+msgid "Pescetarian"
+msgstr "Pescetarian"
+
+msgid "Pharmacy"
+msgstr "Pharmacy"
+
+msgid "Philharmonic"
+msgstr "Philharmonic"
+
+msgid "Photographer"
+msgstr "Photographer"
+
+msgid "Pie"
+msgstr "Pie"
+
+msgid "Pitch"
+msgstr "Pitch"
+
+msgid "Pizza"
+msgstr "Pizza"
+
+msgid "PLN"
+msgstr "PLN"
+
+msgid "Polish"
+msgstr "Polish"
+
+msgid "Political"
+msgstr "Political"
+
+msgid "Portuguese"
+msgstr "Portuguese"
+
+msgid "Pub"
+msgstr "Pub"
+
+msgid "Puppet"
+msgstr "Puppet"
+
+msgid "Puppet theatre"
+msgstr "Figure theatre"
+
+msgid "Racquet"
+msgstr "Racquet"
+
+msgid "Raw"
+msgstr "Raw"
+
+msgid "Real ALE"
+msgstr "Real ale"
+
+msgid "Real cider"
+msgstr "Real cider"
+
+msgid "Regional"
+msgstr "Regional"
+
+msgid "Rowing"
+msgstr "Rowing"
+
+msgid "RUB"
+msgstr "RUB"
+
+msgid "Rugby league"
+msgstr "Rugby league"
+
+msgid "Rugby union"
+msgstr "Rugby union"
+
+msgid "Running"
+msgstr "Running"
+
+msgid "Russian"
+msgstr "Russian"
+
+msgid "Sandwich"
+msgstr "Sandwich"
+
+msgid "Sausage"
+msgstr "Sausage"
+
+msgid "Savory pancakes"
+msgstr "Savory pancakes"
+
+msgid "School"
+msgstr "School"
+
+msgid "Scuba diving"
+msgstr "Scuba diving"
+
+msgid "Seafood"
+msgstr "Seafood"
 
 msgid "Separated"
 msgstr "Separated"
@@ -680,10 +704,158 @@ msgstr "Separated"
 msgid "Set"
 msgstr "Set"
 
-msgid "Close"
-msgstr "Close"
+msgid "Shadow play"
+msgstr "Shadow play"
 
-msgid "Add"
-msgstr "Add"
+msgid "Shandong"
+msgstr "Shandong"
 
+msgid "Shelter"
+msgstr "Shelter"
 
+msgid "Shooting"
+msgstr "Shooting"
+
+msgid "Shop"
+msgstr "Shop"
+
+msgid "Sichuan"
+msgstr "Sichuan"
+
+msgid "Skateboard"
+msgstr "Skateboard"
+
+msgid "Skating"
+msgstr "Skating"
+
+msgid "Skiing"
+msgstr "Skiing"
+
+msgid "Smoking"
+msgstr "Smoking"
+
+msgid "Soccer"
+msgstr "Soccer"
+
+msgid "Social facility"
+msgstr "Social facility"
+
+msgid "Spanish"
+msgstr "Spanish"
+
+msgid "Speech theatre"
+msgstr "Speech theatre"
+
+msgid "Sport"
+msgstr "Sport"
+
+msgid "Sport centre"
+msgstr "Sport centre"
+
+msgid "Stadium"
+msgstr "Stadium"
+
+msgid "Stand up comedy"
+msgstr "Stand up comedy"
+
+msgid "Steak house"
+msgstr "Steak house"
+
+msgid "Stripclub"
+msgstr "Stripclub"
+
+msgid "Surfing"
+msgstr "Surfing"
+
+msgid "Sushi"
+msgstr "Sushi"
+
+msgid "Swimming"
+msgstr "Swimming"
+
+msgid "Swimming pool"
+msgstr "Swimming pool"
+
+msgid "Table tennis"
+msgstr "Table tennis"
+
+msgid "Taekwondo"
+msgstr "Teakwondo"
+
+msgid "Take away"
+msgstr "Take away"
+
+msgid "Team handball"
+msgstr "Team handball"
+
+msgid "Tennis"
+msgstr "Tennis"
+
+msgid "Thai"
+msgstr "Thai"
+
+msgid "Toboggan"
+msgstr "Toboggan"
+
+msgid "Toilets"
+msgstr "Toilets"
+
+msgid "Tourism"
+msgstr "Tourism"
+
+msgid "Track"
+msgstr "Track"
+
+msgid "Transport"
+msgstr "Transport"
+
+msgid "Travel"
+msgstr "Travel"
+
+msgid "Turkish"
+msgstr "Turkish"
+
+msgid "University"
+msgstr "University"
+
+msgid "USD"
+msgstr "USD"
+
+msgid "Variate"
+msgstr "Variaté"
+
+msgid "Vegan"
+msgstr "Vegan"
+
+msgid "Vegetarian"
+msgstr "Vegetarian"
+
+msgid "Veterinary"
+msgstr "Veterinary"
+
+msgid "Volleyball"
+msgstr "Volleyball"
+
+msgid "Water ski"
+msgstr "Water ski"
+
+msgid "Weightlifting"
+msgstr "Weightlifting"
+
+msgid "Wheelchair"
+msgstr "Wheelchair"
+
+msgid "Where"
+msgstr "Where"
+
+msgid "Wlan"
+msgstr "Wlan"
+
+msgid "Wrestling"
+msgstr "Wrestling"
+
+msgid "XBT (BTC)"
+msgstr "XBT (BTC)"
+
+msgid "Yes"
+msgstr "Yes"

@@ -138,8 +138,8 @@ POI.prototype.getInfoBox = function(){
   if(typeof this.oh != 'undefined' && this.element.tags.hasOwnProperty("opening_hours"))
     tabs+='<li><a href="#hours" data-toggle="tab">'+lang_opening_hours+'</a></li>';
 
-  tabs+='<li><a href="#comments" data-toggle="tab">Comments</a></li>';
-  tabs+='<li><a href="#tags" data-toggle="tab">Advanced</a></li></ul>';
+  tabs+='<li><a href="#comments" data-toggle="tab">'+lang_comments+'</a></li>';
+  tabs+='<li><a href="#tags" data-toggle="tab">'+lang_advanced+'</a></li></ul>';
 
   var content = '<div class="tab-content">';
   //------basic

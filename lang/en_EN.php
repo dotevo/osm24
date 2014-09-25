@@ -339,6 +339,16 @@ define('JS_KEY','Key');
 define('JS_VALUE','Value');
 define('JS_OPENING_HOURS','Hours');
 define('JS_BASIC','Basic');
+define('JS_COMMENTS','Comments');
+define('JS_ADVANCED','Advanced');
 define('JS_NOTE','Note');
 define('JS_STATUS','Status');
+
+define('JS_LOADING','Loading...');
+define('JS_PLEASE_ZOOM_IN','Please zoom in');
+define('JS_OPEN','Open');
+define('JS_LAST_HOUR','Last hour');
+define('JS_CLOSE','Closed');
+define('JS_NO_DATA','No data');
+
 ?>        

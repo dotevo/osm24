@@ -296,10 +296,10 @@ $("#export_csv").click(function(){
   legend.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'info legend');
 
-    div.innerHTML +='<i class="map-icon-open" style="background-size: 18px 18px;"></i> Open <br/>'+
-    '<i class="map-icon-last" style="background-size: 18px 18px;"></i> Last hour <br/>'+
-    '<i class="map-icon-closed" style="background-size: 18px 18px;"></i> Close <br/>'+
-    '<i class="map-icon-nd" style="background-size: 18px 18px;"></i> No data <br/>';
+    div.innerHTML +='<i class="map-icon-open" style="background-size: 18px 18px;"></i> '+lang_open+' <br/>'+
+    '<i class="map-icon-last" style="background-size: 18px 18px;"></i> '+lang_last_hour+' <br/>'+
+    '<i class="map-icon-closed" style="background-size: 18px 18px;"></i> '+lang_close+' <br/>'+
+    '<i class="map-icon-nd" style="background-size: 18px 18px;"></i> '+lang_nodata+' <br/>';
     return div;
   };
   legend.addTo(map);
@@ -338,9 +338,9 @@ $("#export_csv").click(function(){
 
   map.on("zoomend", function (e) {
    if(10>map.getZoom()){
-     $("#info").html("Please, zoom in.");
+     $("#info").html(lang_please_zoom_in);
   }else{
-    if($("#info").html()=="Please, zoom in.")
+    if($("#info").html()==lang_please_zoom_in)
       $("#info").html("");
   }
   });
@@ -428,7 +428,7 @@ var zoomControl = L.control.zoom({
     newElement: addElement,
     layer:markers,
     autoclick: idd,
-    onDownload: function(){$("#info").html("Loading...");},
+    onDownload: function(){$("#info").html(lang_loading);},
     onDownloadFinished: function(){$("#info").html("");reloadList();},
     minzoom:10,
     minfullzoom:15,

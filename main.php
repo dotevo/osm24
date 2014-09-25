@@ -583,7 +583,7 @@ include("language.php");
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Gdzie   <script>
+          <h4 class="modal-title">Osm24   <script>
             CoinWidgetCom.go({
                 wallet_address: "1ErU8U4bREFeUWywiBFjj3sCXudMqhEjCf"
               , currency: "bitcoin"

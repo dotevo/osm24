@@ -1,2 +1,9 @@
+.project
+
+#generated
 *.part
 osm24.*
+out
+html/*.html
+html/*.php
+locales/*.json

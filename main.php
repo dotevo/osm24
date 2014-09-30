@@ -501,7 +501,7 @@ include("language.php");
               <ul class="dropdown-menu select-one dropdown-menu-long tag-parent">
                 <li><a id="tourism_all" data-tag-pair="[tourism]" data-tag-type="main"><?php echo PANEL_TOURISM_ALL;?></a></li>
                 <li class="divider"></li>
-                <li><a id="tourism_attraction" data-tag-pair="[tourism=attraction]@[tourism=viewpoint]@[tourism=museum]@[tourism=theme_park]@[tourism@zoo]" data-tag-type="main"><?php echo PANEL_TOURISM_ATTRACTION;?></a></li>
+                <li><a id="tourism_attraction" data-tag-pair="[tourism=attraction]@[tourism=viewpoint]@[tourism=museum]@[tourism=theme_park]@[tourism=zoo]" data-tag-type="main"><?php echo PANEL_TOURISM_ATTRACTION;?></a></li>
                 <li><a id="tourism_accommodation" data-tag-pair="[tourism=hotel]@[tourism=hostel]@[tourism=guest_house]@[tourism=camp_site]@[tourism=caravan_site]@[tourism=motel]@[tourism=alpine_hut]" data-tag-type="main"><?php echo PANEL_TOURISM_ACCOMMODATION;?></a></li>
                 <li><a id="tourism_information" data-tag-pair="[tourism=information]" data-tag-type="main"><?php echo PANEL_TOURISM_INFORMATION;?></a></li>
               </ul>

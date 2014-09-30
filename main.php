@@ -567,6 +567,7 @@ include("language.php");
               <li><a href="?lang=en_EN"><img src="img/flags/en_EN.png"/></a></li>
               <li><a href="?lang=it_IT"><img src="img/flags/it_IT.png"/></a></li>
               <li><a href="?lang=ru_RU"><img src="img/flags/ru_RU.png"/></a></li>
+              <li><a href="?lang=uk_UA"><img src="img/flags/uk_UA.png"/></a></li>
             </ul>
           </li>
           <li><button onclick="ustaw()" type="button" class="btn btn-primary navbar-btn"><?php echo BUTTON_SET;?></button></li>

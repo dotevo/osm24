@@ -26,7 +26,7 @@ include("language.php");
       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
     <![endif]-->
 
-    <script src="js_lang.php"></script>
+    <script src="js_lang.php?cache=<?php echo $_SESSION['lang'];?>"></script>
     <script src="http://code.jquery.com/jquery-2.0.2.js">{"parsetags": "explicit"}</script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/leaflet.js"></script>

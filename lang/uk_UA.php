@@ -135,7 +135,7 @@ define ('PANEL_BEER_REAL_ALE', 'Справжній ель');
 define ('PANEL_BEER_BREWERY_PLACEHOLDER', 'напр. Хейнекен');
 
 define ('PANEL_OFFICE_LIST', 'Тип');
-define ('PANEL_OFFICE_ALL', 'Все');
+define ('PANEL_OFFICE_ALL', 'Усе');
 define ('PANEL_OFFICE_ACCOUNTANT', 'Бухгалтер');
 define ('PANEL_OFFICE_ADMINISTRATIVE', 'Адміністрація');
 define ('PANEL_OFFICE_ARCHITECT', 'Архітектор');
@@ -187,7 +187,7 @@ define ('PANEL_STORE_TRAVEL', 'Подорожі');
 
 
 define ('PANEL_SPORT', 'Види спорту');
-define ('PANEL_SPORT_ALL', 'Все');
+define ('PANEL_SPORT_ALL', 'Усе');
 define ('PANEL_SPORT_9PIN', 'Європейський боулінг');
 define ('PANEL_SPORT_10PIN', 'Звичайний (американський) боулінг');
 define ('PANEL_SPORT_AMERICAN_FOOTBALL', 'Американський футбол');
@@ -324,7 +324,7 @@ define ('BUTTON_SET', 'Встановити');
 define ('BUTTON_LOCATE', 'Де я?');
 define ('BUTTON_STOP_LOCATE', 'Зупинити встановлення розташування');
 define ('BUTTON_ABOUT', 'Про сайт');
-define ('POPUP_ABOUT_BODY', 'Дані <a href="http://ru.wikipedia.org/wiki/OpenStreetMap">OpenStreetMap</a> надані за ліцензією <a href="http://www.openstreetmap.org/copyright"> ODbL </a>. <br/> Лише 40 об’єктів показуються на зумах 10-14. Щоб побачити усі об’єкти, наблизьте мапу (minzoom=15). <br/> <br/> Використані бібліотеки та інструменти: <br/> <a href="http://leafletjs.com">Leaflet</a>, <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://jquery.com/">jQuery</a>, <a href="https://github.com/ypid/opening_hours.js">opening_hours.js</a>, <a href="https://github.com/mlevans/leaflet-hash">Leaflet-hash</a>, <a href="https://github.com/kartenkarsten/leaflet-layer-overpass/">LeafLet-layer-overpass</a>, Overpass API, VIM:-) <br/> Значки: Maps Icons Collection <a href="http://mapicons.nicolasmollet.com">mapicons.nicolasmollet.com</a> та Tuuli <br/> Автор: Adam Jordanek (dotevo)');
+define ('POPUP_ABOUT_BODY', 'Дані <a href="http://uk.wikipedia.org/wiki/OpenStreetMap">OpenStreetMap</a> надані за ліцензією <a href="http://www.openstreetmap.org/copyright">ODbL</a>. <br/> Лише 40 об’єктів показуються на зумах 10-14. Щоб побачити усі об’єкти, наблизьте мапу (minzoom=15). <br/> <br/> Використані бібліотеки та інструменти: <br/> <a href="http://leafletjs.com">Leaflet</a>, <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://jquery.com/">jQuery</a>, <a href="https://github.com/ypid/opening_hours.js">opening_hours.js</a>, <a href="https://github.com/mlevans/leaflet-hash">Leaflet-hash</a>, <a href="https://github.com/kartenkarsten/leaflet-layer-overpass/">LeafLet-layer-overpass</a>, Overpass API, VIM:-) <br/> Значки: Maps Icons Collection <a href="http://mapicons.nicolasmollet.com">mapicons.nicolasmollet.com</a> та Tuuli <br/> Автор: Adam Jordanek (dotevo)');
 define ('BUTTON_CLOSE', 'Зачинити');
 define ('BUTTON_ADD', 'Додати');
 

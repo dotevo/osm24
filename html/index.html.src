@@ -2,27 +2,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
-<script src=\LOCAL{http://code.jquery.com/jquery-1.11.1.min.js}></script>
-<script src=\LOCAL{http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js}></script>
+	<title>Osm24</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href=\LOCAL{http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css}/>
+	<script src=\LOCAL{http://code.jquery.com/jquery-1.11.1.min.js}></script>
+	<script src=\LOCAL{http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.js}></script>
+
+	<link rel="stylesheet" href=\LOCAL{http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css} />
+	<script src=\LOCAL{http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js}></script>
+
+	<link rel="stylesheet" href="css/osm24.css"/>
 </head>
 <body>
-
-<div data-role="page">
-  <div data-role="header">
-    <h1>Welcome To My Homepage</h1>
-  </div>
-
-  <div data-role="main" class="ui-content">
-    <p>I Am Now A Mobile Developer!!</p>
-  </div>
-
-  <div data-role="footer">
-    <h1>Footer Text</h1>
-  </div>
-</div> 
-
+<div data-url="panel-fixed-page1" data-role="page" class="jqm-demos ui-responsive-panel" id="page">
+	<div data-role="header"  data-position="fixed">
+		<h1>OSM24</h1>
+		<a href="#left-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+	</div><!-- /header -->
+	<div data-role="content" class="jqm-content" id="content">
+		<div id="map"></div>
+		<div data-demo-html="#panel-fixed-page1" data-demo-css="true"></div><!--/demo-html -->
+	</div><!-- /content -->
+	<div data-role="footer" data-position="fixed" class="fixedFooter">
+		<div id="bottomheader"><center>&#x21e7; &#x21e7; &#x21e7; &#x21e7; &#x21e7;</center></div>
+		<div id="bottomcontent">
+			POI POI POI
+		</div>
+	</div><!-- /footer -->
+	<div data-role="panel" data-position-fixed="true" id="left-panel" data-swipe-close="false" data-dismissible="false">
+		<ul data-role="listview" data-theme="a" class="nav-search">
+			<li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+			<li><a href="#panel-fixed-page2">Accessibility</a></li>
+			<li><a href="#panel-fixed-page2">Accordions</a></li>
+		</ul>
+	</div><!-- /panel -->
+</div>
+<script src="js/osm24.js"></script>
 </body>
 </html>
-

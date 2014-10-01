@@ -1,2 +1,39 @@
-.test{
+html,body, #page{
+	margin: 0px; padding: 0px;
+}
+
+#bottomcontent{
+	display:none;
+}
+
+#content,#map{
+	height:100%;
+	width:100%;
+	position: absolute;
+	margin: 0px; padding: 0px;
+}
+
+.fixedFooter {
+	position: fixed !important;
+	left: 0px !important;
+	right: 0px !important;
+	bottom: 0px !important;
+	z-index: 999 !important;
+}
+
+#left-panel{
+	overflow-y: auto;
+}
+
+@media (min-width:35em){
+.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push.ui-panel-content-fixed-toolbar-position-left,
+.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal.ui-panel-content-fixed-toolbar-position-left,
+.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-push.ui-panel-content-wrap-position-left,
+.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-reveal.ui-panel-content-wrap-position-left {
+	margin-right: 17em;
+}
+.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push,
+.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal {
+	width: auto;
+}
 }

@@ -25,6 +25,19 @@ html,body, #page{
 	overflow-y: auto;
 }
 
+#scroll-menu {
+	position:relative;
+	white-space: nowrap;
+	height: 100px;
+	margin: 0px;
+	width:100%;
+}
+.poi {
+	width:64px;
+	height: 64px;
+	background: #F0F;
+}
+
 @media (min-width:35em){
 .ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push.ui-panel-content-fixed-toolbar-position-left,
 .ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal.ui-panel-content-fixed-toolbar-position-left,

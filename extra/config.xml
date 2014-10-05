@@ -1,0 +1,12 @@
+ <widget id="eu.osm24.osm24" version="0.0.1">
+ 	<name>OSM24</name>
+	<description>
+		OpenStreetMap map with opening hours.
+	</description>
+	<author email="dotevo@gmail.com" href="http://osm24.eu">
+		OpenStreetMap Polska
+	</author>
+	<content src="index.html" />
+	<access origin="*" />
+</widget>
+

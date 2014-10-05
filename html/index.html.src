@@ -26,7 +26,36 @@
 	<div data-role="footer" data-position="fixed" class="fixedFooter">
 		<div id="bottomheader"><center>&#x21e7; &#x21e7; &#x21e7; &#x21e7; &#x21e7;</center></div>
 		<div id="bottomcontent">
-			POI POI POI
+			<div id='scroll-menu'>
+                <div class="scroll-menu-box"></div>
+                <ul class="scroll-menu-list">
+					<li class=".scroll-menu-item" id="a0">
+						<div class="poi"></div>
+					</li>
+					<li class=".scroll-menu-item" id="a1">
+						<div class="poi"></div>
+					</li>
+					<li class=".scroll-menu-item" id="a2">
+						<div class="poi"></div>
+					</li>
+					<li class=".scroll-menu-item" id="a3">
+						<div class="poi"></div>
+					</li>
+					<li class=".scroll-menu-item" id="a4">
+						<div class="poi"></div>
+					</li>
+					<li class=".scroll-menu-item" id="a5">
+						<div class="poi"></div>
+					</li>
+					<li class=".scroll-menu-item" id="a6">
+						<div class="poi"></div>
+					</li>
+					<li class=".scroll-menu-item" id="a7">
+						<div class="poi"></div>
+					</li>
+
+                </ul>
+            </div>
 		</div>
 	</div><!-- /footer -->
 	<div data-role="panel" data-position-fixed="true" id="left-panel" data-swipe-close="false" data-dismissible="false">

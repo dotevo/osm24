@@ -2,6 +2,9 @@ SUBDIRS = js css locales html
 
 .PHONY: osm24 $(SUBDIRS)
 
+phonegap: osm24
+	cp extra/config.xml out/config.xml
+
 osm24: $(SUBDIRS)
 	mkdir out/js -p
 	mkdir out/css -p

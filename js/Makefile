@@ -3,7 +3,7 @@ COMPRESSOR=yui-compressor
 JOIN=cat
 PROJ=osm24
 
-OBJS=main.part
+OBJS=main.part scroll-list.part
 
 $(PROJ): osm24.joined
 	cp $^ $@.js

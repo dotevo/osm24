@@ -6,7 +6,7 @@ include("language.php");
 <html lang="<?php echo $_SESSION['slang']; ?>">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="fragment" content="!">
@@ -84,7 +84,7 @@ include("language.php");
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-           <button type="button" class="navbar-toggle" style="height:40px" data-toggle="collapse" data-target=".navbar-collapse">
+           <button type="button" class="navbar-toggle" style="height:40px;color:white" data-toggle="collapse" data-target=".navbar-collapse">
 -            Menu
 -          </button><table><tr><td>
           <a id="open-left"></a></td><td>

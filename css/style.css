@@ -367,3 +367,11 @@ table, tr, th, td {
     border-radius: 5px;
     width: 250px;
 }
+
+.leaflet-control button {
+    padding: 0;
+}
+
+.leaflet-control .glyphicon {
+    margin: 0;
+}

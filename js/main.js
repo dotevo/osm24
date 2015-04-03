@@ -38,7 +38,7 @@ function addElement(e){
 
   }else{
     marker=new L.marker(pos, {icon: m_icon,riseOnHover: true}).
-                        bindLabel(poi.getName()).bindPopup(popup, {minWidth: 300});
+                        bindLabel(poi.getName()).bindPopup(popup, {minWidth: 350});
     marker.el = poi;
     marker.on("click",function(){
               this.label.close();

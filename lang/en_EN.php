@@ -52,6 +52,7 @@ define('PANEL_CUISINE_AMERICAN','American');
 define('PANEL_CUISINE_ARAB','Arab');
 define('PANEL_CUISINE_ARGENTINIAN','Argentinian');
 define('PANEL_CUISINE_ASIAN','Asian');
+define('PANEL_CUISINE_ASIAN_ALL','Asian (all)');
 define('PANEL_CUISINE_BAIANA','Baiana');
 define('PANEL_CUISINE_BALKAN','Balkan');
 define('PANEL_CUISINE_BASQUE','Basque');
@@ -351,4 +352,4 @@ define('JS_LAST_HOUR','Last hour');
 define('JS_CLOSE','Closed');
 define('JS_NO_DATA','No data');
 
-?>        
+?>

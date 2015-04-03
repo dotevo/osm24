@@ -53,6 +53,7 @@ define ('PANEL_CUISINE_AMERICAN', 'Американська');
 define ('PANEL_CUISINE_ARAB', 'Арабська');
 define ('PANEL_CUISINE_ARGENTINIAN', 'Аргентинська');
 define ('PANEL_CUISINE_ASIAN', 'Азіатська');
+define ('PANEL_CUISINE_ASIAN_ALL','Asian (all)');
 define ('PANEL_CUISINE_BAIANA', 'Бразильська (Баїя)');
 define ('PANEL_CUISINE_BALKAN', 'Балканська');
 define ('PANEL_CUISINE_BASQUE', 'Баскська');

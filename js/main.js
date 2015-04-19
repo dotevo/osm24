@@ -273,6 +273,42 @@ function dateChanged(d){
 	});
 }
 
+var global_cc = "";
+var global_state = "";
+
+function placeChanged(){
+	markers.eachLayer(function (layer) {
+		var a=layer.el.updateShadow(datan);
+		if(a)
+			layer.setIcon(layer.el.getIcon());
+	});
+}
+
+
+var nominatimQuery = function (){
+  var url = 'http://nominatim.openstreetmap.org/reverse?format=json&lat=52.5487429714954&lon=-1.81602098644987&zoom=18&addressdetails=1';
+  url += '?format=json&lat=' + map.getCenter().lat + '&lon=' + map.getCenter().lng+'&zoom='+map.getZoom()+"&addressdetails=1";
+
+  $.ajax({
+    url: url,
+    crossDomain: true,
+    dataType: "json",
+    data: {},
+    success: function(nominatim){
+		//Parse nominatim
+		var cc = nominatim.address.country_code;
+		var state = nominatim.address.state;
+        if(cc != global_cc || state != global_state){
+          global_cc = cc;
+          global_state = state;
+          global_nominatim = nominatim;
+          placeChanged();
+        }
+    }
+  }).always(function(){
+    //TODO
+  });
+}
 
 $(window).load(function() {
 $("#export_csv").click(function(){
@@ -429,7 +465,7 @@ var zoomControl = L.control.zoom({
     layer:markers,
     autoclick: idd,
     onDownload: function(){$("#info").html(lang_loading);},
-    onDownloadFinished: function(){$("#info").html("");reloadList();},
+    onDownloadFinished: function(){$("#info").html("");reloadList();nominatimQuery();},
     minzoom:10,
     minfullzoom:15,
   });
@@ -439,6 +475,7 @@ var zoomControl = L.control.zoom({
   map.on('locationfound', onLocationFound);
   map.on('locationerror', onLocationError);
 
+  map.on('moveend', nominatimQuery);
   map.on('popupopen', function() {
     var href=$("#plusone-div").data("href");
     var size=$("#plusone-div").data("size");

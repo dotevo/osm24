@@ -16,8 +16,12 @@ var craft_icons=['key_cutter','clockmaker','glaziery','photographer','shoemaker'
 var emergency_icons=['ambulance_station','defibrillator'];
 var tourism_icons=['guest_house','motel','hotel','caravan_site','camp_site','information','attraction','theme_park','zoo','museum','artwork'];
 
+
+var global_nominatim = "";
+
 function POI(element){
   this.element = element;
+  this.nominatim = undefined;
   //this.updateShadow(new Date());
 }
 
@@ -257,7 +261,7 @@ POI.prototype.updateShadow = function (now){
 	this.shadow = "nd";
 	if (this.element.tags.hasOwnProperty("opening_hours")) {
 		try {
-			this.oh = new opening_hours(this.element.tags['opening_hours']);
+			this.oh = new opening_hours(this.element.tags['opening_hours'], global_nominatim);
 		} catch (err) {
 			console.log("Unsupported:" + this.element.tags['opening_hours']);
 			this.oh = undefined;

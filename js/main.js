@@ -286,7 +286,7 @@ function placeChanged(){
 
 
 var nominatimQuery = function (){
-  var url = 'http://nominatim.openstreetmap.org/reverse?format=json&lat=52.5487429714954&lon=-1.81602098644987&zoom=18&addressdetails=1';
+  var url = 'http://nominatim.openstreetmap.org/reverse';
   url += '?format=json&lat=' + map.getCenter().lat + '&lon=' + map.getCenter().lng+'&zoom='+map.getZoom()+"&addressdetails=1";
 
   $.ajax({

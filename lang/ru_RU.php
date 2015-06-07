@@ -181,6 +181,7 @@ define('PANEL_STORE_ALCOHOL','Алкоголь');
 define('PANEL_STORE_ART','Искусство');
 define('PANEL_STORE_CLOTHES','Одежда/обувь');
 define('PANEL_STORE_FOOD','Продукты');
+define('PANEL_STORE_ORGANIC','Organic');
 define('PANEL_STORE_ELECTRONIC','Электроника');
 define('PANEL_STORE_HEALTH_AND_BEAUTY','Здоровье и красота');
 define('PANEL_STORE_TRANSPORT','Транспорт');

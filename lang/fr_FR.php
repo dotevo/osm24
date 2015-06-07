@@ -180,6 +180,7 @@ define('PANEL_STORE_ALCOHOL','Alcool');
 define('PANEL_STORE_ART','Art');
 define('PANEL_STORE_CLOTHES','Vêtements');
 define('PANEL_STORE_FOOD','Alimentation');
+define('PANEL_STORE_ORGANIC','Organic');
 define('PANEL_STORE_ELECTRONIC','Électronique');
 define('PANEL_STORE_HEALTH_AND_BEAUTY','Soins et beauté');
 define('PANEL_STORE_TRANSPORT','Transport');

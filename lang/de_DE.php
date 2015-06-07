@@ -179,6 +179,7 @@ define('PANEL_STORE_ALCOHOL','Alkohol');
 define('PANEL_STORE_ART','Kunst');
 define('PANEL_STORE_CLOTHES','Kleidung');
 define('PANEL_STORE_FOOD','Lebensmittel');
+define('PANEL_STORE_ORGANIC','Bio');
 define('PANEL_STORE_ELECTRONIC','Electronik');
 define('PANEL_STORE_HEALTH_AND_BEAUTY','Gesundheit und Schönheit');
 define('PANEL_STORE_TRANSPORT','Transport');

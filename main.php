@@ -154,7 +154,7 @@ include("language.php");
                 <li><a id="arab"><?php echo PANEL_CUISINE_ARAB;?></a></li>
                 <li><a id="argentinian"><?php echo PANEL_CUISINE_ARGENTINIAN;?></a></li>
                 <li><a id="asian"><?php echo PANEL_CUISINE_ASIAN;?></a></li>
-                <li><a id="asian_all" data-tag-pair="[cuisine=noodle]@[cuisine=cantonese]@[cuisine=chinese]@[cuisine=asian]@[cuisine=japanese]@[cuisine=sushi]@[cuisine=savory_pancakes]@[cuisine=kyo_ryouri]@[cuisine=okinawa_ryori]@[cuisine=korean]@[cuisine=thai]@[cuisine=vietnamese]"><?php echo PANEL_CUISINE_ASIAN_ALL;?></a></li>
+                <li><a id="asian_all" data-tag-pair="[cuisine~'noodle|cantonese|chinese|asian|japanese|sushi|savory_pancakes|kyo_ryouri|okinawa_ryori|korean|thai|vietnamese']"><?php echo PANEL_CUISINE_ASIAN_ALL;?></a></li>
                 <li><a id="baiana"><?php echo PANEL_CUISINE_BAIANA;?></a></li>
                 <li><a id="balkan"><?php echo PANEL_CUISINE_BALKAN;?></a></li>
                 <li><a id="basque"><?php echo PANEL_CUISINE_BASQUE;?></a></li>

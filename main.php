@@ -566,12 +566,12 @@ include("language.php");
             <b class="caret"></b>
             </a>
             <ul class="dropdown-menu flags">
-              <li><a href="?lang=en_EN"><img src="img/flags/en_EN.png"/></a></li>
-              <li><a href="?lang=it_IT"><img src="img/flags/it_IT.png"/></a></li>
-              <li><a href="?lang=ru_RU"><img src="img/flags/ru_RU.png"/></a></li>
-              <li><a href="?lang=uk_UA"><img src="img/flags/uk_UA.png"/></a></li>
-              <li><a href="?lang=de_DE"><img src="img/flags/de_DE.png"/></a></li>
-              <li><a href="?lang=fr_FR"><img src="img/flags/fr_FR.png"/></a></li>
+              <li><a href="?lang=de_DE"><img src="img/flags/de_DE.png"/>Deutsch</a></li>
+              <li><a href="?lang=en_EN"><img src="img/flags/en_EN.png"/>English</a></li>
+              <li><a href="?lang=fr_FR"><img src="img/flags/fr_FR.png"/>Français</a></li>
+              <li><a href="?lang=it_IT"><img src="img/flags/it_IT.png"/>Italiano</a></li>
+              <li><a href="?lang=ru_RU"><img src="img/flags/ru_RU.png"/>русский</a></li>
+              <li><a href="?lang=uk_UA"><img src="img/flags/uk_UA.png"/>Український</a></li>
             </ul>
           </li>
           <li><button onclick="ustaw()" type="button" class="btn btn-primary navbar-btn"><?php echo BUTTON_SET;?></button></li>

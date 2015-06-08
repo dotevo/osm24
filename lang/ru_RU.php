@@ -53,6 +53,7 @@ define('PANEL_CUISINE_AMERICAN','Американская');
 define('PANEL_CUISINE_ARAB','Арабская');
 define('PANEL_CUISINE_ARGENTINIAN','Аргентинская');
 define('PANEL_CUISINE_ASIAN','Азиатская');
+define('PANEL_CUISINE_ASIAN_ALL','Asian (all)'); //FIXME
 define('PANEL_CUISINE_BAIANA','Бразильская (Баия)');
 define('PANEL_CUISINE_BALKAN','Балканская');
 define('PANEL_CUISINE_BASQUE','Баскская');
@@ -180,6 +181,7 @@ define('PANEL_STORE_ALCOHOL','Алкоголь');
 define('PANEL_STORE_ART','Искусство');
 define('PANEL_STORE_CLOTHES','Одежда/обувь');
 define('PANEL_STORE_FOOD','Продукты');
+define('PANEL_STORE_ORGANIC','Organic');
 define('PANEL_STORE_ELECTRONIC','Электроника');
 define('PANEL_STORE_HEALTH_AND_BEAUTY','Здоровье и красота');
 define('PANEL_STORE_TRANSPORT','Транспорт');
@@ -352,5 +354,5 @@ define('JS_OPEN','Открыто');
 define('JS_LAST_HOUR','Последний час');
 define('JS_CLOSE','Закрыто');
 define('JS_NO_DATA','Нет данных');
-	
-?>        
+
+?>

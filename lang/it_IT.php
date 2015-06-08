@@ -25,8 +25,8 @@ define('PANEL_CUISINE_CAFFEE_SHOP','Cafè');
 define('PANEL_CUISINE_CREPE','Crépe');
 define('PANEL_CUISINE_COUSCOUS','Couscous');
 define('PANEL_CUISINE_CURRY','Curry');
-define('PANEL_CUISINE_DONUT','Donut'); //FIXME
-define('PANEL_CUISINE_DOUGHNUT','Doughnut'); //FIXME
+define('PANEL_CUISINE_DONUT','Donut');
+define('PANEL_CUISINE_DOUGHNUT','Donut');
 define('PANEL_CUISINE_EMPANADA','Empanada');
 define('PANEL_CUISINE_FISH_AND_CHIPS','Fish and chips');
 define('PANEL_CUISINE_FRIED_FOOD','Fritto');
@@ -51,6 +51,7 @@ define('PANEL_CUISINE_AMERICAN','Americano');
 define('PANEL_CUISINE_ARAB','Arabo');
 define('PANEL_CUISINE_ARGENTINIAN','Argentino');
 define('PANEL_CUISINE_ASIAN','Asiatico');
+define('PANEL_CUISINE_ASIAN_ALL','Asiatico (tutto)');
 define('PANEL_CUISINE_BAIANA','Baiano');
 define('PANEL_CUISINE_BALKAN','Balcano');
 define('PANEL_CUISINE_BASQUE','Basco');
@@ -175,6 +176,7 @@ define('PANEL_STORE_ALCOHOL','Alcool');
 define('PANEL_STORE_ART','Arte');
 define('PANEL_STORE_CLOTHES','Vestiti');
 define('PANEL_STORE_FOOD','Cibo');
+define('PANEL_STORE_ORGANIC','Organic');
 define('PANEL_STORE_ELECTRONIC','Elettronica');
 define('PANEL_STORE_HEALTH_AND_BEAUTY','Salute e bellezza');
 define('PANEL_STORE_TRANSPORT','Trasporto');
@@ -347,4 +349,4 @@ define('JS_LAST_HOUR','Last hour');
 define('JS_CLOSE','Closed');
 define('JS_NO_DATA','No data');
 
-?>        
+?>

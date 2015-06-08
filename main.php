@@ -154,6 +154,7 @@ include("language.php");
                 <li><a id="arab"><?php echo PANEL_CUISINE_ARAB;?></a></li>
                 <li><a id="argentinian"><?php echo PANEL_CUISINE_ARGENTINIAN;?></a></li>
                 <li><a id="asian"><?php echo PANEL_CUISINE_ASIAN;?></a></li>
+                <li><a id="asian_all" data-tag-pair="[cuisine~'noodle|cantonese|chinese|asian|japanese|sushi|savory_pancakes|kyo_ryouri|okinawa_ryori|korean|thai|vietnamese']"><?php echo PANEL_CUISINE_ASIAN_ALL;?></a></li>
                 <li><a id="baiana"><?php echo PANEL_CUISINE_BAIANA;?></a></li>
                 <li><a id="balkan"><?php echo PANEL_CUISINE_BALKAN;?></a></li>
                 <li><a id="basque"><?php echo PANEL_CUISINE_BASQUE;?></a></li>
@@ -357,6 +358,7 @@ include("language.php");
                 <li><a id="store_art" data-tag-pair="[shop=art]@[shop=music]" data-tag-type="main"><?php echo PANEL_STORE_ART;?></a></li>
                 <li><a id="store_clothes" data-tag-pair="[shop=clothes]@[shop=shoes]@[shop=second_hand]" data-tag-type="main"><?php echo PANEL_STORE_CLOTHES;?></a></li>
                 <li><a id="store_food" data-tag-pair="[shop=supermarket]@[shop=bakery]@[shop=butcher]@[shop=convenience]@[shop=farm]@[shop=greengrocer]@[shop=seafood]@[shop=confectionery]" data-tag-type="main"><?php echo PANEL_STORE_FOOD;?></a></li>
+                <li><a id="store_organic" data-tag-pair="[organic=only]" data-tag-type="main"><?php echo PANEL_STORE_ORGANIC; ?></a></li>
                 <li><a id="store_electronic" data-tag-pair="[shop='computer']@[shop=mobile_phone]@[shop=electronics]" data-tag-type="main"><?php echo PANEL_STORE_ELECTRONIC;?></a></li>
                 <li><a id="store_health" data-tag-pair="[amenity='pharmacy']@[shop=chemist]@[shop=hairdresser]@[shop=beauty]" data-tag-type="main"><?php echo PANEL_STORE_HEALTH_AND_BEAUTY;?></a></li>
                 <li><a id="store_transport" data-tag-pair="[shop=car]@[shop=bicycle]@[shop=motorcycle]@[shop=tyres]@[amenity='fuel']" data-tag-type="main"><?php echo PANEL_STORE_TRANSPORT;?></a></li>

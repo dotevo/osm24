@@ -52,6 +52,7 @@ define('PANEL_CUISINE_AMERICAN','Américain');
 define('PANEL_CUISINE_ARAB','Arabe');
 define('PANEL_CUISINE_ARGENTINIAN','Argentin');
 define('PANEL_CUISINE_ASIAN','Asiatique');
+define('PANEL_CUISINE_ASIAN_ALL','Asiatique (tous)');
 define('PANEL_CUISINE_BAIANA','Baiana');
 define('PANEL_CUISINE_BALKAN','Balkans');
 define('PANEL_CUISINE_BASQUE','Basque');
@@ -179,6 +180,7 @@ define('PANEL_STORE_ALCOHOL','Alcool');
 define('PANEL_STORE_ART','Art');
 define('PANEL_STORE_CLOTHES','Vêtements');
 define('PANEL_STORE_FOOD','Alimentation');
+define('PANEL_STORE_ORGANIC','Organic');
 define('PANEL_STORE_ELECTRONIC','Électronique');
 define('PANEL_STORE_HEALTH_AND_BEAUTY','Soins et beauté');
 define('PANEL_STORE_TRANSPORT','Transport');
@@ -351,5 +353,5 @@ define('JS_LAST_HOUR','Moins d\'une heure');
 define('JS_CLOSE','Fermé');
 define('JS_NO_DATA','Inconnu');
 
-?>        
+?>
 
